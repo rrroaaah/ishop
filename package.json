@@ -1,0 +1,25 @@
+{
+    "name":"ishop",
+    "version":"1.0.0",
+    "description":"null",
+    "type": "module",
+    "scripts":{
+        "watch": "concurrently \"sass --watch --update --style=expanded miz/_index.scss:assets/css/miz.min.css\" \"node miz/pkg/miz-controller.js --watch\" \"sass --watch --update --style=expanded sass/style.scss:assets/css/style.min.css\"",
+        "build": "concurrently \"sass --no-source-map --style=compressed miz/_index.scss:assets/css/miz.min.css\" \"node miz/pkg/miz-controller.js --build\" \"sass --no-source-map --style=compressed sass/style.scss:assets/css/style.min.css\"",
+        "clean": "sass --no-source-map --style=expanded miz/_index.scss:assets/css/miz-clean.css && node miz/pkg/miz-min.cjs",
+        "dev": "node miz/pkg/server.js"
+    },
+    "author":"",
+    "license":"ISC",
+    "devDependencies":{
+        "sass":"^1.77.8",
+        "concurrently": "^9.0.0",
+        "terser": "^5.28.1"
+    },
+    "dependencies": {
+        "ncp": "^2.0.0",
+        "cheerio": "^1.1.2",
+        "multer": "^2.0.2",
+        "express": "^5.1.0"
+    }
+}
