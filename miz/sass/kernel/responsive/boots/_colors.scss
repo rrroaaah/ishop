@@ -1,0 +1,75 @@
+@use "../../../config/colors" as *;
+@use "../../../../themes/ishop/config/colors" as *;
+@use'sass:list';
+@use'sass:string';
+
+@function str-replace-color($string, $search, $replace: '') {
+    $index: string.index($string, $search);
+    @if ($index){
+        @return string.slice($string, 1, $index - 1) + $replace + str-replace-color(string.slice($string, $index + string.length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+@mixin detect-color-palette($keyword, $key-palette-color, $value-palette-color) {
+    @if ($keyword == $borders) {
+        $result : str-replace-color("border-#{$key-palette-color}-color", "-border", "");
+
+        .#{$result} {
+            border-color: string.unquote("var(--#{$key-palette-color})");
+        }
+    }
+
+    @if ($keyword == $backgrounds) {
+        $result : str-replace-color("bg-#{$key-palette-color}-color", "-background", "");
+
+        .#{$result} {
+            background-color: string.unquote("var(--#{$key-palette-color})");
+        }
+    }
+
+    @if ($keyword == $colors) {
+        .#{$key-palette-color}-color {
+            color: string.unquote("var(--#{$key-palette-color})");
+        }
+    }
+}
+
+@mixin compare-palette-key($key-palette-color, $value-palette-color, $keyword) {
+    @for $i from 1 through list.length($keyword) {
+        $item-list: list.nth($keyword, $i);
+
+        @if (#{$key-palette-color} == $item-list) {
+            // @debug #{$key-palette-color} , $item-list , $keyword;
+            @include detect-color-palette($keyword, $key-palette-color, $value-palette-color);
+        }
+    }
+}
+
+@mixin generate-color-classes($color-palette) {
+    @each $key, $value in $color-palette {
+        @each $key-color-property , $value-color-property in $value {
+            @include compare-palette-key($key-color-property, $value-color-property, $borders);
+            @include compare-palette-key($key-color-property, $value-color-property, $colors);
+            @include compare-palette-key($key-color-property, $value-color-property, $backgrounds);
+        }
+
+        @if $key =="colors" {
+            @include generate-color-variables-mode($value);
+        }
+    }
+}
+
+
+@mixin generate-color-variables-mode($property-mode) {
+    @each $class , $colors in $property-mode {
+        .#{$class} {
+            @each $key-color-property , $value-color-property in $colors {
+                #{"--" + $key-color-property}: $value-color-property;
+            }
+        }
+    }
+}
+
+@include generate-color-classes($color-palette);

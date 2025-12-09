@@ -1,0 +1,7 @@
+@use "../../config/colors" as *;
+@use 'sass:map';
+@use 'sass:string';
+
+@function get-color($key){
+    @return string.unquote("var(--#{$key})");
+}

@@ -1,0 +1,22 @@
+@use "../../config/dims" as *;
+@use "../../../themes/ishop/config/dims" as *;
+@use "functions" as *;
+@use'sass:list';
+@use'sass:map';
+
+@mixin generate-total-style-opacity($map-config , $property){
+    $factor : map.get($map-config, factor);
+    $map:();
+    $list:();
+    $i : 0;
+    $value : 0;
+    @while ($value < 1){
+        $value:$i * $factor;
+        .opacity-#{$i}{
+            #{$property}:$value;
+        }
+        $i : $i + 1;
+    }
+}
+
+@include generate-total-style-opacity($conf-opacity , opacity);

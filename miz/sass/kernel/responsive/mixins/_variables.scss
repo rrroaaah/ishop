@@ -1,0 +1,31 @@
+@use "../../../../themes/ishop/config/_typography" as *;
+@use "../../../../themes/ishop/config/_colors" as *;
+@use "../../../config/_typography" as *;
+@use "../../../config/_colors" as *;
+
+@mixin root(){
+    :root{
+        @content;
+    }
+}
+
+@mixin generate-font-variables(){
+    @each $font-name , $font-details in $fonts {
+        #{"--" + "font-" + $font-name}: $font-name;
+    }
+}
+
+@mixin generate-color-variables() {
+    @each $key, $value in $color-palette {
+        @if $key =="default" {
+            @each $key-color-property , $value-color-property in $value {
+                #{"--" + $key-color-property}: $value-color-property;
+            }
+        }
+    }
+}
+
+@include root(){
+    @include generate-color-variables();
+    @include generate-font-variables();
+};

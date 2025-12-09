@@ -1,0 +1,21 @@
+@use "../../../sass/config/responsive" as *;
+@use "sass:map";
+
+$conf-gaps:map.merge($conf-gaps ,(
+    count:30,
+    unit:rem,
+    factor:0.25,
+    responsive:true
+));
+$conf-paddings:map.merge($conf-paddings ,(
+    count:30,
+    unit:rem,
+    factor:0.25,
+    responsive:false
+));
+$conf-margins:map.merge($conf-margins ,(
+    count:30,
+    unit:rem,
+    factor:0.25,
+    responsive:true
+));

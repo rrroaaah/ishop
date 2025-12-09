@@ -1,0 +1,25 @@
+@use "../../../sass/config/_typography" as *;
+@use "sass:map";
+
+$fonts-ishop: (
+    "primary": (
+        "defaults":"sans-serif, 'Courier New', Courier, monospace",
+        "folder": "yekan-bakh",
+        "font-types": (
+            "heavy": (
+                "Yekan Bakh FaNum 07 Heavy.woff",
+            ),
+            "bold": (
+                "Yekan Bakh FaNum 06 Bold.woff",
+            ),
+            "medium": (
+                "Yekan Bakh FaNum 05 Medium.woff",
+            ),
+            "regular": (
+                "Yekan Bakh FaNum 04 Regular.woff",
+            ),
+        )
+    ),
+);
+
+$fonts:map.merge($fonts , $fonts-ishop);

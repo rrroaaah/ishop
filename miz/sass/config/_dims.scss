@@ -1,0 +1,30 @@
+$border-radius:(
+    none:0px,
+    extra-small:2px,
+    small:5px,
+    normal:10px,
+    medium:16px,
+    large:25px,
+    extra-large:50px,
+    full:1000px,
+);
+
+$conf-opacity:(
+    factor:0.1
+);
+
+$conf-z-index:(
+    max:10,
+    min:0,
+    step:1
+);
+
+$conf-aspect-ratio:(
+    nominator:4,
+    denominator:3,
+    step:1
+);
+
+$conf-border-thickness:(
+    last-width:10
+)

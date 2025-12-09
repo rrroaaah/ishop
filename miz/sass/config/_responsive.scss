@@ -1,0 +1,94 @@
+$break-points:(xxl:1400px , xl:1200px , lg:992px , md:768px , sm:576px);
+// number of boxed space around should be equal with break points
+$header-space-horizontally:(0rem,0rem,0rem,0rem,0rem);
+$header-space-vertically:(0rem,0rem,0rem,0rem,0rem);
+$boxed-space-horizontally:(5rem,1rem,1rem,1rem,1rem);
+$boxed-space-vertically:(2rem,2rem,2rem,2rem,1rem);
+
+$conf-cols:(
+    count:12,
+    responsive:true
+);
+$conf-width:(
+    count:50,
+    responsive:true
+);
+$conf-height:(
+    count:50,
+    responsive:true
+);
+$conf-grids:(
+    count:14,
+    responsive:true
+);
+$conf-gaps:(
+    count:25,
+    unit:rem,
+    factor:0.5,
+    responsive:true
+);
+$conf-paddings:(
+    count:25,
+    unit:rem,
+    factor:0.5,
+    responsive:true
+);
+$conf-margins:(
+    count:25,
+    unit:rem,
+    factor:0.5,
+    responsive:true
+);
+$conf-letter-spacing:(
+    count:25,
+    unit:rem,
+    factor:0.5,
+    responsive:true
+);
+$conf-orders:(
+    count:10,
+    responsive:true
+);
+$conf-display:(
+    responsive:true
+);
+$conf-grows:(
+    count:5,
+    responsive:true
+);
+$conf-wrap:(
+    responsive:true
+);
+$conf-flex-direction:(
+    responsive:true
+);
+$conf-justify-content:(
+    responsive:true
+);
+$conf-justify-self:(
+    responsive:true
+);
+$conf-justify-items:(
+    responsive:true
+);
+$conf-align-content:(
+    responsive:true
+);
+$conf-align-self:(
+    responsive:true
+);
+$conf-align-items:(
+    responsive:true
+);
+$conf-text-align:(
+    responsive:true
+);
+$conf-text-transform:(
+    responsive:true
+);
+$conf-text-decoration:(
+    responsive:true
+);
+$conf-font-style:(
+    responsive:true
+);

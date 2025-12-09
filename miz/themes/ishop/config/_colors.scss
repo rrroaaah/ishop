@@ -1,0 +1,77 @@
+@use "../../../sass/config/colors" as *;
+@use "sass:map";
+
+$light-color-palette-ishop:(
+    primary:#E80645,
+    on-primary: #FFFFFF,
+    primary-light: #FFFFFF,
+    primary-dark: #FFFFFF,
+    secondary: #F3F7F9,
+    on-secondary: #021959,
+    secondary-light: #393939,
+    secondary-dark: #FFFFFF,
+    specific: #FFFFFF,
+    button-text: #FFFFFF,
+    button: #E80645,
+    text: #021959,
+    title-text: #021959,
+    header-text: #DDCDFE,
+    header-title-text: #ffffff,
+    secondary-text: #8795AB,
+    section-title-text: #0D0D0D,
+    border: #dee2e6,
+    divider: #727273,
+    shadow: #ffffff,
+    icon: rgb(2, 25, 89),
+    icon-hover: #E80645,
+    menu: #FFFFFF,
+    card: #F5F9FA,
+    footer:#2B3035,
+    footer-text : #B1B5B9,
+    footer-link : #DEE2E6,
+    footer-link-hover : #8BB9FE,
+    link-sidebar-text : #AEB2B6,
+    background: #111111,
+    section: #262626,
+    hover: #FFFFFF, 
+    button-hover: #E40000,
+    bg-list-hover: #F2E0E0,
+    button-text-hover: #FFC6C6,
+    discount-price: #9aa8bc,
+    fields: #27272A,
+    border-fields: #3F3F46,
+    title-text-fields: #A1A1AA,
+    text-fields: #ECEDEE,
+    black: #000000,
+    white: #FFFFFF,
+    danger-regular: #D70D0D,
+    disabled-regular: #B1B1B1,
+    warning-regular: #FFB800,
+    warning-light: #FDD368,
+    warning-dark: #CA9200,
+    success-regular: #02B74A,
+    success-light: #C0FCD8,
+    success-dark: #007A31,
+    danger-dark: #AA0D0D,
+    danger-light: #F8D0D0,
+    disabled-light: #E2E2E2,
+    disabled-dark: #575857,
+    information-regular: #3761EB,
+    information-light: #7393FF,
+    information-dark: #2145BC,
+    border-secondary: #FFFFFF,
+    uncommon: #FFFFFF,
+    transparent:#00000000,
+);
+
+
+$light-color-palette:map.merge($light-color-palette , $light-color-palette-ishop);
+
+$color-palette-ishop:(
+    default : $light-color-palette ,
+    colors : (
+        light : $light-color-palette ,
+    )
+);
+
+$color-palette:map.merge($color-palette , $color-palette-ishop);

@@ -1,0 +1,12 @@
+@use 'sass:string';
+
+@forward "functions";
+@forward "cursor";
+@forward "aspect-ratio";
+@forward "opacity";
+@forward "overflow";
+@forward "position";
+@forward "z-index";
+@forward "image";
+@forward "visibility";
+@forward "user-select";
