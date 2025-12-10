@@ -1,0 +1,12 @@
+@use "../../../../sass/kernel/" as *;
+
+$privilege-custom-classes: ".gap-16, .pt-8, .pb-5, .px-14, .radius-all-small";
+
+.privilege{
+    box-shadow: 2px 2px 5px 3px get-color(shadow);
+    @extend .w-100, .d-flex, .flex-column, .position-relative, #{$privilege-custom-classes};
+
+    img{
+        @extend .w-100;
+    }
+}
