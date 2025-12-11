@@ -1,0 +1,44 @@
+.border-bottom {
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.icon-share::before {
+    content: "";
+    font-family: 'icomoon';
+    font-style: normal;
+}
+
+#article .accordion {
+    box-shadow: unset;
+    border: unset;
+}
+
+#article .accordion-box {
+    background-color: white;
+}
+
+.gray {
+    color: gray;
+}
+
+.m-bottom-30 {
+    margin-bottom: -30px;
+}
+
+@media screen and (width < 1400px) {}
+
+@media screen and (width < 1200px) {}
+
+@media screen and (width < 992px) {
+    .flex-lg-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (width < 768px) {
+    .flex-md-column-reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (width < 576px) {}

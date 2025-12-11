@@ -1,0 +1,153 @@
+
+#conectus input, textarea {
+  outline: none;
+  color: #020d2b;
+  border: none;
+  border-bottom: 1px solid #E6E9EE;
+}
+
+#conectus #conect-ways {
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+    padding-bottom: 8rem !important;
+    box-shadow: 0px 1px 1px 0px var(--shadow-color);
+}
+
+#conectus .wrapper-form {
+    box-shadow: 0px 1px 1px 0px var(--shadow-color);
+}
+
+#conectus input::placeholder {
+  opacity: 0.8;
+  color: #021959;
+}
+
+#conectus textarea::placeholder {
+  opacity: 0.8;
+  color: #021959;
+  line-height: 30px;
+}
+
+#conectus .icon-arrow-left::before {
+  content: "\e92c";
+  font-family: icomoon;
+  font-style: normal;
+}
+
+#conectus .send-btn {
+    background-color: #0650A3;
+    transition: 0.3s;
+}
+
+#conectus .send-btn:hover {
+    box-shadow: 0 6px 9px -6px rgba(6, 80, 163, 0.8);
+}
+
+#conectus .icon-bookmark::before {
+  content: "\e90f";
+  font-family: icomoon;
+  font-style: normal;
+}
+
+#conectus .border-bottom {
+    border-bottom: 1px solid #E6E9EE;
+}
+
+#conectus .icon-envelope::before {
+  content: "\e912";
+  font-family: icomoon;
+  font-style: normal;
+}
+
+#conectus .icon-phone::before {
+  content: "\e916";
+  font-family: icomoon;
+  font-style: normal;
+}
+
+#conectus .icon-calender::before {
+  content: "\e910";
+  font-family: icomoon;
+  font-style: normal;
+}
+
+#conectus .icon-twitter::before {
+  content: "\e91c";
+  font-family: icomoon;
+  font-style: normal;
+  color: #66749B;
+}
+
+#conectus .icon-whatsapp::before {
+  content: "\e91e";
+  font-family: icomoon;
+  font-style: normal;
+  color: #66749B;
+}
+
+#conectus .icon-telegram::before {
+  content: "\e91b";
+  font-family: icomoon;
+  font-style: normal;
+  color: #66749B;
+}
+
+#conectus .icon-facebook::before {
+  content: "\e913";
+  font-family: 'icomoon';
+  font-style: normal;
+  color: #66749B;
+}
+
+#conectus .vertical-line {
+    background-color: #E6E9EE;
+    width: 1px;
+    height: 3rem;
+}
+
+#conectus iframe {
+  height: auto;
+}
+
+
+
+
+
+@media screen and (width < 1400px) {
+    #conectus #conect-ways{
+      padding-left: 8rem !important;
+      padding-right: 8rem !important;
+    }
+}
+
+@media screen and (width < 1200px) {
+    #conect-ways > div {
+      flex-wrap: wrap !important;
+    }
+
+    #conectus .wrapper-form {
+      padding-top: 3rem !important;
+    }
+}
+
+@media screen and (width < 992px) {
+   #conectus iframe {
+    order: 1 !important;
+   }
+}
+
+
+@media screen and (width < 768px) {
+   #conectus iframe {
+    order: 0 !important;
+    padding-top: 2.5rem !important;
+  }
+}
+
+@media screen and (width < 576px) {
+   #conectus #conect-ways{
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
+    }
+}
+
