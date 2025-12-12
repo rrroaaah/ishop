@@ -251,6 +251,10 @@
   flex-shrink: 0;
 }
 
+#about-us .line-height, #achievements .line-height, #proservices .line-height {
+  line-height: 2.5rem;
+}
+
 .border-bottom {
   border-bottom: 1px solid var(--border-color) !important;
 }
@@ -595,56 +599,22 @@
     padding-right: 5rem !important;
   }
 }
-#faq .faq-search-form {
+#faq-wrapper .faq-search-form {
   background-color: #f8f9fb;
 }
 
-.fa-regular.fa-magnifying-glass {
-  color: #7c88a9;
-}
-
-#faq main input {
-  border: none;
-  background-color: transparent;
-  width: 340px;
-}
-
-#faq input::placeholder {
+#faq-wrapper input::placeholder {
   font-weight: 100;
 }
 
-@media screen and (width < 768px) {
-  #faq input {
-    width: 230px;
-  }
-}
-@media screen and (width < 576px) {
-  #faq input {
-    width: 120px;
-  }
-}
-#logopage #brandpreview h2 {
-  color: #0650a3;
-}
-
-#logopage #brandpreview {
-  margin: auto;
-}
-
-#logopage #wrapper-logo {
-  margin: auto;
+#wrapper-logo > div {
   box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
 }
 
-#logopage #wrapper-logo > div {
-  row-gap: 40px !important;
+#brandpreview .line-height {
+  line-height: 2.5rem;
 }
 
-@media screen and (width < 768px) {
-  #logopage #wrapper-logo > div {
-    row-gap: 40px !important;
-  }
-}
 #my-account #login-wrapper .authbox + p {
   color: #9ea7be;
 }

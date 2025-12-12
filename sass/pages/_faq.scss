@@ -1,16 +1,10 @@
 
-#faq .faq-search-form {
+#faq-wrapper .faq-search-form {
   background-color: #f8f9fb;
 }
-.fa-regular.fa-magnifying-glass {
-  color: #7c88a9;
-}
-#faq main input {
-  border: none;
-  background-color: transparent;
-  width: 340px;
-}
-#faq input::placeholder {
+
+
+#faq-wrapper input::placeholder {
   font-weight: 100;
 }
 
@@ -23,17 +17,8 @@
 
 @media screen and (width < 992px) {}
 
+@media screen and (width < 768px) {}
 
-@media screen and (width < 768px) {
-    #faq input {
-        width: 230px;
-    }
-}
-
-@media screen and (width < 576px) {
-     #faq input {
-        width: 120px;
-    }
-}
+@media screen and (width < 576px) {}
 
 
