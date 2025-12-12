@@ -1,0 +1,28 @@
+.icon-search:before {
+    content: "\e919";
+    font-family: 'icomoon';
+    font-style: normal;
+}
+
+::placeholder {
+    font-weight: 700;
+    color: #4D5E8A;
+}
+
+@media screen and (width < 1400px) {}
+
+@media screen and (width < 1200px) {
+    .w-xl-200 {
+        width: 200%;
+    }
+}
+
+@media screen and (width < 992px) {
+    .font-size-lg-16px {
+        font-size: 16px;
+    }
+}
+
+@media screen and (width < 768px) {}
+
+@media screen and (width < 576px) {}
