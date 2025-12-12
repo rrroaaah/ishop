@@ -11,7 +11,7 @@ $weblog-card-newest-column-card-body-description-custom-classes: ".txt-big, .tex
     @extend .overflow-hidden, .d-flex, .flex-column, #{$weblog-card-newest-column-custom-classes};
 
     & .title {
-        @extend #{$weblog-card-newest-column-title-custom-classes};
+        @extend .txt-ellipsis, #{$weblog-card-newest-column-title-custom-classes};
     }
 
     & .card-body{
