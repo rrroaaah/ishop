@@ -10,7 +10,7 @@ $biography-description-custom-classes: ".text-color, .txt-mid-title";
 $biography-cover-on-image-custom-classes: ".gap-2, .px-4, .py-6, .font-weight-bold";
 
 .biography{
-    @extend .position-relative, #{$biography-custom-classes};
+    @extend .position-relative, .d-flex, #{$biography-custom-classes};
 
     &::after{
         content: "";

@@ -1451,7 +1451,7 @@
   display: none;
 }
 
-.d-flex, .product-card .image-container, .product-card .image-container .image-box, .product-category, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .logo-banner, .logo-banner .under-banner, .privilege, .contact-us-social-media, .contact-us-information {
+.d-flex, .product-card .image-container, .product-card .image-container .image-box, .product-category, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .logo-banner, .logo-banner .under-banner, .privilege, .contact-us-social-media, .contact-us-information {
   display: flex;
 }
 
