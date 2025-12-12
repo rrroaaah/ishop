@@ -11,7 +11,7 @@ $conf-paddings:map.merge($conf-paddings ,(
     count:30,
     unit:rem,
     factor:0.25,
-    responsive:false
+    responsive:true
 ));
 $conf-margins:map.merge($conf-margins ,(
     count:30,
