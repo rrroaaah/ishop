@@ -247,6 +247,10 @@
   box-shadow: 1px 1px 1px 1px #FAFAFC;
 }
 
+.biography {
+  flex-shrink: 0;
+}
+
 .border-bottom {
   border-bottom: 1px solid var(--border-color) !important;
 }
