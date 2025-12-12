@@ -3,9 +3,7 @@
 $logo-banner-custom-classes: ".gap-16";
 $logo-banner-image-custom-classes: ".radius-all-medium";
 $logo-banner-description-custom-classes: ".txt-title";
-// <!--* need change color palette *-->
-$logo-banner-icon-download-banner-custom-classes: ".txt-big-title, .on-secondary-color";
-// <!--* need change color palette *-->
+$logo-banner-icon-download-banner-custom-classes: ".txt-big-title, .title-text-color";
 
 .logo-banner{
     @extend .d-flex, .flex-column, #{$logo-banner-custom-classes};

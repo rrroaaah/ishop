@@ -1,0 +1,108 @@
+@use "../../../../sass/kernel/" as *;
+@use "sass:map";
+
+$product-card-transition: all 0.2s ease-out;
+$product-card-custom-classes: ".px-7, .py-7, .radius-all-medium, .bw-1, .border-color, .border-style-solid";
+$product-card-image-container-custom-classes: ".pt-1, .pb-5, .px-3";
+$product-card-image-box-custom-classes: ".w-70";
+$features:(
+    checkpay : ".py-1, .px-2, .bg-on-secondary-color, .radius-all-small, .on-primary-color, .txt-normal, .font-weight-bold",
+);
+$product-card-countdown-custom-classes: ".bg-primary-color, .radius-all-extra-small, .py-1, .px-2, .on-primary-color, .font-weight-bold";
+$product-card-card-body-custom-classes: ".text-color, .gap-5";
+$product-card-card-body-title-custom-classes: ".txt-extra-title, .font-weight-bold";
+$product-card-card-body-available-number-custom-classes: ".font-weight-bold, .txt-mid-title";
+$product-card-card-body-btn-cart-custom-classes: ".bg-primary-color, .py-3, .px-2, .radius-all-small, .on-primary-color, .font-weight-medium, .txt-big, .cursor-pointer";
+$product-card-original-price-custom-classes: ".secondary-text-color, .font-weight-bold";
+$product-card-discount-percentage-custom-classes: ".font-weight-bold, .on-primary-color, .bg-primary-color, .radius-all-small, .font-weight-medium, .px-1, .txt-mid-title";
+$product-card-special-price-custom-classes: ".font-weight-bold, .text-color, .txt-high-title";
+$product-card-credit-purchase-box-custom-classes: ".secondary-text-color, .txt-small, .font-weight-bold";
+$product-card-credit-purchase-image-custom-classes: ".py-1, .px-2, .radius-all-small";
+$product-card-product-colors-width: 10px;
+
+.product-card{
+    transition: $product-card-transition;
+    @extend .position-relative, #{$product-card-custom-classes};
+
+    &:hover{
+        background-color: get-color(card);
+    }
+
+    .countdown{
+        @extend #{$product-card-countdown-custom-classes};
+    }
+
+    .product-colors{
+        @extend .position-absolute, .right-0, .mie-3;
+
+        span{
+            width: $product-card-product-colors-width;
+            @extend .aspect-ratio-1x1, .radius-all-full;
+        }
+    }
+
+    .image-container{
+        @extend .d-flex, .justify-content-center, .position-relative, #{$product-card-image-container-custom-classes};
+
+        .feature{
+            @extend .position-absolute, .left-0;
+    
+            @each $feature-class , $feature-custom-classes in $features{
+                &.#{$feature-class}{
+                    @extend #{$feature-custom-classes};
+                }
+            }
+        }
+
+        .image-box{
+            @extend .d-flex, .justify-content-center, #{$product-card-image-box-custom-classes};
+
+            img{
+                @extend .w-100;
+            }
+        }
+    }
+
+    .card-body{
+        @extend .d-flex, .flex-column, #{$product-card-card-body-custom-classes};
+        
+        .title{
+            @extend #{$product-card-card-body-title-custom-classes};
+        }
+        
+        .available-number{
+            @extend #{$product-card-card-body-available-number-custom-classes};
+        }
+        
+        .btn-add-to-cart{
+            box-shadow: 2px 3px 4px -3px get-color(primary);
+            @extend #{$product-card-card-body-btn-cart-custom-classes};
+        }
+
+        .discount-box{
+            @extend .d-flex, .flex-column;
+            
+            .original-price{
+                @extend #{$product-card-original-price-custom-classes};
+            }
+            
+            .discount-percentage{
+                box-shadow: 2px 3px 4px -3px get-color(primary);
+                @extend .d-flex, .align-items-center, #{$product-card-discount-percentage-custom-classes};
+            }
+            
+            .special-price{
+                @extend #{$product-card-special-price-custom-classes};
+            }
+        }
+
+        .credit-purchase-box{
+            @extend #{$product-card-credit-purchase-box-custom-classes};
+
+            img{
+                max-width: 45px;
+                @extend #{$product-card-credit-purchase-image-custom-classes};
+            }
+        }
+    }
+}
