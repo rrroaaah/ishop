@@ -1,0 +1,34 @@
+@use "../../../../../sass/kernel/" as *;
+
+$weblog-card-newest-row-custom-classes: ".bw-1, .border-color, .border-style-solid, .radius-all-small, .font-weight-regular";
+$weblog-card-newest-row-cover-image-custom-classes: ".radius-all-small";
+$weblog-card-newest-row-card-body-custom-classes: ".gap-6, .px-6, .py-6";
+$weblog-card-newest-row-card-body-title-custom-classes: ".text-color, .txt-extra-title, .font-weight-bold";
+// <!--* add .txt-align-justify  *-->
+$weblog-card-newest-row-card-body-description-custom-classes: ".text-color, .txt-title";
+// <!--* add .txt-align-justify  *-->
+
+.weblog-card.newest-row {
+    @extend .d-flex, #{$weblog-card-newest-row-custom-classes};
+    
+    .cover-image{
+        @extend .w-60, .d-flex, .overflow-hidden, .aspect-ratio-2x1, #{$weblog-card-newest-row-cover-image-custom-classes};
+
+        img{
+            @extend .w-100, .object-cover;
+        }
+    }
+
+    
+    & .card-body{
+        @extend .d-flex, .flex-column, #{$weblog-card-newest-row-card-body-custom-classes};
+        
+        & .title {
+            @extend #{$weblog-card-newest-row-card-body-title-custom-classes};
+        }
+
+        & .description{
+            @extend #{$weblog-card-newest-row-card-body-description-custom-classes};
+        }
+    }
+}
