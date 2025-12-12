@@ -3,8 +3,10 @@
 
 $product-card-transition: all 200ms linear;
 $product-card-custom-classes: ".px-7, .py-7, .radius-all-medium, .bw-1, .border-color, .border-style-solid";
+$product-card-image-container-custom-classes: ".pt-1, .pb-5, .px-3";
+$product-card-image-box-custom-classes: ".w-70";
 $features:(
-    checkpay : ".py-1, .px-2, .bg-on-secondary-color, .radius-all-small",
+    checkpay : ".py-1, .px-2, .bg-on-secondary-color, .radius-all-small, .on-primary-color, .txt-normal, .font-weight-bold",
 );
 
 .product-card{
@@ -15,12 +17,24 @@ $features:(
         background-color: get-color(card);
     }
 
-    .feature{
-        @extend .position-absolute, .left-0;
+    .image-container{
+        @extend .d-flex, .justify-content-center, .position-relative, #{$product-card-image-container-custom-classes};
 
-        @each $feature-class , $feature-custom-classes in $features{
-            &.#{$feature-class}{
-                @extend #{$feature-custom-classes};
+        .feature{
+            @extend .position-absolute, .left-0;
+    
+            @each $feature-class , $feature-custom-classes in $features{
+                &.#{$feature-class}{
+                    @extend #{$feature-custom-classes};
+                }
+            }
+        }
+
+        .image-box{
+            @extend .d-flex, .justify-content-center, #{$product-card-image-box-custom-classes};
+
+            img{
+                @extend .w-100;
             }
         }
     }
