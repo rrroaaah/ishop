@@ -4,9 +4,7 @@ $biography-custom-classes: ".overflow-hidden, .radius-all-small";
 $biography-after-custom-classes: ".radius-all-small, .opacity-4";
 $biography-weblog-gradient: linear-gradient(180deg, get-color(transparent) 0%, get-color(on-secondary) 100%);
 $biography-title-custom-classes: ".txt-big-title, .secondary-color, .font-weight-bold";
-// <!--* change color .secondary-text-color *-->
-$biography-description-custom-classes: ".text-color, .txt-mid-title";
-// <!--* change color .secondary-text-color *-->
+$biography-description-custom-classes: ".secondary-color, .txt-mid-title";
 $biography-cover-on-image-custom-classes: ".gap-2, .px-4, .py-6, .font-weight-bold";
 
 .biography{

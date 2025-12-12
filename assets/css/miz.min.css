@@ -344,7 +344,7 @@
   background-color: var(--primary-dark);
 }
 
-.secondary-color, .accordion-group .accordion, .accordion-group.accordion-zebra .accordion:nth-child(2n-1), .biography .title {
+.secondary-color, .accordion-group .accordion, .accordion-group.accordion-zebra .accordion:nth-child(2n-1), .biography .title, .biography .description {
   color: var(--secondary);
 }
 
@@ -352,7 +352,7 @@
   background-color: var(--secondary);
 }
 
-.on-secondary-color, .product-category, .article-related .title, .logo-banner .under-banner .icon-download-banner, .contact-us-information .title {
+.on-secondary-color, .product-category {
   color: var(--on-secondary);
 }
 
@@ -388,7 +388,7 @@
   color: var(--library-icon);
 }
 
-.text-color, .accordion-group .accordion .accordion-box .accordion-body, .biography .description, .article-related .description, .weblog-card.newest-row .card-body .title, .weblog-card.newest-row .card-body .description, .weblog-card.newest-column .title, .weblog-card.newest-column .card-body .description, .contact-us-information .direction {
+.text-color, .accordion-group .accordion .accordion-box .accordion-body, .article-related .description, .weblog-card.newest-row .card-body .title, .weblog-card.newest-column .title, .contact-us-information .direction {
   color: var(--text);
 }
 
@@ -396,7 +396,7 @@
   background-color: var(--text);
 }
 
-.title-text-color, .accordion-group .accordion .accordion-box .accordion-header {
+.title-text-color, .accordion-group .accordion .accordion-box .accordion-header, .article-related .title, .weblog-card.newest-row .card-body .description, .weblog-card.newest-column .card-body .description, .logo-banner .under-banner .icon-download-banner, .contact-us-information .title {
   color: var(--title-text);
 }
 

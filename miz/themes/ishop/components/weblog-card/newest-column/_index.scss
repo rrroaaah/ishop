@@ -3,9 +3,7 @@
 $weblog-card-newest-column-custom-classes:".radius-all-small, .gap-6, .bw-1, .border-color, .border-style-solid";
 $weblog-card-newest-column-title-custom-classes: ".txt-mid-title, .text-color, .font-weight-bold";
 $weblog-card-newest-column-card-body-custom-classes: ".gap-3, .px-5, .pb-6";
-// <!--* add .txt-align-justify  *-->
-$weblog-card-newest-column-card-body-description-custom-classes: ".txt-big, .text-color";
-// <!--* add .txt-align-justify  *-->
+$weblog-card-newest-column-card-body-description-custom-classes: ".txt-big, .title-text-color";
 
 .weblog-card.newest-column {
     @extend .overflow-hidden, .d-flex, .flex-column, #{$weblog-card-newest-column-custom-classes};
