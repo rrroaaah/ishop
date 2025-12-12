@@ -4,9 +4,7 @@ $weblog-card-newest-row-custom-classes: ".bw-1, .border-color, .border-style-sol
 $weblog-card-newest-row-cover-image-custom-classes: ".radius-all-small";
 $weblog-card-newest-row-card-body-custom-classes: ".gap-6, .px-6, .py-6";
 $weblog-card-newest-row-card-body-title-custom-classes: ".text-color, .txt-extra-title, .font-weight-bold";
-// <!--* add .txt-align-justify  *-->
-$weblog-card-newest-row-card-body-description-custom-classes: ".text-color, .txt-title";
-// <!--* add .txt-align-justify  *-->
+$weblog-card-newest-row-card-body-description-custom-classes: ".title-text-color, .txt-title";
 
 .weblog-card.newest-row {
     @extend .d-flex, #{$weblog-card-newest-row-custom-classes};
