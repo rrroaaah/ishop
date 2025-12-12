@@ -8151,6 +8151,10 @@
   text-align: right;
 }
 
+.txt-align-justify {
+  text-align: justify;
+}
+
 .txt-decoration-line-through {
   text-decoration-line: line-through;
 }
