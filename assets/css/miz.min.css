@@ -208,7 +208,7 @@
   font-weight: 800;
 }
 
-.font-weight-bold, .product-card .image-container .feature.checkpay, .accordion-group .accordion .accordion-box .accordion-body, .biography .title, .biography .cover-on-image, .article-related .title, .article-related .description, .article-banner-weblog .title, .weblog-card.newest-row .card-body .title, .weblog-card.newest-column .title, .contact-us-information .title, .contact-us-information .direction {
+.font-weight-bold, .product-card .image-container .feature.checkpay, .accordion-group .accordion .accordion-box .accordion-header, .accordion-group .accordion .accordion-box .accordion-body, .biography .title, .biography .cover-on-image, .article-related .title, .article-related .description, .article-banner-weblog .title, .weblog-card.newest-row .card-body .title, .weblog-card.newest-column .title, .contact-us-information .title, .contact-us-information .direction {
   font-weight: 700;
 }
 
@@ -352,7 +352,7 @@
   background-color: var(--secondary);
 }
 
-.on-secondary-color, .product-category, .accordion-group .accordion .accordion-box .accordion-header, .article-related .title, .logo-banner .under-banner .icon-download-banner, .contact-us-information .title {
+.on-secondary-color, .product-category, .article-related .title, .logo-banner .under-banner .icon-download-banner, .contact-us-information .title {
   color: var(--on-secondary);
 }
 
@@ -396,7 +396,7 @@
   background-color: var(--text);
 }
 
-.title-text-color {
+.title-text-color, .accordion-group .accordion .accordion-box .accordion-header {
   color: var(--title-text);
 }
 
