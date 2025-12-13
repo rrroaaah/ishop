@@ -408,6 +408,10 @@
   color: var(--highlight-text);
 }
 
+.secondary-text-color {
+  color: var(--secondary-text);
+}
+
 .bg-secondary-text-color {
   background-color: var(--secondary-text);
 }
