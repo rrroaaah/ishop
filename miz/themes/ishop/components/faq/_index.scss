@@ -1,0 +1,86 @@
+@use "../../../../sass/config/_dims" as *;
+@use "../../../../sass/config/_typography" as *;
+@use "../../../../sass/kernel" as *;
+@use "../../config" as *;
+@use 'sass:map';
+
+$accordion-height-scroll: 500px;
+$accordion-rotate-icon: 180deg;
+$accordion-transition: 0.3s;
+$accordion-group-custom-classes: ".d-flex, .flex-column, .gap-4";
+$accordion-custom-classes: ".bg-color, .secondary-color, .#{$font-prefix}-normal, .radius-all-small,";
+$accordion-body-custom-classes: ".bg-card-color, .text-color, .font-weight-bold, .px-4, .py-6, .#{$font-prefix}-title, .radius-all-extra-small";
+$accordion-header-custom-classes: ".title-text-color, .font-weight-bold, .pb-1, .#{$font-prefix}-extra-title, .pt-2, .pl-2, .pb-6";
+$accordion-box-custom-classes: ".gap-1, .py-3, .px-4";
+$accordion-zebra-custom-classes: ".bg-secondary-light-color, .secondary-color";
+$accordion-zebra-nth-child: "2n-1";
+
+.accordion-group {
+    @extend #{$accordion-group-custom-classes};
+
+    &.accordion-compact{
+        gap: 0;
+        overflow: hidden;
+        @extend .gap-0, .overflow-hidden;
+
+        .accordion{
+            @extend .radius-all-none;
+        }
+    }
+
+    &.accordion-outline {
+        .accordion {
+            background-color: transparent !important;
+        }
+    }
+
+    .accordion {
+        box-shadow: 0px 3px 10px 0px get-color(shadow);
+        @extend .w-100, .overflow-hidden, #{$accordion-custom-classes};
+
+        .accordion-box {
+            transition: $accordion-transition;
+            min-width: 100%;
+            grid-template-rows: 0fr 0fr;
+            @extend .d-grid, .cursor-pointer, #{$accordion-box-custom-classes};
+
+            .accordion-header {
+                @extend .w-100, .d-flex, .flex-row, .justify-content-space-between, .align-items-center, #{$accordion-header-custom-classes};
+
+                &.accordion-header>i {
+                    transition: $accordion-transition;
+                }
+            }
+
+            & .accordion-body {
+                @extend .opacity-0, .overflow-hidden, #{$accordion-body-custom-classes};
+            }
+        }
+
+        &.active .accordion-box {
+            grid-template-rows: 0fr 1fr;
+
+            .accordion-header>i {
+                transform: rotate($accordion-rotate-icon);
+            }
+        }
+
+        & .accordion-body {
+            transition: $accordion-transition;
+            @extend .opacity-0;
+        }
+
+        &.active .accordion-body {
+            @extend .opacity-#{calc(1 / map.get($conf-opacity, factor))};
+        }
+    }
+
+    &.scroll-accordion {
+        max-height: $accordion-height-scroll;
+        @extend .overflow-y-scroll;
+    }
+
+    &.accordion-zebra .accordion:nth-child(#{$accordion-zebra-nth-child}) {
+        @extend #{$accordion-zebra-custom-classes};
+    }
+}

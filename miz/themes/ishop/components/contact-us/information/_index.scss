@@ -1,10 +1,8 @@
 @use "../../../../../sass/kernel/" as *;
 
 $contact-us-information-custom-classes: ".py-3, .gap-4";
-// <!--* need to change color palette *-->
-$contact-us-information-title-custom-classes: ".txt-title, .font-weight-bold, .on-secondary-color";
-// <!--* need to change color palette *-->
-$contact-us-information-description-custom-classes: ".txt-title, .font-weight-bold, .text-color";
+$contact-us-information-title-custom-classes: ".txt-title, .font-weight-bold, .title-text-color";
+$contact-us-information-direction-custom-classes: ".txt-title, .font-weight-bold, .text-color";
 
 .contact-us-information{
     @extend .d-flex, .flex-row-reverse, .justify-content-space-between, #{$contact-us-information-custom-classes};
@@ -13,7 +11,7 @@ $contact-us-information-description-custom-classes: ".txt-title, .font-weight-bo
         @extend #{$contact-us-information-title-custom-classes};
     }
     
-    .description{
-        @extend #{$contact-us-information-description-custom-classes};
+    .direction{
+        @extend #{$contact-us-information-direction-custom-classes};
     }
 }

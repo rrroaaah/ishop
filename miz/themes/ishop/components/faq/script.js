@@ -1,23 +1,3 @@
-// Mizoon Theme Scripts
-// Auto-generated file
-
-
-// File: article\script.js
-
-
-// File: basic\script.js
-
-
-// File: biography\script.js
-
-
-// File: certificate-of-appreciation\script.js
-
-
-// File: contact-us\script.js
-
-
-// File: faq\script.js
 class Accordion {
     constructor() {
         this.accordionItems = document.querySelectorAll('.accordion');
@@ -63,23 +43,3 @@ class Accordion {
 
 // Initialize accordion when DOM is loaded
 new Accordion();
-
-// File: logo-banner\script.js
-
-
-// File: product-card\script.js
-
-
-// File: product-category\script.js
-const productsCategory = document.querySelectorAll(".product-category");
-
-productsCategory.forEach(category => {
-    category.addEventListener("click" , () => {
-        productsCategory.forEach(active => active.classList.remove("active"));
-
-        category.classList.add("active");
-    });
-});
-
-// File: weblog-card\script.js
-

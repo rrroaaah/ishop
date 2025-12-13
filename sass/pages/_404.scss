@@ -1,11 +1,12 @@
 #page-404 {
-  background-image: url("../../media/images/404bg.png");
+  background-image: url("../../assets/media/images/404bg.png");
   background-size: cover;
   background-position: center;
 }
 
 #page-404 .timer {
-  border: 3px solid var(--on-primary-color);
+  border: 3px solid var(--on-primary);
+  width: 60px;
 }
 
 #page-404 input {
@@ -13,4 +14,8 @@
   background-color: transparent;
   outline: none;
   border: none;
+}
+
+.font-initial{
+  font-family: initial;
 }

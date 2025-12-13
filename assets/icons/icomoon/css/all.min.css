@@ -1,0 +1,34 @@
+@font-face {
+    font-family: icomoon;
+    src: url("../fonts/icomoon.ttf");
+}
+
+.icon-user::before {
+    content: "\e91d";
+    font-family: 'icomoon';
+    font-style: normal;
+}
+
+.icon-calender::before {
+    content: "\e910";
+    font-family: 'icomoon';
+    font-style: normal;
+}
+
+.icon-comment::before {
+    content: "\e911";
+    font-family: 'icomoon';
+    font-style: normal;
+}
+
+.icon-clock::before {
+    content: "\e905";
+    font-family: 'icomoon';
+    font-style: normal;
+}
+
+.icon-view::before {
+    content: "\e92f";
+    font-family: 'icomoon';
+    font-style: normal;
+}
