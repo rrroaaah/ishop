@@ -450,143 +450,137 @@
   width: 90%;
 }
 
-#conectus input, textarea {
+#contact-ways input, textarea {
   outline: none;
-  color: #020d2b;
-  border: none;
   border-bottom: 1px solid #E6E9EE;
 }
 
-#conectus #conect-ways {
+#contact-ways {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
   padding-bottom: 8rem !important;
   box-shadow: 0px 1px 1px 0px var(--shadow-color);
 }
 
-#conectus .wrapper-form {
+#contact-ways .wrapper-form {
   box-shadow: 0px 1px 1px 0px var(--shadow-color);
 }
 
-#conectus input::placeholder {
+#contact-ways input::placeholder {
   opacity: 0.8;
   color: #021959;
 }
 
-#conectus textarea::placeholder {
+#contact-ways textarea::placeholder {
   opacity: 0.8;
   color: #021959;
   line-height: 30px;
 }
 
-#conectus .icon-arrow-left::before {
+#contact-ways .icon-arrow-left::before {
   content: "\e92c";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .send-btn {
+#contact-ways .send-btn {
   background-color: #0650A3;
   transition: 0.3s;
 }
 
-#conectus .send-btn:hover {
+#contact-ways .send-btn:hover {
   box-shadow: 0 6px 9px -6px rgba(6, 80, 163, 0.8);
 }
 
-#conectus .icon-bookmark::before {
+#contact-ways .icon-bookmark::before {
   content: "\e90f";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .border-bottom {
+#contact-ways .border-bottom {
   border-bottom: 1px solid #E6E9EE;
 }
 
-#conectus .icon-envelope::before {
+#contact-ways .icon-envelope::before {
   content: "\e912";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .icon-phone::before {
+#contact-ways .icon-phone::before {
   content: "\e916";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .icon-calender::before {
+#contact-ways .icon-calender::before {
   content: "\e910";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .icon-twitter::before {
+#contact-ways .icon-twitter::before {
   content: "\e91c";
   font-family: icomoon;
   font-style: normal;
   color: #66749B;
 }
 
-#conectus .icon-whatsapp::before {
+#contact-ways .icon-whatsapp::before {
   content: "\e91e";
   font-family: icomoon;
   font-style: normal;
   color: #66749B;
 }
 
-#conectus .icon-telegram::before {
+#contact-ways .icon-telegram::before {
   content: "\e91b";
   font-family: icomoon;
   font-style: normal;
   color: #66749B;
 }
 
-#conectus .icon-facebook::before {
+#contact-ways .icon-facebook::before {
   content: "\e913";
   font-family: "icomoon";
   font-style: normal;
   color: #66749B;
 }
 
-#conectus .vertical-line {
+#contact-ways .vertical-line {
   background-color: #E6E9EE;
   width: 1px;
   height: 3rem;
 }
 
-#conectus iframe {
-  height: auto;
-}
-
 @media screen and (width < 1400px) {
-  #conectus #conect-ways {
+  #contact-ways {
     padding-left: 8rem !important;
     padding-right: 8rem !important;
   }
 }
 @media screen and (width < 1200px) {
-  #conect-ways > div {
+  #contact-ways > div {
     flex-wrap: wrap !important;
   }
-  #conectus .wrapper-form {
+  #contact-ways .wrapper-form {
     padding-top: 3rem !important;
   }
 }
 @media screen and (width < 992px) {
-  #conectus iframe {
+  #contact-ways iframe {
     order: 1 !important;
   }
 }
 @media screen and (width < 768px) {
-  #conectus iframe {
+  #contact-ways iframe {
     order: 0 !important;
     padding-top: 2.5rem !important;
   }
 }
 @media screen and (width < 576px) {
-  #conectus #conect-ways {
+  #contact-ways {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
   }
@@ -725,8 +719,52 @@
     row-gap: 40px !important;
   }
 }
-#my-account #login-wrapper .authbox + p {
+#my-account .authbox + p {
   color: #9ea7be;
+}
+
+.authbox {
+  box-shadow: 0px 33px 126px 20px rgba(154, 168, 188, 0.06);
+  width: 430px;
+}
+
+.authbox form {
+  border: 1px solid var(--border);
+}
+
+.authbox input {
+  border: unset;
+  outline: none;
+}
+
+.authbox label {
+  letter-spacing: 0.9rem;
+  font-weight: 600;
+  color: #021959;
+}
+
+.authbox > div + div + a {
+  box-shadow: 7px 7px 13px -3px rgba(232, 6, 69, 0.2392156863) !important;
+}
+
+.authbox > div > span > span {
+  color: #8c94a9;
+}
+
+.authbox > div > span {
+  font-weight: 600;
+}
+
+.authbox p span {
+  background: #fff077;
+  box-shadow: 0px 3px 32px 6px rgba(255, 240, 119, 0.26);
+  letter-spacing: 0.5rem;
+  margin: auto;
+}
+
+.authbox form + p {
+  font-weight: 600;
+  font-size: 0.7rem;
 }
 
 #offer #offer-wrapper p span {
@@ -1642,6 +1680,25 @@ aside {
 ::placeholder {
   font-weight: 700;
   color: #4D5E8A;
+}
+
+.veiwall .icon-arr-left-foot {
+  box-shadow: 3px 4px 9px 0px rgba(232, 6, 69, 0.2117647059) !important;
+  border-radius: 20px 8px 8px 20px;
+}
+
+.veiwall .icon-arr-left-foot::before {
+  content: "\e908";
+  font-family: "icomoon";
+  font-style: normal;
+}
+
+.border-unset {
+  border: unset;
+}
+
+.outline-unset {
+  outline: unset;
 }
 
 @media screen and (width < 1200px) {
