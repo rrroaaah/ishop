@@ -247,6 +247,14 @@
   box-shadow: 1px 1px 1px 1px #FAFAFC;
 }
 
+.biography {
+  flex-shrink: 0;
+}
+
+#about-us .line-height, #achievements .line-height, #proservices .line-height {
+  line-height: 2.5rem;
+}
+
 .border-bottom {
   border-bottom: 1px solid var(--border-color) !important;
 }
@@ -585,133 +593,20 @@
     padding-right: 5rem !important;
   }
 }
-#faq {
-  height: 0 !important;
+#faq-wrapper .faq-search-form {
+  background-color: #f8f9fb;
 }
 
-#faq .icon-search::before {
-  content: "\e919";
-  font-family: icomoon;
-  font-style: normal;
+#faq-wrapper input::placeholder {
+  font-weight: 100;
 }
 
-#faq .faq-search-form {
-  background-color: #F8F9FB;
-}
-
-#faq main input {
-  border: none;
-  background-color: transparent;
-  width: 340px;
-}
-
-#faq #ask {
-  padding-left: 3rem !important;
-  padding-right: 3rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-one:checked) .accordion-box {
-  opacity: 1;
-  max-height: 500px;
-  padding-bottom: 1.5rem !important;
-  padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-one:checked) svg {
-  transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-two:checked) .accordion-box {
-  opacity: 1;
-  max-height: 500px;
-  padding-bottom: 1.5rem !important;
-  padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-two:checked) svg {
-  transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-three:checked) .accordion-box {
-  opacity: 1;
-  max-height: 500px;
-  padding-bottom: 1.5rem !important;
-  padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-three:checked) svg {
-  transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-four:checked) .accordion-box {
-  opacity: 1;
-  max-height: 500px;
-  padding-bottom: 1.5rem !important;
-  padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-four:checked) svg {
-  transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-five:checked) .accordion-box {
-  opacity: 1;
-  max-height: 500px;
-  padding-bottom: 1.5rem !important;
-  padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-five:checked) svg {
-  transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-six:checked) .accordion-box {
-  opacity: 1;
-  max-height: 500px;
-  padding-bottom: 1.5rem !important;
-  padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-six:checked) svg {
-  transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-seven:checked) .accordion-box {
-  opacity: 1;
-  max-height: 500px;
-  padding-bottom: 1.5rem !important;
-  padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-seven:checked) svg {
-  transform: rotate(180deg);
-}
-
-@media screen and (width < 768px) {
-  #faq input {
-    width: 230px;
-  }
-}
-@media screen and (width < 576px) {
-  #faq input {
-    width: 120px;
-  }
-}
-#logopage #brandpreview h2 {
-  color: #0650a3;
-}
-
-#logopage #brandpreview {
-  margin: auto;
-}
-
-#logopage #wrapper-logo {
-  margin: auto;
+#wrapper-logo > div {
   box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
 }
 
-#logopage #wrapper-logo > div {
-  row-gap: 40px !important;
+#brandpreview .line-height {
+  line-height: 2.5rem;
 }
 
 @media screen and (width < 768px) {
