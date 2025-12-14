@@ -344,7 +344,7 @@
   background-color: var(--primary-dark);
 }
 
-.secondary-color {
+.secondary-color, .accordion-group .accordion, .accordion-group.accordion-zebra .accordion:nth-child(2n-1), .biography .title {
   color: var(--secondary);
 }
 
@@ -360,7 +360,7 @@
   background-color: var(--on-secondary);
 }
 
-.bg-secondary-light-color {
+.bg-secondary-light-color, .accordion-group.accordion-zebra .accordion:nth-child(2n-1) {
   background-color: var(--secondary-light);
 }
 
@@ -452,11 +452,11 @@
   background-color: var(--menu);
 }
 
-.bg-card-color {
+.bg-card-color, .accordion-group .accordion .accordion-box .accordion-body {
   background-color: var(--card);
 }
 
-.bg-color {
+.bg-color, .accordion-group .accordion {
   background-color: var(--background);
 }
 
@@ -702,7 +702,7 @@
   border-end-end-radius: 0px;
 }
 
-.radius-all-none {
+.radius-all-none, .accordion-group.accordion-compact .accordion {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -741,7 +741,7 @@
   border-end-end-radius: 4px;
 }
 
-.radius-all-extra-small {
+.radius-all-extra-small, .accordion-group .accordion .accordion-box .accordion-body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -780,7 +780,7 @@
   border-end-end-radius: 8px;
 }
 
-.radius-all-small, .article-related .cover-image img, .article-banner-weblog::after, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .privilege {
+.radius-all-small, .accordion-group .accordion, .biography, .biography::after, .article-related .cover-image img, .article-banner-weblog::after, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .privilege {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -1463,7 +1463,7 @@
   display: flex;
 }
 
-.d-grid {
+.d-grid, .accordion-group .accordion .accordion-box {
   display: grid;
 }
 
@@ -1975,7 +1975,7 @@
   width: 98%;
 }
 
-.w-100, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after, .weblog-card.newest-row .cover-image img, .logo-banner img, .privilege, .privilege img {
+.w-100, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after, .weblog-card.newest-row .cover-image img, .logo-banner img, .privilege, .privilege img {
   width: 100%;
 }
 
@@ -2383,7 +2383,7 @@
   height: 98%;
 }
 
-.h-100, .article-banner-weblog::after {
+.h-100, .biography::after, .article-banner-weblog::after {
   height: 100%;
 }
 
@@ -2391,7 +2391,7 @@
   height: 100%;
 }
 
-.flex-row {
+.flex-row, .accordion-group .accordion .accordion-box .accordion-header {
   flex-direction: row;
 }
 
@@ -7719,7 +7719,7 @@
   margin-inline-end: 7.5rem;
 }
 
-.gap-0 {
+.gap-0, .accordion-group.accordion-compact {
   gap: 0rem;
 }
 
@@ -7727,7 +7727,7 @@
   gap: 0rem;
 }
 
-.gap-1 {
+.gap-1, .accordion-group .accordion .accordion-box {
   gap: 0.25rem;
 }
 
@@ -7735,7 +7735,7 @@
   gap: 0.25rem;
 }
 
-.gap-2, .contact-us-social-media {
+.gap-2, .biography .cover-on-image, .contact-us-social-media {
   gap: 0.5rem;
 }
 
@@ -7751,7 +7751,7 @@
   gap: 0.75rem;
 }
 
-.gap-4, .contact-us-information {
+.gap-4, .accordion-group, .contact-us-information {
   gap: 1rem;
 }
 
@@ -9245,7 +9245,7 @@
   font-size: 0.688rem;
 }
 
-.txt-normal {
+.txt-normal, .accordion-group .accordion {
   font-size: 0.75rem;
 }
 
@@ -9269,7 +9269,7 @@
   font-size: 0.875rem;
 }
 
-.txt-mid-title, .weblog-card.newest-column .title {
+.txt-mid-title, .biography .description, .weblog-card.newest-column .title {
   font-size: 0.938rem;
 }
 
@@ -9285,7 +9285,7 @@
   font-size: 1.125rem;
 }
 
-.txt-big-title, .article-banner-weblog .title, .logo-banner .under-banner .icon-download-banner {
+.txt-big-title, .biography .title, .article-banner-weblog .title, .logo-banner .under-banner .icon-download-banner {
   font-size: 1.313rem;
 }
 
@@ -9293,7 +9293,7 @@
   font-size: 1.313rem;
 }
 
-.txt-extra-title, .article-related .title, .weblog-card.newest-row .card-body .title {
+.txt-extra-title, .accordion-group .accordion .accordion-box .accordion-header, .article-related .title, .weblog-card.newest-row .card-body .title {
   font-size: 1rem;
 }
 
@@ -21616,7 +21616,7 @@ dialog {
   background: none;
 }
 
-.cursor-pointer {
+.cursor-pointer, .accordion-group .accordion .accordion-box {
   cursor: pointer;
 }
 
@@ -21656,7 +21656,7 @@ dialog {
   aspect-ratio: 3/3;
 }
 
-.opacity-0 {
+.opacity-0, .accordion-group .accordion .accordion-box .accordion-body, .accordion-group .accordion .accordion-body {
   opacity: 0;
 }
 
@@ -21672,7 +21672,7 @@ dialog {
   opacity: 0.3;
 }
 
-.opacity-4 {
+.opacity-4, .biography::after {
   opacity: 0.4;
 }
 
@@ -21696,7 +21696,7 @@ dialog {
   opacity: 0.9;
 }
 
-.opacity-10 {
+.opacity-10, .accordion-group .accordion.active .accordion-body {
   opacity: 1;
 }
 
@@ -21704,7 +21704,7 @@ dialog {
   overflow: scroll;
 }
 
-.overflow-hidden, .article-banner-weblog, .weblog-card.newest-row .cover-image, .weblog-card.newest-column {
+.overflow-hidden, .accordion-group.accordion-compact, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-body, .biography, .article-banner-weblog, .weblog-card.newest-row .cover-image, .weblog-card.newest-column {
   overflow: hidden;
 }
 
@@ -21712,7 +21712,7 @@ dialog {
   overflow-x: scroll;
 }
 
-.overflow-y-scroll {
+.overflow-y-scroll, .accordion-group.scroll-accordion {
   overflow-y: scroll;
 }
 
@@ -21724,11 +21724,11 @@ dialog {
   overflow-y: hidden;
 }
 
-.position-relative, .article-banner-weblog, .privilege {
+.position-relative, .biography, .article-banner-weblog, .privilege {
   position: relative;
 }
 
-.position-absolute, .article-banner-weblog::after, .article-banner-weblog .banner-content {
+.position-absolute, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
   position: absolute;
 }
 
@@ -21740,19 +21740,19 @@ dialog {
   position: sticky;
 }
 
-.top-0, .article-banner-weblog::after {
+.top-0, .biography::after, .article-banner-weblog::after {
   top: 0px;
 }
 
-.left-0 {
+.left-0, .biography .cover-on-image {
   left: 0px;
 }
 
-.right-0, .article-banner-weblog::after, .article-banner-weblog .banner-content {
+.right-0, .biography::after, .article-banner-weblog::after, .article-banner-weblog .banner-content {
   right: 0px;
 }
 
-.bottom-0, .article-banner-weblog .banner-content {
+.bottom-0, .biography .cover-on-image, .article-banner-weblog .banner-content {
   bottom: 0px;
 }
 
@@ -21760,11 +21760,11 @@ dialog {
   z-index: 0;
 }
 
-.z-index-1, .article-banner-weblog::after {
+.z-index-1, .biography::after, .article-banner-weblog::after {
   z-index: 1;
 }
 
-.z-index-2, .article-banner-weblog .banner-content {
+.z-index-2, .biography .cover-on-image, .article-banner-weblog .banner-content {
   z-index: 2;
 }
 
@@ -21852,6 +21852,40 @@ dialog {
 .article-banner-weblog::after {
   content: "";
   background-image: linear-gradient(180deg, rgba(2, 25, 89, 0) 0%, #021959 100%);
+}
+.biography::after {
+  content: "";
+  background-image: linear-gradient(180deg, var(--transparent) 0%, var(--on-secondary) 100%);
+}
+.accordion-group.accordion-compact {
+  gap: 0;
+  overflow: hidden;
+}
+.accordion-group.accordion-outline .accordion {
+  background-color: transparent !important;
+}
+.accordion-group .accordion {
+  box-shadow: 0px 3px 10px 0px var(--shadow);
+}
+.accordion-group .accordion .accordion-box {
+  transition: 0.3s;
+  min-width: 100%;
+  grid-template-rows: 0fr 0fr;
+}
+.accordion-group .accordion .accordion-box .accordion-header.accordion-header > i {
+  transition: 0.3s;
+}
+.accordion-group .accordion.active .accordion-box {
+  grid-template-rows: 0fr 1fr;
+}
+.accordion-group .accordion.active .accordion-box .accordion-header > i {
+  transform: rotate(180deg);
+}
+.accordion-group .accordion .accordion-body {
+  transition: 0.3s;
+}
+.accordion-group.scroll-accordion {
+  max-height: 500px;
 }
 
 /*# sourceMappingURL=miz.min.css.map */
