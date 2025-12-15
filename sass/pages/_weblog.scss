@@ -9,6 +9,24 @@
     color: #4D5E8A;
 }
 
+.veiwall .icon-arr-left-foot {
+    box-shadow: 3px 4px 9px 0px #e8064536 !important;
+    border-radius: 20px 8px 8px 20px;
+}
+
+.veiwall .icon-arr-left-foot::before {
+    content: "\e908";
+    font-family: 'icomoon';
+    font-style: normal;
+}
+
+.border-unset{
+    border: unset;
+}
+.outline-unset{
+    outline: unset;
+}
+
 @media screen and (width < 1400px) {}
 
 @media screen and (width < 1200px) {
