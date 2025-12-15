@@ -1,0 +1,101 @@
+@use "../../../../sass/kernel/" as *;
+
+$product-comment-custom-classes: ".gap-5";
+$product-comment-information-comment-custom-classes: ".gap-5";
+$product-comment-information-comment-user-name-custom-classes: ".text-color, .font-weight-bold";
+$product-comment-information-comment-user-type-custom-classes: ".radius-all-full, .bg-primary-color, .on-primary-color, .font-weight-bold, .txt-normal, .px-2, .py-1";
+$product-comment-information-comment-rating-star-custom-classes: ".gap-1";
+$product-comment-information-comment-rating-star-icon-color: #DEA444;
+$product-comment-information-comment-date-time-custom-classes: ".txt-normal, .text-color, .font-weight-bold";
+$product-comment-information-comment-btn-custom-classes: ".gap-3, .py-3, .px-3, .bg-secondary-color, .radius-all-full, .cursor-pointer";
+$product-comment-information-comment-btn-count-custom-classes: ".font-weight-bold";
+$product-comment-text-container-custom-classes: ".gap-5";
+$product-comment-text-container-title-custom-classes: ".txt-high-title, .text-color, .font-weight-bold";
+$product-comment-text-container-description-custom-classes: ".txt-title, .font-weight-bold, .secondary-text-color";
+$product-comment-features-container-show-more-custom-classes: ".gap-2, .mb-6, .cursor-pointer";
+$product-comment-features-container-show-more-btn-custom-classes: ".radius-all-small, .d-flex, .justify-content-center, .align-items-center";
+$product-comment-features-container-show-more-text-show-more-custom-classes: ".txt-subtitle, .text-color, .font-weight-bold";
+$product-comment-features-container-features-custom-classes: ".txt-normal, .secondary-text-color, .font-weight-bold";
+$product-comment-features-container-feature-custom-classes: ".gap-4";
+$product-comment-comment-gallery-custom-classes: ".grid-3, .w-22, .gap-2";
+$product-comment-comment-gallery-image-custom-classes: ".radius-all-small";
+
+.product-comment{
+    @extend .d-flex, .flex-column , .w-100, #{$product-comment-custom-classes};
+
+    .information-comment{
+        @extend .d-flex, .justify-content-space-between, #{$product-comment-information-comment-custom-classes};
+
+        .user-name{
+            @extend #{$product-comment-information-comment-user-name-custom-classes};
+        }
+
+        .user-type{
+            @extend #{$product-comment-information-comment-user-type-custom-classes};
+        }
+        
+        .rating-star{
+            @extend .d-flex, #{$product-comment-information-comment-rating-star-custom-classes};
+            
+            i.active{
+                color: $product-comment-information-comment-rating-star-icon-color;
+            }
+        }
+        
+        .date-time{
+            @extend #{$product-comment-information-comment-date-time-custom-classes};
+        }
+
+        .btn{
+            @extend .d-flex, .align-items-center, #{$product-comment-information-comment-btn-custom-classes};
+
+            .count{
+                @extend #{$product-comment-information-comment-btn-count-custom-classes};
+            }
+        }
+    }
+
+    .text-container{
+        @extend .d-flex, .flex-column, #{$product-comment-text-container-custom-classes};
+
+        .title{
+            @extend #{$product-comment-text-container-title-custom-classes};
+        }
+
+        .description{
+            @extend #{$product-comment-text-container-description-custom-classes};
+        }
+    }
+
+    .features-container{
+        @extend .d-flex, .align-items-start, .justify-content-space-between;
+
+        .show-more{
+            @extend .d-flex, .align-items-center, .w-fit-content, #{$product-comment-features-container-show-more-custom-classes};
+
+            .btn{
+                @extend #{$product-comment-features-container-show-more-btn-custom-classes};
+            }
+
+            .text-show-more{
+                @extend #{$product-comment-features-container-show-more-text-show-more-custom-classes};
+            }
+        }
+
+        .features{
+            @extend #{$product-comment-features-container-features-custom-classes};
+            
+            .feature{
+                @extend .d-flex, .align-items-center, #{$product-comment-features-container-feature-custom-classes};
+            }
+        }
+    }
+
+    .comment-gallery{
+        @extend .d-grid, .align-self-end, #{$product-comment-comment-gallery-custom-classes};
+        
+        img{
+            @extend .w-100, #{$product-comment-comment-gallery-image-custom-classes};
+        }
+    }
+}
