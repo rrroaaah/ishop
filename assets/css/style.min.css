@@ -423,41 +423,6 @@
     font-size: 0.8rem;
   }
 }
-#compare-page .product-sales {
-  border-bottom: none;
-  border-top: none;
-}
-
-#compare-page section {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  width: 1300px;
-}
-
-#compare-page section div > div:nth-child(4) a {
-  background-color: #16A8B3;
-}
-
-#compare-page .border-left {
-  border-left: 1px solid var(--divider-color);
-}
-
-#compare-page .border-bottom {
-  border-bottom: 1px solid var(--divider-color);
-}
-
-#compare-page section .margin-top {
-  margin-top: -10px;
-}
-
-#compare-page section .secondary-text {
-  color: #5e6a8d;
-}
-
-#compare-page .horizental-line {
-  width: 90%;
-}
-
 #contact-ways input, textarea {
   outline: none;
   border-bottom: 1px solid #E6E9EE;
