@@ -1,105 +1,12 @@
-#faq {
-    height: 0 !important;
+
+#faq-wrapper .faq-search-form {
+  background-color: #f8f9fb;
 }
 
-#faq .icon-search::before {
-  content: "\e919";
-  font-family: icomoon;
-  font-style: normal;
-}
 
-#faq .faq-search-form {
-  background-color: #F8F9FB;
+#faq-wrapper input::placeholder {
+  font-weight: 100;
 }
-
-#faq main input {
-  border: none;
-  background-color: transparent;
-  width: 340px;
-}
-
-#faq #ask {
-    padding-left: 3rem !important;
-    padding-right: 3rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-one:checked) .accordion-box {
-    opacity: 1;
-    max-height: 500px;
-    padding-bottom: 1.5rem !important;
-    padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-one:checked) svg {
-    transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-two:checked) .accordion-box {
-    opacity: 1;
-    max-height: 500px;
-    padding-bottom: 1.5rem !important;
-    padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-two:checked) svg {
-    transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-three:checked) .accordion-box {
-    opacity: 1;
-    max-height: 500px;
-    padding-bottom: 1.5rem !important;
-    padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-three:checked) svg {
-    transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-four:checked) .accordion-box {
-    opacity: 1;
-    max-height: 500px;
-    padding-bottom: 1.5rem !important;
-    padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-four:checked) svg {
-    transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-five:checked) .accordion-box {
-    opacity: 1;
-    max-height: 500px;
-    padding-bottom: 1.5rem !important;
-    padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-five:checked) svg {
-    transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-six:checked) .accordion-box {
-    opacity: 1;
-    max-height: 500px;
-    padding-bottom: 1.5rem !important;
-    padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-six:checked) svg {
-    transform: rotate(180deg);
-}
-
-#faq .accordion:has(#accordion-btn-seven:checked) .accordion-box {
-    opacity: 1;
-    max-height: 500px;
-    padding-bottom: 1.5rem !important;
-    padding-top: 1.5rem !important;
-}
-
-#faq .accordion:has(#accordion-btn-seven:checked) svg {
-    transform: rotate(180deg);
-}
-
 
 
 
@@ -110,17 +17,8 @@
 
 @media screen and (width < 992px) {}
 
+@media screen and (width < 768px) {}
 
-@media screen and (width < 768px) {
-    #faq input {
-        width: 230px;
-    }
-}
-
-@media screen and (width < 576px) {
-     #faq input {
-        width: 120px;
-    }
-}
+@media screen and (width < 576px) {}
 
 
