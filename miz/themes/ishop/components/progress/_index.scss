@@ -1,0 +1,20 @@
+@use "../../../../sass/kernel/" as *;
+
+$progress-custom-classes:".radius-all-full, .bg-disabled-light-color";
+$progress-bar-custom-classes:".bg-primary-color, .pt-1, .txt-small";
+
+.progress {
+    @extend .w-100, .d-flex, .flex-row, .overflow-hidden, #{$progress-custom-classes};
+}
+
+.progress-bar {
+    width: var(--percentage);
+    user-select: none;
+    @extend .d-flex, .align-items-center, .justify-content-center, .overflow-hidden, #{$progress-bar-custom-classes};
+
+    &.progress-animation {
+        animation: progress-animation var(--progress-animation-duration) forwards ease-in-out;
+        animation-delay: var(--progress-animation-delay, 0s);
+        @extend .w-0, .pl-0, .pr-0;
+    }
+}

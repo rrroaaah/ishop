@@ -164,7 +164,7 @@
   height: 0vh;
 }
 
-.w-fit-content {
+.w-fit-content, .product-comment .features-container .show-more, .product-details {
   width: fit-content;
 }
 
@@ -208,11 +208,7 @@
   font-weight: 800;
 }
 
-<<<<<<< HEAD
 .font-weight-bold, .accordion-group .accordion .accordion-box .accordion-body, .biography .title, .biography .cover-on-image, .article-related .title, .article-related .description, .article-banner-weblog .title, .weblog-card.newest-row .card-body .title, .weblog-card.newest-column .title, .contact-us-information .title, .contact-us-information .direction {
-=======
-.font-weight-bold, .product-card .image-container .feature.checkpay, .accordion-group .accordion .accordion-box .accordion-header, .accordion-group .accordion .accordion-box .accordion-body, .biography .title, .biography .cover-on-image, .article-related .title, .article-related .description, .article-banner-weblog .title, .weblog-card.newest-row .card-body .title, .weblog-card.newest-column .title, .contact-us-information .title, .contact-us-information .direction {
->>>>>>> ab4020bb8bc6cab483b892f5cb37a9a2ddb23bd0
   font-weight: 700;
 }
 
@@ -220,11 +216,11 @@
   font-weight: 600;
 }
 
-.font-weight-medium, .article-banner-weblog {
+.font-weight-medium, .product-qa .answer-container .answer-description, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, .article-banner-weblog {
   font-weight: 500;
 }
 
-.font-weight-regular, .article-related, .weblog-card.newest-row {
+.font-weight-regular, .weblog-card.newest-row, .article-related {
   font-weight: 400;
 }
 
@@ -320,7 +316,7 @@
   color: var(--primary);
 }
 
-.bg-primary-color {
+.bg-primary-color, .product-comment .information-comment .user-type, .progress-bar, .product-card .countdown, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.warranty {
   background-color: var(--primary);
 }
 
@@ -328,7 +324,7 @@
   border-color: var(--on-primary);
 }
 
-.on-primary-color, .product-card .image-container .feature.checkpay, .article-banner-weblog {
+.on-primary-color, .product-qa .answer-container .answer-description .user-name .user-type, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.installments, .article-banner-weblog {
   color: var(--on-primary);
 }
 
@@ -352,7 +348,7 @@
   color: var(--secondary);
 }
 
-.bg-secondary-color, .product-category {
+.bg-secondary-color, .product-qa .question-container .btn, .product-comment .information-comment .btn, .summary-opinion, .product-category {
   background-color: var(--secondary);
 }
 
@@ -360,7 +356,7 @@
   color: var(--on-secondary);
 }
 
-.bg-on-secondary-color, .product-card .image-container .feature.checkpay {
+.bg-on-secondary-color, .modal-container .modal-content .modal-header, .product-card .image-container .feature.checkpay, button.product-button-feature.check-payment {
   background-color: var(--on-secondary);
 }
 
@@ -392,11 +388,7 @@
   color: var(--library-icon);
 }
 
-<<<<<<< HEAD
 .text-color, .accordion-group .accordion .accordion-box .accordion-body, .biography .description, .article-related .description, .weblog-card.newest-row .card-body .title, .weblog-card.newest-row .card-body .description, .weblog-card.newest-column .title, .weblog-card.newest-column .card-body .description, .contact-us-information .direction {
-=======
-.text-color, .accordion-group .accordion .accordion-box .accordion-body, .article-related .description, .weblog-card.newest-row .card-body .title, .weblog-card.newest-column .title, .contact-us-information .direction {
->>>>>>> ab4020bb8bc6cab483b892f5cb37a9a2ddb23bd0
   color: var(--text);
 }
 
@@ -404,7 +396,7 @@
   background-color: var(--text);
 }
 
-.title-text-color, .accordion-group .accordion .accordion-box .accordion-header, .article-related .title, .weblog-card.newest-row .card-body .description, .weblog-card.newest-column .card-body .description, .logo-banner .under-banner .icon-download-banner, .contact-us-information .title {
+.title-text-color, .weblog-card.newest-row .card-body .description, .weblog-card.newest-column .card-body .description, .logo-banner .under-banner .icon-download-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-information .title, .article-related .title {
   color: var(--title-text);
 }
 
@@ -416,7 +408,7 @@
   color: var(--highlight-text);
 }
 
-.secondary-text-color {
+.secondary-text-color, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment .text-container .description, .product-comment .features-container .features, .summary-opinion .description, .return-condition-box .description, .rating-card .card-header .rating-count .description, .rating-card .card-header .rating-count .number, .rating-card .card-body .percentage-point .description-container .comment-number, .rating-card .card-footer .comments-number .description, .product-details .title, .product-card .card-body .discount-box .original-price, .product-card .card-body .credit-purchase-box, .feature-description-box.text-type .title, .feature-description-box.text-type .description {
   color: var(--secondary-text);
 }
 
@@ -428,7 +420,7 @@
   background-color: var(--section-title-text);
 }
 
-.border-color, .product-card, .article-related, .weblog-card.newest-row, .weblog-card.newest-column {
+.border-color, .weblog-card.newest-row, .weblog-card.newest-column, .return-condition-box, .rating-card .card-footer .comments-number, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
   border-color: var(--border);
 }
 
@@ -460,15 +452,15 @@
   background-color: var(--menu);
 }
 
-.bg-card-color, .accordion-group .accordion .accordion-box .accordion-body {
+.bg-card-color, button.product-button-feature.payable-credit, .accordion-group .accordion .accordion-box .accordion-body {
   background-color: var(--card);
 }
 
-.bg-color, .accordion-group .accordion {
+.bg-color, .rating-card, .accordion-group .accordion {
   background-color: var(--background);
 }
 
-.bg-section-color {
+.bg-section-color, .modal-container .modal-content {
   background-color: var(--section);
 }
 
@@ -576,7 +568,7 @@
   background-color: var(--danger-light);
 }
 
-.bg-disabled-light-color {
+.bg-disabled-light-color, .progress {
   background-color: var(--disabled-light);
 }
 
@@ -584,7 +576,7 @@
   background-color: var(--disabled-dark);
 }
 
-.bg-information-regular-color {
+.bg-information-regular-color, button.product-button-feature.installments {
   background-color: var(--information-regular);
 }
 
@@ -604,7 +596,7 @@
   background-color: var(--unCommon);
 }
 
-.bg-transparent-color {
+.bg-transparent-color, .modal-container {
   background-color: var(--transparent);
 }
 
@@ -678,11 +670,11 @@
   border-width: 0px;
 }
 
-.bw-1, .product-card, .article-related, .weblog-card.newest-row, .weblog-card.newest-column {
+.bw-1, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
   border-width: 1px;
 }
 
-.bw-2 {
+.bw-2, .return-condition-box, .rating-card .card-footer .comments-number {
   border-width: 2px;
 }
 
@@ -789,7 +781,7 @@
   border-end-end-radius: 4px;
 }
 
-.radius-all-extra-small, .accordion-group .accordion .accordion-box .accordion-body {
+.radius-all-extra-small, .product-card .countdown, .accordion-group .accordion .accordion-box .accordion-body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -828,7 +820,7 @@
   border-end-end-radius: 8px;
 }
 
-.radius-all-small, .product-card .image-container .feature.checkpay, .accordion-group .accordion, .biography, .biography::after, .article-related .cover-image img, .article-banner-weblog::after, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .privilege {
+.radius-all-small, .product-qa .answer-container .btn-answer, .product-comment .features-container .show-more .btn, .product-comment .comment-gallery img, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container .modal-content, .product-details, .product-details.rating, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments, .accordion-group .accordion, .privilege, .biography, .biography::after, .article-related .cover-image img, .article-banner-weblog::after {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -906,7 +898,7 @@
   border-end-end-radius: 17px;
 }
 
-.radius-all-medium, .product-card, .product-category, .article-banner-weblog, .logo-banner img {
+.radius-all-medium, .return-condition-box, .rating-card, .product-category, .product-card, .logo-banner img, .article-banner-weblog {
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
@@ -945,7 +937,7 @@
   border-end-end-radius: 35px;
 }
 
-.radius-all-large {
+.radius-all-large, .summary-opinion {
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
   border-bottom-left-radius: 35px;
@@ -1023,7 +1015,7 @@
   border-end-end-radius: 2000px;
 }
 
-.radius-all-full {
+.radius-all-full, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name .user-type, .product-comment .information-comment .user-type, .product-comment .information-comment .btn, .progress, .product-card .product-colors span {
   border-top-left-radius: 2000px;
   border-top-right-radius: 2000px;
   border-bottom-left-radius: 2000px;
@@ -1050,11 +1042,11 @@
   border-inline-start-style: solid;
 }
 
-.bie-style-solid {
+.bie-style-solid, .rating-card .card-footer .comments-number {
   border-inline-end-style: solid;
 }
 
-.border-style-solid, .product-card, .weblog-card.newest-row, .weblog-card.newest-column {
+.border-style-solid, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit {
   border-top-style: solid;
   border-left-style: solid;
   border-bottom-style: solid;
@@ -1095,7 +1087,7 @@
   border-inline-end-style: dashed;
 }
 
-.border-style-dashed {
+.border-style-dashed, .return-condition-box {
   border-top-style: dashed;
   border-left-style: dashed;
   border-bottom-style: dashed;
@@ -1495,7 +1487,7 @@
   display: block;
 }
 
-.d-none {
+.d-none, .modal-container, .modal-container .modal-content {
   display: none;
 }
 
@@ -1503,11 +1495,7 @@
   display: none;
 }
 
-<<<<<<< HEAD
 .d-flex, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .logo-banner, .logo-banner .under-banner, .privilege, .contact-us-social-media, .contact-us-information {
-=======
-.d-flex, .product-card .image-container, .product-card .image-container .image-box, .product-category, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .logo-banner, .logo-banner .under-banner, .privilege, .contact-us-social-media, .contact-us-information {
->>>>>>> ab4020bb8bc6cab483b892f5cb37a9a2ddb23bd0
   display: flex;
 }
 
@@ -1515,7 +1503,7 @@
   display: flex;
 }
 
-.d-grid, .accordion-group .accordion .accordion-box {
+.d-grid, .product-comment .comment-gallery, .accordion-group .accordion .accordion-box {
   display: grid;
 }
 
@@ -1627,7 +1615,7 @@
   width: calc(100% - var(--gx));
 }
 
-.w-0 {
+.w-0, .progress-bar.progress-animation {
   width: 0%;
 }
 
@@ -1715,7 +1703,7 @@
   width: 20%;
 }
 
-.w-22 {
+.w-22, .product-comment .comment-gallery {
   width: 22%;
 }
 
@@ -1747,7 +1735,7 @@
   width: 28%;
 }
 
-.w-30 {
+.w-30, .modal-container .modal-content {
   width: 30%;
 }
 
@@ -1867,7 +1855,7 @@
   width: 58%;
 }
 
-.w-60, .article-related .cover-image, .weblog-card.newest-row .cover-image {
+.w-60, .weblog-card.newest-row .cover-image, .article-related .cover-image {
   width: 60%;
 }
 
@@ -2027,7 +2015,7 @@
   width: 98%;
 }
 
-.w-100, .product-card .image-container .image-box img, .product-category img, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after, .weblog-card.newest-row .cover-image img, .logo-banner img, .privilege, .privilege img {
+.w-100, .product-comment, .product-comment .comment-gallery img, .weblog-card.newest-row .cover-image img, .rating-card, .progress, .product-category img, .product-card .image-container .image-box img, .logo-banner img, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .privilege, .privilege img, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after {
   width: 100%;
 }
 
@@ -2443,7 +2431,7 @@
   height: 100%;
 }
 
-.flex-row, .accordion-group .accordion .accordion-box .accordion-header {
+.flex-row, .progress, .product-details.rating, .accordion-group .accordion .accordion-box .accordion-header {
   flex-direction: row;
 }
 
@@ -2459,11 +2447,7 @@
   flex-direction: row-reverse;
 }
 
-<<<<<<< HEAD
 .flex-column, .accordion-group, .biography .cover-on-image, .article-banner-weblog, .article-banner-weblog .banner-content, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .logo-banner, .privilege, .contact-us-social-media {
-=======
-.flex-column, .product-category, .accordion-group, .biography .cover-on-image, .article-banner-weblog, .article-banner-weblog .banner-content, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .logo-banner, .privilege, .contact-us-social-media {
->>>>>>> ab4020bb8bc6cab483b892f5cb37a9a2ddb23bd0
   flex-direction: column;
 }
 
@@ -2487,7 +2471,7 @@
   justify-content: flex-start;
 }
 
-.justify-content-center, .product-card .image-container, .product-card .image-container .image-box, .product-category {
+.justify-content-center, .product-comment .features-container .show-more .btn, .modal-container, .rating-card, .rating-card .card-footer, .progress-bar, .product-category, .product-card .image-container, .product-card .image-container .image-box {
   justify-content: center;
 }
 
@@ -2503,7 +2487,7 @@
   justify-content: flex-end;
 }
 
-.justify-content-start {
+.justify-content-start, .product-details {
   justify-content: start;
 }
 
@@ -2519,7 +2503,7 @@
   justify-content: end;
 }
 
-.justify-content-space-between, .accordion-group .accordion .accordion-box .accordion-header, .logo-banner .under-banner, .contact-us-information {
+.justify-content-space-between, .product-comment .information-comment, .product-comment .features-container, .rating-card .card-header .rating-count, .rating-card .card-body .percentage-point .description-container, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-information {
   justify-content: space-between;
 }
 
@@ -2735,7 +2719,7 @@
   align-self: start;
 }
 
-.align-self-end {
+.align-self-end, .product-comment .comment-gallery {
   align-self: end;
 }
 
@@ -2767,11 +2751,7 @@
   align-items: flex-start;
 }
 
-<<<<<<< HEAD
 .align-items-center, .accordion-group .accordion .accordion-box .accordion-header, .article-related, .logo-banner .under-banner, .contact-us-social-media {
-=======
-.align-items-center, .product-category, .accordion-group .accordion .accordion-box .accordion-header, .article-related, .logo-banner .under-banner, .contact-us-social-media {
->>>>>>> ab4020bb8bc6cab483b892f5cb37a9a2ddb23bd0
   align-items: center;
 }
 
@@ -2795,7 +2775,7 @@
   align-items: stretch;
 }
 
-.align-items-start, .article-banner-weblog .banner-content {
+.align-items-start, .product-qa .answer-container, .product-comment .features-container, .product-details, .article-banner-weblog .banner-content {
   align-items: start;
 }
 
@@ -2971,7 +2951,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-3 {
+.grid-3, .product-comment .comment-gallery {
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -3083,7 +3063,7 @@
   padding: 0.25rem;
 }
 
-.p-2 {
+.p-2, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer {
   padding: 0.5rem;
 }
 
@@ -3323,7 +3303,7 @@
   padding-top: 0rem;
 }
 
-.pt-1, .product-card .image-container {
+.pt-1, .progress-bar, .product-card .image-container {
   padding-top: 0.25rem;
 }
 
@@ -3611,7 +3591,7 @@
   padding-bottom: 1.25rem;
 }
 
-.pb-6, .accordion-group .accordion .accordion-box .accordion-header, .weblog-card.newest-column .card-body {
+.pb-6, .weblog-card.newest-column .card-body, .accordion-group .accordion .accordion-box .accordion-header {
   padding-bottom: 1.5rem;
 }
 
@@ -3619,7 +3599,7 @@
   padding-bottom: 1.5rem;
 }
 
-.pb-7 {
+.pb-7, .rating-card .card-header {
   padding-bottom: 1.75rem;
 }
 
@@ -3811,7 +3791,7 @@
   padding-bottom: 7.5rem;
 }
 
-.pl-0 {
+.pl-0, .progress-bar.progress-animation {
   padding-left: 0rem;
 }
 
@@ -4059,7 +4039,7 @@
   padding-left: 7.5rem;
 }
 
-.pr-0 {
+.pr-0, .progress-bar.progress-animation {
   padding-right: 0rem;
 }
 
@@ -4317,7 +4297,7 @@
   padding-right: 0rem;
 }
 
-.px-1 {
+.px-1, .product-qa .answer-container .answer-description .user-name .user-type, .summary-opinion mark, .product-card .card-body .discount-box .discount-percentage {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
@@ -4327,7 +4307,7 @@
   padding-right: 0.25rem;
 }
 
-.px-2, .product-card .image-container .feature.checkpay {
+.px-2, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -4337,7 +4317,7 @@
   padding-right: 0.5rem;
 }
 
-.px-3, .product-card .image-container {
+.px-3, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-card .image-container {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
@@ -4347,7 +4327,7 @@
   padding-right: 0.75rem;
 }
 
-.px-4, .accordion-group .accordion .accordion-box, .accordion-group .accordion .accordion-box .accordion-body, .biography .cover-on-image {
+.px-4, .product-details.rating, .accordion-group .accordion .accordion-box, .accordion-group .accordion .accordion-box .accordion-body, .biography .cover-on-image {
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -4377,7 +4357,7 @@
   padding-right: 1.5rem;
 }
 
-.px-7, .product-card, .product-category {
+.px-7, .product-category, .product-card {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
 }
@@ -4387,7 +4367,7 @@
   padding-right: 1.75rem;
 }
 
-.px-8 {
+.px-8, .return-condition-box {
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -4407,7 +4387,7 @@
   padding-right: 2.25rem;
 }
 
-.px-10 {
+.px-10, .summary-opinion, .rating-card {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
@@ -4627,7 +4607,7 @@
   padding-bottom: 0rem;
 }
 
-.py-1, .product-card .image-container .feature.checkpay {
+.py-1, .product-comment .information-comment .user-type, .summary-opinion mark, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
@@ -4647,7 +4627,7 @@
   padding-bottom: 0.5rem;
 }
 
-.py-3, .accordion-group .accordion .accordion-box, .contact-us-information {
+.py-3, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-details, .product-details.rating, .product-card .card-body .btn-add-to-cart, .accordion-group .accordion .accordion-box, .contact-us-information {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
@@ -4677,7 +4657,7 @@
   padding-bottom: 1.25rem;
 }
 
-.py-6, .accordion-group .accordion .accordion-box .accordion-body, .biography .cover-on-image, .weblog-card.newest-row .card-body {
+.py-6, .weblog-card.newest-row .card-body, .accordion-group .accordion .accordion-box .accordion-body, .biography .cover-on-image {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -4697,7 +4677,7 @@
   padding-bottom: 1.75rem;
 }
 
-.py-8 {
+.py-8, .return-condition-box {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -4717,7 +4697,7 @@
   padding-bottom: 2.25rem;
 }
 
-.py-10 {
+.py-10, .summary-opinion {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -4747,7 +4727,7 @@
   padding-bottom: 3rem;
 }
 
-.py-13 {
+.py-13, .rating-card {
   padding-top: 3.25rem;
   padding-bottom: 3.25rem;
 }
@@ -4959,7 +4939,7 @@
   padding-inline-start: 0.75rem;
 }
 
-.pis-4 {
+.pis-4, .product-details {
   padding-inline-start: 1rem;
 }
 
@@ -5191,7 +5171,7 @@
   padding-inline-end: 0.25rem;
 }
 
-.pie-2 {
+.pie-2, .rating-card .card-footer .comments-number {
   padding-inline-end: 0.5rem;
 }
 
@@ -5287,7 +5267,7 @@
   padding-inline-end: 3.25rem;
 }
 
-.pie-14 {
+.pie-14, .product-details {
   padding-inline-end: 3.5rem;
 }
 
@@ -5967,7 +5947,7 @@
   margin-bottom: 1.25rem;
 }
 
-.mb-6 {
+.mb-6, .product-comment .features-container .show-more {
   margin-bottom: 1.5rem;
 }
 
@@ -7555,7 +7535,7 @@
   margin-inline-end: 0.5rem;
 }
 
-.mie-3 {
+.mie-3, .product-card .product-colors {
   margin-inline-end: 0.75rem;
 }
 
@@ -7787,7 +7767,7 @@
   gap: 0rem;
 }
 
-.gap-1, .accordion-group .accordion .accordion-box {
+.gap-1, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .rating-star, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .product-details, .accordion-group .accordion .accordion-box {
   gap: 0.25rem;
 }
 
@@ -7795,7 +7775,7 @@
   gap: 0.25rem;
 }
 
-.gap-2, .biography .cover-on-image, .contact-us-social-media {
+.gap-2, .product-comment .features-container .show-more, .product-comment .comment-gallery, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .contact-us-social-media, .biography .cover-on-image {
   gap: 0.5rem;
 }
 
@@ -7803,7 +7783,7 @@
   gap: 0.5rem;
 }
 
-.gap-3, .product-category, .weblog-card.newest-column .card-body {
+.gap-3, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-comment .information-comment .btn, .weblog-card.newest-column .card-body, .rating-card .card-header, .product-category, .feature-description-box.text-type {
   gap: 0.75rem;
 }
 
@@ -7811,7 +7791,7 @@
   gap: 0.75rem;
 }
 
-.gap-4, .accordion-group, .contact-us-information {
+.gap-4, .product-comment .features-container .features .feature, .return-condition-box, .rating-card .card-body, .rating-card .card-footer .comments-number, .accordion-group, .contact-us-information {
   gap: 1rem;
 }
 
@@ -7819,7 +7799,7 @@
   gap: 1rem;
 }
 
-.gap-5, .article-banner-weblog .banner-content {
+.gap-5, .product-qa .question-container, .product-comment, .product-comment .information-comment, .product-comment .text-container, .product-card .card-body, .article-banner-weblog .banner-content {
   gap: 1.25rem;
 }
 
@@ -7835,7 +7815,7 @@
   gap: 1.5rem;
 }
 
-.gap-7 {
+.gap-7, .rating-card {
   gap: 1.75rem;
 }
 
@@ -7843,7 +7823,7 @@
   gap: 1.75rem;
 }
 
-.gap-8 {
+.gap-8, .summary-opinion {
   gap: 2rem;
 }
 
@@ -7859,7 +7839,7 @@
   gap: 2.25rem;
 }
 
-.gap-10 {
+.gap-10, .product-qa {
   gap: 2.5rem;
 }
 
@@ -7891,7 +7871,7 @@
   gap: 3.25rem;
 }
 
-.gap-14 {
+.gap-14, .product-details.rating {
   gap: 3.5rem;
 }
 
@@ -9289,7 +9269,7 @@
   letter-spacing: 12.5rem;
 }
 
-.txt-small {
+.txt-small, .rating-card .card-header .rating-count .description, .rating-card .card-header .rating-count .number, .progress-bar, .product-card .card-body .credit-purchase-box {
   font-size: 0.625rem;
 }
 
@@ -9297,7 +9277,7 @@
   font-size: 0.625rem;
 }
 
-.txt-subtitle {
+.txt-subtitle, .product-comment .features-container .show-more .text-show-more, .rating-card .card-body .percentage-point .description-container .comment-number {
   font-size: 0.688rem;
 }
 
@@ -9305,7 +9285,7 @@
   font-size: 0.688rem;
 }
 
-.txt-normal, .product-card .image-container .feature.checkpay, .accordion-group .accordion {
+.txt-normal, .product-qa .question-container .text-quesiton, .product-comment .information-comment .user-type, .product-comment .information-comment .date-time, .product-comment .features-container .features, .product-card .image-container .feature.checkpay, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments, .accordion-group .accordion {
   font-size: 0.75rem;
 }
 
@@ -9313,7 +9293,7 @@
   font-size: 0.75rem;
 }
 
-.txt-big, .product-category, .article-related .description, .weblog-card.newest-column .card-body .description {
+.txt-big, .product-qa .answer-container .btn-answer, .product-qa .answer-container .answer-description .user-name, .product-qa .answer-container .answer-description .user-name .user-type, .weblog-card.newest-column .card-body .description, .return-condition-box .description, .rating-card .card-footer .comments-number .description, .product-details .title, .product-category, .product-card .card-body .btn-add-to-cart, .feature-description-box.text-type .title, .feature-description-box.text-type .description, .article-related .description {
   font-size: 0.814rem;
 }
 
@@ -9321,7 +9301,7 @@
   font-size: 0.814rem;
 }
 
-.txt-title, .accordion-group .accordion .accordion-box .accordion-body, .weblog-card.newest-row .card-body .description, .logo-banner .under-banner .description, .contact-us-information .title, .contact-us-information .direction {
+.txt-title, .product-comment .text-container .description, .weblog-card.newest-row .card-body .description, .summary-opinion .description, .rating-card .card-footer .comments-number .count, .product-details .description, .logo-banner .under-banner .description, .accordion-group .accordion .accordion-box .accordion-body, .contact-us-information .title, .contact-us-information .direction {
   font-size: 0.875rem;
 }
 
@@ -9329,7 +9309,7 @@
   font-size: 0.875rem;
 }
 
-.txt-mid-title, .biography .description, .weblog-card.newest-column .title {
+.txt-mid-title, .product-qa .answer-container .answer-description .text-answer, .weblog-card.newest-column .title, .summary-opinion mark, .product-card .card-body .available-number, .product-card .card-body .discount-box .discount-percentage, .biography .description {
   font-size: 0.938rem;
 }
 
@@ -9337,7 +9317,7 @@
   font-size: 0.938rem;
 }
 
-.txt-high-title {
+.txt-high-title, .product-comment .text-container .title, .product-card .card-body .discount-box .special-price {
   font-size: 1.125rem;
 }
 
@@ -9345,7 +9325,7 @@
   font-size: 1.125rem;
 }
 
-.txt-big-title, .biography .title, .article-banner-weblog .title, .logo-banner .under-banner .icon-download-banner {
+.txt-big-title, .summary-opinion .title, .logo-banner .under-banner .icon-download-banner, .biography .title, .article-banner-weblog .title {
   font-size: 1.313rem;
 }
 
@@ -9353,7 +9333,7 @@
   font-size: 1.313rem;
 }
 
-.txt-extra-title, .accordion-group .accordion .accordion-box .accordion-header, .article-related .title, .weblog-card.newest-row .card-body .title {
+.txt-extra-title, .weblog-card.newest-row .card-body .title, .product-card .card-body .title, .accordion-group .accordion .accordion-box .accordion-header, .article-related .title {
   font-size: 1rem;
 }
 
@@ -9385,7 +9365,7 @@
   text-transform: capitalize;
 }
 
-.txt-align-center {
+.txt-align-center, .rating-card .card-footer .comments-number .description {
   text-align: center;
 }
 
@@ -10563,7 +10543,7 @@
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-  .px-xl-4 {
+  .px-xl-4, .return-condition-box {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -21696,11 +21676,11 @@ dialog {
   background: none;
 }
 
-.cursor-pointer, .product-category, .accordion-group .accordion .accordion-box {
+.cursor-pointer, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .accordion-group .accordion .accordion-box {
   cursor: pointer;
 }
 
-.aspect-ratio-1x1, .product-category, .product-category img {
+.aspect-ratio-1x1, .product-category, .product-category img, .product-card .product-colors span {
   aspect-ratio: 1/1;
 }
 
@@ -21784,7 +21764,7 @@ dialog {
   overflow: scroll;
 }
 
-.overflow-hidden, .accordion-group.accordion-compact, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-body, .biography, .article-banner-weblog, .weblog-card.newest-row .cover-image, .weblog-card.newest-column {
+.overflow-hidden, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container, .modal-container .modal-content, .progress, .progress-bar, .accordion-group.accordion-compact, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-body, .biography, .article-banner-weblog {
   overflow: hidden;
 }
 
@@ -21804,15 +21784,15 @@ dialog {
   overflow-y: hidden;
 }
 
-.position-relative, .product-card, .product-card .image-container, .biography, .article-banner-weblog, .privilege {
+.position-relative, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
   position: relative;
 }
 
-.position-absolute, .product-card .image-container .feature, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
+.position-absolute, .product-card .product-colors, .product-card .image-container .feature, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
   position: absolute;
 }
 
-.position-fixed {
+.position-fixed, .modal-container {
   position: fixed;
 }
 
@@ -21820,15 +21800,15 @@ dialog {
   position: sticky;
 }
 
-.top-0, .biography::after, .article-banner-weblog::after {
+.top-0, .modal-container, .biography::after, .article-banner-weblog::after {
   top: 0px;
 }
 
-.left-0, .product-card .image-container .feature, .biography .cover-on-image {
+.left-0, .modal-container, .product-card .image-container .feature, .biography .cover-on-image {
   left: 0px;
 }
 
-.right-0, .biography::after, .article-banner-weblog::after, .article-banner-weblog .banner-content {
+.right-0, .product-card .product-colors, .biography::after, .article-banner-weblog::after, .article-banner-weblog .banner-content {
   right: 0px;
 }
 
@@ -21880,7 +21860,7 @@ dialog {
   z-index: 10;
 }
 
-.object-cover, .article-related .cover-image img, .article-banner-weblog img, .weblog-card.newest-row .cover-image img, .logo-banner img {
+.object-cover, .weblog-card.newest-row .cover-image img, .logo-banner img, .article-related .cover-image img, .article-banner-weblog img {
   object-fit: cover;
 }
 
@@ -21920,15 +21900,6 @@ dialog {
   user-select: text;
 }
 
-.contact-us-social-media ~ .vertical-line {
-  width: 1px;
-  height: 1.5rem;
-  background-color: var(--divider);
-}
-
-.privilege {
-  box-shadow: 2px 2px 5px 3px var(--shadow);
-}
 .article-banner-weblog::after {
   content: "";
   background-image: linear-gradient(180deg, rgba(2, 25, 89, 0) 0%, #021959 100%);
@@ -21937,6 +21908,15 @@ dialog {
   content: "";
   background-image: linear-gradient(180deg, var(--transparent) 0%, var(--on-secondary) 100%);
 }
+.privilege {
+  box-shadow: 2px 2px 5px 3px var(--shadow);
+}
+.contact-us-social-media ~ .vertical-line {
+  width: 1px;
+  height: 1.5rem;
+  background-color: var(--divider);
+}
+
 .accordion-group.accordion-compact {
   gap: 0;
   overflow: hidden;
@@ -21967,6 +21947,32 @@ dialog {
 .accordion-group.scroll-accordion {
   max-height: 500px;
 }
+.feature-description-box.text-type .description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.product-card {
+  transition: all 0.2s ease-out;
+}
+.product-card:hover {
+  background-color: var(--card);
+}
+.product-card .product-colors span {
+  width: 10px;
+}
+.product-card .card-body .btn-add-to-cart {
+  box-shadow: 2px 3px 4px -3px var(--primary);
+}
+.product-card .card-body .discount-box .discount-percentage {
+  box-shadow: 2px 3px 4px -3px var(--primary);
+}
+.product-card .card-body .credit-purchase-box img {
+  max-width: 45px;
+}
+
 .product-category {
   transition: 0.3s ease-out;
 }
@@ -21978,11 +21984,83 @@ dialog {
   background-color: var(--primary);
   color: var(--on-primary);
 }
-.product-card {
-  transition: all 200ms linear;
+.progress-bar {
+  width: var(--percentage);
+  user-select: none;
 }
-.product-card:hover {
-  background-color: var(--card);
+.progress-bar.progress-animation {
+  animation: progress-animation var(--progress-animation-duration) forwards ease-in-out;
+  animation-delay: var(--progress-animation-delay, 0s);
+}
+
+.rating-card {
+  box-shadow: inset 34px 34px 52px 29px rgba(0, 0, 0, 0.03), 90px 160px 200px -120px rgba(0, 0, 0, 0.2);
+}
+.rating-card .card-header .rating-star i.active {
+  color: #DEA444;
+}
+.modal-container {
+  min-width: 100%;
+  min-height: 100%;
+  pointer-events: none;
+}
+.modal-container.show {
+  pointer-events: all;
+}
+.modal-container.show .modal-content {
+  display: block;
+  animation: modal-open 0.3s ease-out forwards;
+}
+.modal-container.hide {
+  pointer-events: none;
+}
+.modal-container.hide .modal-content {
+  display: block;
+  animation: modal-close 0.3s ease-out forwards;
+}
+.modal-container .dragging {
+  transition: 0.07s ease-out;
+  user-select: none;
+  cursor: move;
+}
+
+@keyframes modal-open {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes modal-close {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+.story-line::after {
+  content: "";
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  background-image: url("../media/images/story-ring.svg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 10px -10px 5px rgba(220, 5, 172, 0.06), 0px 0px 5px rgba(235, 53, 44, 0.32), -10px 10px 5px rgba(245, 155, 8, 0.06), inset 10px -10px 5px rgba(220, 5, 172, 0.09), inset 0px 0px 5px rgba(235, 53, 44, 0.4), inset -10px 10px 5px rgba(245, 155, 8, 0.09);
+  border-radius: 50%;
+}
+
+.summary-opinion mark {
+  background-color: #FFF077;
+}
+.product-comment .information-comment .rating-star i.active {
+  color: #DEA444;
 }
 
 /*# sourceMappingURL=miz.min.css.map */

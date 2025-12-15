@@ -1,0 +1,30 @@
+@use "../../../../sass/kernel/" as *;
+
+$summary-opinion-custom-classes: ".bg-secondary-color, .radius-all-large, .py-10, .px-10, .gap-8";
+$summary-opinion-title-custom-classes: ".txt-big-title, .text-color, .font-weight-bold";
+// <!--* .line-height-1 *-->
+$summary-opinion-mark-custom-classes: ".txt-mid-title, .text-color, .font-weight-bold, .px-1, .py-1";
+// <!--* .line-height-1 *-->
+
+$summary-opinion-mark-bg-color: #FFF077;
+
+// <!--* .line-height-3, .text-justify *-->
+$summary-opinion-description-custom-classes: ".secondary-text-color, .txt-title, .font-weight-bold";
+// <!--* .line-height-3, .text-justify *-->
+
+.summary-opinion{
+    @extend .d-flex, .flex-column, #{$summary-opinion-custom-classes};
+    
+    .title{
+        @extend #{$summary-opinion-title-custom-classes};
+    }
+
+    mark{
+        background-color: $summary-opinion-mark-bg-color;
+        @extend #{$summary-opinion-mark-custom-classes};
+    }
+
+    .description{
+        @extend #{$summary-opinion-description-custom-classes};
+    }
+}
