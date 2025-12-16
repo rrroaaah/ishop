@@ -1,8 +1,87 @@
-$backgrounds:(primary,on-primary,primary-light,primary-dark,secondary,on-secondary,secondary-light,secondary-dark,specific,button,fields,text,title-text,secondary-text,section-title-text,border,divider,shadow,icon,menu,card,background,section,hover,button-hover,text-hover,button-text-hover,danger-regular,disabled-regular,warning-regular,warning-light,warning-dark,success-regular,success-light,success-dark,danger-dark,danger-light,disabled-light,disabled-dark,information-regular,information-light,information-dark,border-secondary,unCommon,"transparent");
-$colors:(primary-light,on-primary,on-secondary,icon,text,specific,primary,secondary,highlight-text, library-icon,title-text,button-text,text-fields);
-$borders:(divider,border,primary,on-primary);
+$backgrounds: (
+    primary,
+    on-primary,
+    primary-light,
+    primary-dark,
+    secondary,
+    on-secondary,
+    secondary-light,
+    secondary-dark,
+    specific,
+    button,
+    fields,
+    text,
+    title-text,
+    secondary-text,
+    section-title-text,
+    border,
+    divider,
+    shadow,
+    icon,
+    menu,
+    card,
+    background,
+    section,
+    hover,
+    button-hover,
+    text-hover,
+    button-text-hover,
+    danger-regular,
+    disabled-regular,
+    warning-regular,
+    warning-light,
+    warning-dark,
+    success-regular,
+    success-light,
+    success-dark,
+    danger-dark,
+    danger-light,
+    disabled-light,
+    
+    disabled-dark,
+    information-regular,
+    "white",
+    information-light,
+    information-dark,
+    border-secondary,
+    unCommon,
+    "transparent"
+);
+$colors: (
+    primary-light,
+    on-primary,
+    on-secondary,
+    icon,
+    text,
+    specific,
+    primary,
+    secondary,
+    highlight-text,
+    library-icon,
+    title-text,
+    button-text,
+    text-fields,
+    secondary-text,
+    danger-regular,
+    disabled-regular,
+    warning-regular,
+    warning-light,
+    warning-dark,
+    success-regular,
+    success-light,
+    success-dark,
+    danger-dark,
+    danger-light
+);
+$borders: (
+    divider,
+    border,
+    primary,
+    on-primary,
+    information-regular
+);
 
-$light-color-palette:(
+$light-color-palette: (
     primary:blue,
     on-primary: #c97d7d,
     primary-light: #c97d7d8a,
@@ -66,7 +145,7 @@ $light-color-palette:(
     unCommon: #FFFFFF,
 );
 
-$dark-color-palette:(
+$dark-color-palette: (
     primary: red,
     on-primary: #c97d7d,
     primary-light: #c97d7d8a,
@@ -132,10 +211,9 @@ $dark-color-palette:(
     unCommon: #FFFFFF
 );
 
-$color-palette:(
+$color-palette: (
     default : $dark-color-palette ,
-    colors : (
-        light-palette : $light-color-palette ,
+    colors : (light-palette : $light-color-palette ,
         dark-palette : $dark-color-palette ,
     )
 );

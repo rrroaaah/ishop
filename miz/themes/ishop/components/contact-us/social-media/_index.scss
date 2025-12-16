@@ -1,0 +1,15 @@
+@use "../../../../../sass/kernel/" as *;
+
+$contact-us-social-media-custom-classes: ".gap-2";
+
+.contact-us-social-media{
+    @extend .d-flex, .flex-column, .align-items-center, #{$contact-us-social-media-custom-classes};
+
+    // <!--* bad structure code *-->
+    & ~ .vertical-line{
+        width: 1px;
+        height: 1.5rem;
+        background-color: get-color(divider);
+    }
+    // <!--* bad structure code *-->
+}

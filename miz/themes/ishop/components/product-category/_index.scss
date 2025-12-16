@@ -1,0 +1,24 @@
+@use "../../../../sass/kernel/" as *;
+
+$product-category-custom-classes: ".on-secondary-color, .txt-big, .radius-all-medium, .bg-secondary-color, .gap-3, .px-7, .px-lg-5";
+$product-category-transition: 0.3s ease-out;
+$product-category-image-custom-classes: null;
+
+.product-category{
+    transition: $product-category-transition;
+    @extend .d-flex, .aspect-ratio-1x1, .flex-column, .align-items-center, .justify-content-center, .cursor-pointer, .user-select-none, #{$product-category-custom-classes};
+
+    &:hover{
+        background-color: get-color(card);
+        transform: translateY(-3%);
+    }
+
+    &.active{
+        background-color: get-color(primary);
+        color: get-color(on-primary);
+    }
+
+    img{
+        @extend .w-100, .aspect-ratio-1x1 , #{$product-category-image-custom-classes};
+    }
+}

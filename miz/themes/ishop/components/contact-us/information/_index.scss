@@ -1,0 +1,17 @@
+@use "../../../../../sass/kernel/" as *;
+
+$contact-us-information-custom-classes: ".py-3, .gap-4";
+$contact-us-information-title-custom-classes: ".txt-title, .font-weight-bold, .title-text-color";
+$contact-us-information-direction-custom-classes: ".txt-title, .font-weight-bold, .text-color";
+
+.contact-us-information{
+    @extend .d-flex, .flex-row-reverse, .justify-content-space-between, #{$contact-us-information-custom-classes};
+    
+    .title{
+        @extend #{$contact-us-information-title-custom-classes};
+    }
+    
+    .direction{
+        @extend #{$contact-us-information-direction-custom-classes};
+    }
+}

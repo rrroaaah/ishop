@@ -1,0 +1,26 @@
+@use "../../../../../sass/kernel/" as *;
+
+$article-related-custom-classes: ".bw-1, .bb-style-solid, .border-color, .align-items-center, .font-weight-regular";
+$article-related-cover-image-img-custom-classes: ".radius-all-small";
+$article-related-title-custom-classes: ".title-text-color, .txt-extra-title, .font-weight-bold";
+$article-related-description-custom-classes: ".text-color, .txt-big, .font-weight-bold";
+
+.article-related{
+    @extend .d-flex, #{$article-related-custom-classes};
+
+    .cover-image{
+        @extend .w-60, .d-flex;
+        
+        img{
+            @extend .w-100, .object-cover, #{$article-related-cover-image-img-custom-classes};
+        }
+    }
+
+    .title{
+        @extend #{$article-related-title-custom-classes};
+    }
+
+    .description{
+        @extend #{$article-related-description-custom-classes};
+    }
+}

@@ -1,0 +1,25 @@
+@use "../../../../sass/kernel/" as *;
+
+$logo-banner-custom-classes: ".gap-16";
+$logo-banner-image-custom-classes: ".radius-all-medium";
+$logo-banner-description-custom-classes: ".txt-title";
+$logo-banner-icon-download-banner-custom-classes: ".txt-big-title, .title-text-color";
+
+.logo-banner{
+    @extend .d-flex, .flex-column, #{$logo-banner-custom-classes};
+
+    img{
+        @extend  .w-100, .object-cover, #{$logo-banner-image-custom-classes};
+    }
+    .under-banner{
+        @extend .d-flex, .justify-content-space-between, .align-items-center;
+
+        .description{
+            @extend #{$logo-banner-description-custom-classes};
+        }
+
+        .icon-download-banner{
+            @extend #{$logo-banner-icon-download-banner-custom-classes};
+        }
+    }
+}

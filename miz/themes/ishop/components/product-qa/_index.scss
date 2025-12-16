@@ -1,0 +1,58 @@
+@use "../../../../sass/kernel/" as *;
+
+$product-qa-custom-classes: ".gap-10";
+$product-qa-question-container-custom-classes: ".gap-5";
+$product-qa-question-container-btn-custom-classes: ".gap-3, .py-3, .px-3, .bg-secondary-color, .radius-all-full, .cursor-pointer";
+$product-qa-question-container-btn-count-custom-classes: ".font-weight-bold";
+$product-qa-answer-container-custom-classes: ".gap-3";
+// <!-- .success-dark-color *-->
+$product-qa-answer-container-btn-answer-custom-classes: ".bg-success-light-color, .radius-all-small, .font-weight-bold, .txt-big";
+// <!-- .success-dark-color *-->
+$product-qa-answer-container-answer-description-custom-classes: ".font-weight-medium, .secondary-text-color, .gap-3";
+$product-qa-answer-container-answer-description-text-answer-custom-classes: ".txt-mid-title";
+$product-qa-answer-container-answer-description-user-name-custom-classes: ".secondary-text-color, .txt-big, .gap-1";
+$product-qa-answer-container-answer-description-user-type-custom-classes: ".bg-disabled-regular-color, .on-primary-color, .radius-all-full, .txt-big, .px-1";
+
+.product-qa{
+    @extend .d-flex, .flex-column, #{$product-qa-custom-classes};
+
+    .question-container{
+        @extend .d-flex, .align-items-center, #{$product-qa-question-container-custom-classes};
+
+        .text-quesiton{
+            @extend .font-weight-bold, .text-color, .txt-normal;
+        }
+
+        .btn{
+            @extend .d-flex, .align-items-center, #{$product-qa-question-container-btn-custom-classes};
+
+            .count{
+                @extend #{$product-qa-question-container-btn-count-custom-classes};
+            }
+        }
+    }
+
+    .answer-container{
+        @extend .d-flex, .align-items-start, #{$product-qa-answer-container-custom-classes};
+
+        .btn-answer{
+            @extend #{$product-qa-answer-container-btn-answer-custom-classes};
+        }
+
+        .answer-description{
+            @extend .d-flex, .flex-column, #{$product-qa-answer-container-answer-description-custom-classes};
+
+            .text-answer{
+                @extend #{$product-qa-answer-container-answer-description-text-answer-custom-classes};
+            }
+            
+            .user-name{
+                @extend .d-flex, .align-items-center, #{$product-qa-answer-container-answer-description-user-name-custom-classes};
+                
+                .user-type{
+                    @extend #{$product-qa-answer-container-answer-description-user-type-custom-classes};
+                }
+            }
+        }
+    }
+}
