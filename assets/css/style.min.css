@@ -270,16 +270,30 @@
   border: unset;
 }
 
-#article .accordion-box {
-  background-color: white;
+#article .shadow {
+  box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
 }
 
-.gray {
-  color: gray;
+#article .border-bottom {
+  border-bottom: 1px solid var(--border);
 }
 
-.m-bottom-30 {
-  margin-bottom: -30px;
+#article input {
+  border: 1px solid var(--border-fields);
+}
+
+#article textarea {
+  border: 1px solid var(--border-fields);
+}
+
+#article .bg-btn-variantly {
+  background-color: #0650A3;
+}
+
+.icon-arr-left-foot::before {
+  content: "\e908";
+  font-family: "icomoon";
+  font-style: normal;
 }
 
 @media screen and (width < 992px) {
@@ -294,16 +308,12 @@
 }
 #shoppingcart .shop-process {
   background-image: linear-gradient(to right, #FFA30A 1%, #FFF0D8 1% 100%);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   height: 6px;
 }
 
 #shoppingcart #process .horizontal-line {
   background-color: #EDF2F9;
   height: 1px;
-  padding-right: 1.25rem;
-  padding-left: 1.25rem;
 }
 
 #shoppingcart .back-svg {
@@ -317,12 +327,12 @@
 }
 
 #shoppingcart #process .back-svg.variant {
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   box-shadow: 0px 0px 0px 0px #B2BACE !important;
 }
 
 #shoppingcart .back-svg.variant svg path {
-  stroke: var(--secondary-color) !important;
+  stroke: var(--secondary) !important;
 }
 
 #shoppingcart .count {
@@ -340,13 +350,8 @@
 }
 
 #shoppingcart .cart-number.variant {
-  background-color: var(--primary-color);
-  color: var(--on-primary-color);
-  border: none;
-}
-
-#shoppingcart #cart {
-  padding-top: 0rem !important;
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
 
 #shoppingcart .txt-header > div {
@@ -354,10 +359,6 @@
   border-right: 1px solid rgba(245, 247, 249, 0.7960784314);
   border-left: 1px solid rgba(245, 247, 249, 0.831372549);
   border-bottom: 1px solid rgba(245, 247, 249, 0.5843137255);
-}
-
-#shoppingcart #process {
-  padding-top: 1rem !important;
 }
 
 @media screen and (width < 1400px) {
@@ -602,6 +603,30 @@
   box-shadow: 7px 7px 13px -3px rgba(232, 6, 69, 0.2392156863) !important;
 }
 
+@media screen and (width < 768px) {
+  #faq input {
+    width: 230px;
+  }
+}
+@media screen and (width < 576px) {
+  #faq input {
+    width: 120px;
+  }
+}
+#logopage #wrapper-logo {
+  box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
+}
+
+@media screen and (width < 768px) {
+  #logopage #wrapper-logo > div {
+    row-gap: 40px !important;
+  }
+}
+#my-account #login-wrapper .authbox + p {
+  color: #9ea7be;
+}
+
+#offer #offer-wrapper p span {
 .authbox > div > span > span {
   color: #8c94a9;
 }

@@ -37,8 +37,8 @@
   --bg-list-hover: #F2E0E0;
   --button-text-hover: #FFC6C6;
   --discount-price: #9aa8bc;
-  --fields: #27272A;
-  --border-fields: #3F3F46;
+  --fields: #FCFCFC;
+  --border-fields: #E8EDF3;
   --title-text-fields: #A1A1AA;
   --text-fields: #ECEDEE;
   --black: #000000;
@@ -480,6 +480,10 @@
   background-color: var(--fields);
 }
 
+.border-fields-color {
+  border-color: var(--border-fields);
+}
+
 .text-fields-color {
   color: var(--text-fields);
 }
@@ -643,8 +647,8 @@
   --bg-list-hover: #F2E0E0;
   --button-text-hover: #FFC6C6;
   --discount-price: #9aa8bc;
-  --fields: #27272A;
-  --border-fields: #3F3F46;
+  --fields: #FCFCFC;
+  --border-fields: #E8EDF3;
   --title-text-fields: #A1A1AA;
   --text-fields: #ECEDEE;
   --black: #000000;
@@ -2099,7 +2103,7 @@
   width: 59%;
 }
 
-.w-60, .weblog-card.newest-row .cover-image, .article-related .cover-image {
+.w-60, .article-related .cover-image, .weblog-card.newest-row .cover-image {
   width: 60%;
 }
 
@@ -9787,6 +9791,10 @@
 
 .txt-align-right {
   text-align: right;
+}
+
+.txt-align-justify {
+  text-align: justify;
 }
 
 .txt-decoration-line-through {
