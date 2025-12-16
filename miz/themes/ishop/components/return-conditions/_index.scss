@@ -1,0 +1,14 @@
+@use "../../../../sass/kernel/" as *;
+
+$return-condition-box-custom-classes: ".gap-4, .px-8, .px-xl-4, .py-8, .radius-all-medium, .border-color, .bw-2, .border-style-dashed";
+// <!--* .line-height-3 *-->
+$return-condition-box-description-custom-classes: ".secondary-text-color, .txt-big";
+// <!--* .line-height-3 *-->
+
+.return-condition-box{
+    @extend .d-flex, #{$return-condition-box-custom-classes};
+
+    .description{
+        @extend #{$return-condition-box-description-custom-classes};
+    }
+}
