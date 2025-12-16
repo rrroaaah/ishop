@@ -609,11 +609,6 @@
   line-height: 2.5rem;
 }
 
-@media screen and (width < 768px) {
-  #logopage #wrapper-logo > div {
-    row-gap: 40px !important;
-  }
-}
 #my-account .authbox + p {
   color: #9ea7be;
 }
