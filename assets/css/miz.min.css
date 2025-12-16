@@ -420,7 +420,7 @@
   background-color: var(--section-title-text);
 }
 
-.border-color, .weblog-card.newest-row, .weblog-card.newest-column, .return-condition-box, .rating-card .card-footer .comments-number, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
+.border-color, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .return-condition-box, .rating-card .card-footer .comments-number, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
   border-color: var(--border);
 }
 
@@ -678,7 +678,7 @@
   border-width: 0px;
 }
 
-.bw-1, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
+.bw-1, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
   border-width: 1px;
 }
 
@@ -789,7 +789,7 @@
   border-end-end-radius: 4px;
 }
 
-.radius-all-extra-small, .product-card .countdown, .accordion-group .accordion .accordion-box .accordion-body {
+.radius-all-extra-small, .product-gallery.slider .slider-toggles .slider-toggle, .product-card .countdown, .accordion-group .accordion .accordion-box .accordion-body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -906,7 +906,7 @@
   border-end-end-radius: 17px;
 }
 
-.radius-all-medium, .return-condition-box, .rating-card, .product-category, .product-card, .logo-banner img, .article-banner-weblog {
+.radius-all-medium, .product-gallery.slider .slider-wrapper, .return-condition-box, .rating-card, .product-category, .product-card, .logo-banner img, .article-banner-weblog {
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
@@ -1054,7 +1054,7 @@
   border-inline-end-style: solid;
 }
 
-.border-style-solid, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit {
+.border-style-solid, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit {
   border-top-style: solid;
   border-left-style: solid;
   border-bottom-style: solid;
@@ -1503,7 +1503,7 @@
   display: none;
 }
 
-.d-flex, .product-qa, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment, .product-comment .information-comment, .product-comment .information-comment .rating-star, .product-comment .information-comment .btn, .product-comment .text-container, .product-comment .features-container, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container .modal-content, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .return-condition-box, .rating-card, .rating-card .card-header, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress, .progress-bar, .product-details, .product-category, .product-card .image-container, .product-card .image-container .image-box, .product-card .card-body, .product-card .card-body .discount-box, .product-card .card-body .discount-box .discount-percentage, .logo-banner, .logo-banner .under-banner, .feature-description-box.text-type, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .contact-us-information, .privilege, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content {
+.d-flex, .product-gallery.slider, .product-qa, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment, .product-comment .information-comment, .product-comment .information-comment .rating-star, .product-comment .information-comment .btn, .product-comment .text-container, .product-comment .features-container, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container .modal-content, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .return-condition-box, .rating-card, .rating-card .card-header, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress, .progress-bar, .product-details, .product-category, .product-card .image-container, .product-card .image-container .image-box, .product-card .card-body, .product-card .card-body .discount-box, .product-card .card-body .discount-box .discount-percentage, .logo-banner, .logo-banner .under-banner, .feature-description-box.text-type, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .contact-us-information, .privilege, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content {
   display: flex;
 }
 
@@ -1511,7 +1511,7 @@
   display: flex;
 }
 
-.d-grid, .product-comment .comment-gallery, .accordion-group .accordion .accordion-box {
+.d-grid, .product-gallery.slider .slider-toggles, .product-comment .comment-gallery, .accordion-group .accordion .accordion-box {
   display: grid;
 }
 
@@ -2831,7 +2831,7 @@
   height: 98%;
 }
 
-.h-100, .biography::after, .article-banner-weblog::after {
+.h-100, .product-gallery.slider .slider-wrapper .slider-content img, .biography::after, .article-banner-weblog::after {
   height: 100%;
 }
 
@@ -2855,7 +2855,7 @@
   flex-direction: row-reverse;
 }
 
-.flex-column, .product-qa, .product-qa .answer-container .answer-description, .product-comment, .product-comment .text-container, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container .modal-content, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .rating-card, .rating-card .card-header, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-footer .comments-number, .product-details, .product-category, .product-card .card-body, .product-card .card-body .discount-box, .logo-banner, .feature-description-box.text-type, .accordion-group, .contact-us-social-media, .privilege, .biography .cover-on-image, .article-banner-weblog, .article-banner-weblog .banner-content {
+.flex-column, .product-gallery.slider, .product-qa, .product-qa .answer-container .answer-description, .product-comment, .product-comment .text-container, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container .modal-content, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .rating-card, .rating-card .card-header, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-footer .comments-number, .product-details, .product-category, .product-card .card-body, .product-card .card-body .discount-box, .logo-banner, .feature-description-box.text-type, .accordion-group, .contact-us-social-media, .privilege, .biography .cover-on-image, .article-banner-weblog, .article-banner-weblog .banner-content {
   flex-direction: column;
 }
 
@@ -3159,7 +3159,7 @@
   align-items: flex-start;
 }
 
-.align-items-center, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .modal-container, .rating-card .card-header, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress-bar, .product-details.rating, .product-category, .product-card .card-body .discount-box .discount-percentage, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .article-related {
+.align-items-center, .product-gallery.slider, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .modal-container, .rating-card .card-header, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress-bar, .product-details.rating, .product-category, .product-card .card-body .discount-box .discount-percentage, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .article-related {
   align-items: center;
 }
 
@@ -3391,7 +3391,7 @@
   grid-template-columns: repeat(6, 1fr);
 }
 
-.grid-7 {
+.grid-7, .product-gallery.slider .slider-toggles {
   grid-template-columns: repeat(7, 1fr);
 }
 
@@ -8191,7 +8191,7 @@
   gap: 0.5rem;
 }
 
-.gap-3, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-comment .information-comment .btn, .weblog-card.newest-column .card-body, .rating-card .card-header, .product-category, .feature-description-box.text-type {
+.gap-3, .product-gallery.slider .slider-toggles, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-comment .information-comment .btn, .weblog-card.newest-column .card-body, .rating-card .card-header, .product-category, .feature-description-box.text-type {
   gap: 0.75rem;
 }
 
@@ -8199,7 +8199,7 @@
   gap: 0.75rem;
 }
 
-.gap-4, .product-comment .features-container .features .feature, .return-condition-box, .rating-card .card-body, .rating-card .card-footer .comments-number, .accordion-group, .contact-us-information {
+.gap-4, .product-gallery.slider, .product-comment .features-container .features .feature, .return-condition-box, .rating-card .card-body, .rating-card .card-footer .comments-number, .accordion-group, .contact-us-information {
   gap: 1rem;
 }
 
@@ -22688,11 +22688,11 @@ dialog {
   background: none;
 }
 
-.cursor-pointer, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .accordion-group .accordion .accordion-box {
+.cursor-pointer, .product-gallery.slider .slider-toggles .slider-toggle, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .accordion-group .accordion .accordion-box {
   cursor: pointer;
 }
 
-.aspect-ratio-1x1, .product-category, .product-category img, .product-card .product-colors span {
+.aspect-ratio-1x1, .product-gallery.slider .slider-wrapper, .product-category, .product-category img, .product-card .product-colors span {
   aspect-ratio: 1/1;
 }
 
@@ -22776,7 +22776,7 @@ dialog {
   overflow: scroll;
 }
 
-.overflow-hidden, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container, .modal-container .modal-content, .progress, .progress-bar, .accordion-group.accordion-compact, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-body, .biography, .article-banner-weblog {
+.overflow-hidden, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container, .modal-container .modal-content, .progress, .progress-bar, .accordion-group.accordion-compact, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-body, .biography, .article-banner-weblog {
   overflow: hidden;
 }
 
@@ -22796,7 +22796,7 @@ dialog {
   overflow-y: hidden;
 }
 
-.position-relative, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
+.position-relative, .product-gallery.slider .slider-wrapper, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
   position: relative;
 }
 
@@ -22880,7 +22880,7 @@ dialog {
   object-fit: fill;
 }
 
-.object-contain {
+.object-contain, .product-gallery.slider .slider-wrapper .slider-content img {
   object-fit: contain;
 }
 

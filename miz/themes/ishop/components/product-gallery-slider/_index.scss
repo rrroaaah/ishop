@@ -1,0 +1,29 @@
+@use "../../../../sass/kernel/" as *;
+
+$product-gallery-slider-custom-classes: ".w-100, .gap-4";
+$product-gallery-slider-wrapper-custom-classes: ".aspect-ratio-1x1, .w-100, .radius-all-medium, .border-color, .bw-1, .border-style-solid";
+$product-gallery-slider-content-image-custom-classes: ".w-100, .h-100, .object-contain";
+$product-gallery-slider-toggles-custom-classes: ".grid-7, .gap-3";
+$product-gallery-slider-toggle-custom-classes: ".radius-all-extra-small";
+
+.product-gallery.slider{
+    @extend .d-flex, .flex-column, .align-items-center, #{$product-gallery-slider-custom-classes};
+
+    .slider-wrapper{
+        @extend .position-relative, .overflow-hidden, #{$product-gallery-slider-wrapper-custom-classes};
+        
+        .slider-content{
+            img{
+                @extend #{$product-gallery-slider-content-image-custom-classes};
+            }
+        }
+    }
+
+    .slider-toggles{
+        @extend .d-grid, #{$product-gallery-slider-toggles-custom-classes};
+
+        .slider-toggle{
+            @extend .w-100, .cursor-pointer, #{$product-gallery-slider-toggle-custom-classes};
+        }
+    }
+}
