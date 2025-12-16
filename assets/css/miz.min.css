@@ -164,11 +164,11 @@
   height: 0vh;
 }
 
-.w-fit-content, .product-comment .features-container .show-more, .product-details {
+.w-fit-content, .tooltip span, .product-comment .features-container .show-more, .product-details {
   width: fit-content;
 }
 
-.h-fit-content {
+.h-fit-content, .tooltip span {
   height: fit-content;
 }
 
@@ -316,7 +316,7 @@
   color: var(--primary);
 }
 
-.bg-primary-color, .product-comment .information-comment .user-type, .progress-bar, .product-card .countdown, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.warranty {
+.bg-primary-color, .tooltip span, .product-comment .information-comment .user-type, .progress-bar, .product-card .countdown, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.warranty {
   background-color: var(--primary);
 }
 
@@ -324,7 +324,7 @@
   border-color: var(--on-primary);
 }
 
-.on-primary-color, .product-qa .answer-container .answer-description .user-name .user-type, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.installments, .article-banner-weblog {
+.on-primary-color, .tooltip span, .product-qa .answer-container .answer-description .user-name .user-type, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.installments, .article-banner-weblog {
   color: var(--on-primary);
 }
 
@@ -780,7 +780,7 @@
   border-end-end-radius: 8px;
 }
 
-.radius-all-small, .product-qa .answer-container .btn-answer, .product-comment .features-container .show-more .btn, .product-comment .comment-gallery img, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container .modal-content, .product-details, .product-details.rating, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments, .accordion-group .accordion, .privilege, .biography, .biography::after, .article-related .cover-image img, .article-banner-weblog::after {
+.radius-all-small, .tooltip span, .product-qa .answer-container .btn-answer, .product-comment .features-container .show-more .btn, .product-comment .comment-gallery img, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container .modal-content, .product-details, .product-details.rating, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments, .accordion-group .accordion, .privilege, .biography, .biography::after, .article-related .cover-image img, .article-banner-weblog::after {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -1006,7 +1006,7 @@
   border-inline-end-style: solid;
 }
 
-.border-style-solid, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit {
+.border-style-solid, .tooltip span::after, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit {
   border-top-style: solid;
   border-left-style: solid;
   border-bottom-style: solid;
@@ -4267,7 +4267,7 @@
   padding-right: 0.25rem;
 }
 
-.px-2, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
+.px-2, .tooltip span, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -4567,7 +4567,7 @@
   padding-bottom: 0rem;
 }
 
-.py-1, .product-comment .information-comment .user-type, .summary-opinion mark, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
+.py-1, .tooltip span, .product-comment .information-comment .user-type, .summary-opinion mark, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
@@ -9317,7 +9317,7 @@
   text-transform: capitalize;
 }
 
-.txt-align-center, .rating-card .card-footer .comments-number .description {
+.txt-align-center, .tooltip span, .rating-card .card-footer .comments-number .description {
   text-align: center;
 }
 
@@ -21656,7 +21656,7 @@ dialog {
   aspect-ratio: 3/3;
 }
 
-.opacity-0, .accordion-group .accordion .accordion-box .accordion-body, .accordion-group .accordion .accordion-body {
+.opacity-0, .tooltip span, .accordion-group .accordion .accordion-box .accordion-body, .accordion-group .accordion .accordion-body {
   opacity: 0;
 }
 
@@ -21696,7 +21696,7 @@ dialog {
   opacity: 0.9;
 }
 
-.opacity-10, .accordion-group .accordion.active .accordion-body {
+.opacity-10, .tooltip:hover span, .accordion-group .accordion.active .accordion-body {
   opacity: 1;
 }
 
@@ -21724,11 +21724,11 @@ dialog {
   overflow-y: hidden;
 }
 
-.position-relative, .product-gallery.slider .slider-wrapper, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
+.position-relative, .tooltip, .product-gallery.slider .slider-wrapper, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
   position: relative;
 }
 
-.position-absolute, .product-card .product-colors, .product-card .image-container .feature, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
+.position-absolute, .tooltip span, .tooltip span::after, .product-card .product-colors, .product-card .image-container .feature, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
   position: absolute;
 }
 
@@ -21760,7 +21760,7 @@ dialog {
   z-index: 0;
 }
 
-.z-index-1, .biography::after, .article-banner-weblog::after {
+.z-index-1, .tooltip span, .biography::after, .article-banner-weblog::after {
   z-index: 1;
 }
 
@@ -22001,6 +22001,63 @@ dialog {
 }
 .product-comment .information-comment .rating-star i.active {
   color: #DEA444;
+}
+.tooltip.tooltip-top span {
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tooltip.tooltip-top span::after {
+  border-top-color: inherit !important;
+  left: 50%;
+  top: 100%;
+}
+.tooltip.tooltip-bottom span {
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tooltip.tooltip-bottom span::after {
+  border-bottom-color: inherit !important;
+  left: 50%;
+  bottom: 100%;
+}
+.tooltip.tooltip-right span {
+  left: 100%;
+  top: 50%;
+  transform: translateX(25%) translateY(-50%);
+}
+.tooltip.tooltip-right span::after {
+  border-right-color: inherit !important;
+  right: 100%;
+  top: 50%;
+  transform: translateX(0%) translateY(-50%);
+}
+.tooltip.tooltip-left span {
+  right: 100%;
+  top: 50%;
+  transform: translateX(-25%) translateY(-50%);
+}
+.tooltip.tooltip-left span::after {
+  border-left-color: inherit !important;
+  left: 100%;
+  top: 50%;
+  transform: translateX(50%) translateY(-50%);
+}
+.tooltip span {
+  border-color: var(--primary);
+  transition: 0.2s linear;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.tooltip span::after {
+  content: "";
+  margin-left: -5px;
+  border-width: 5px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
 
 /*# sourceMappingURL=miz.min.css.map */
