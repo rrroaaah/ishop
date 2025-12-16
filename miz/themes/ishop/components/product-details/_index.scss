@@ -1,0 +1,22 @@
+@use "../../../../sass/kernel/" as *;
+
+$product-details-custom-classes: ".bw-1, .border-style-solid, .border-color, .radius-all-small, .py-3, .pis-4, .pie-14, .gap-1";
+$product-details-rating-custom-classes: ".bw-1, .border-style-solid, .border-color, .radius-all-small, .py-3, .px-4, .gap-14";
+$product-details-title-custom-classes: ".txt-big, .font-weight-bold, .secondary-text-color";
+$product-details-description-custom-classes: ".font-weight-bold, .txt-title";
+
+.product-details{
+    @extend .w-fit-content, .d-flex, .flex-column, .align-items-start, .justify-content-start, #{$product-details-custom-classes};
+
+    .title{
+        @extend #{$product-details-title-custom-classes};
+    }
+
+    .description{
+        @extend #{$product-details-description-custom-classes};
+    }
+
+    &.rating{
+        @extend .flex-row, .align-items-center, #{$product-details-rating-custom-classes};
+    }
+}

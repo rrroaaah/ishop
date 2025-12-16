@@ -1,0 +1,21 @@
+@use "../../../../sass/kernel/" as *;
+
+$product-button-features:(
+    check-payment : ".py-1, .px-2, .bg-on-secondary-color, .radius-all-small, .on-primary-color, .txt-normal, .font-weight-bold",
+    original : ".py-1, .px-2, .bg-success-regular-color, .radius-all-small, .on-primary-color, .txt-normal, .font-weight-bold",
+    fake : ".py-1, .px-2, .bg-warning-dark-color, .radius-all-small, .on-primary-color, .txt-normal, .font-weight-bold",
+    warranty : ".py-1, .px-2, .bg-primary-color, .radius-all-small, .on-primary-color, .txt-normal, .font-weight-bold",
+    // <!--* bg-card-color => bg-white-color *-->
+    payable-credit : ".py-1, .px-2, .bg-card-color, .radius-all-small, .on-secondary-color, .txt-normal, .font-weight-bold, .border-color, .bw-1, .border-style-solid",
+    // <!--* bg-card-color => bg-white-color *-->
+    installments : ".py-1, .px-2, .bg-information-regular-color, .radius-all-small, .on-primary-color, .txt-normal, .font-weight-bold",
+);
+
+button.product-button-feature{
+    // @extend .position-absolute, .left-0;
+    @each $product-button-feature-class , $product-button-feature-custom-classes in $product-button-features{
+        &.#{$product-button-feature-class}{
+            @extend #{$product-button-feature-custom-classes};
+        }
+    }
+}

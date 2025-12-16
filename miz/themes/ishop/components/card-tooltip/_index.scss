@@ -1,0 +1,83 @@
+@use "../../../../sass/config/_dims" as *;
+@use "../../../../sass/kernel/" as *;
+@use 'sass:map';
+
+$tooltip-custom-classes:".px-2, .py-1, .on-primary-color, .radius-all-small, .bg-primary-color";
+$tooltip-triangle-color:"primary";
+$tooltip-transition:0.2s linear;
+
+.tooltip{
+    @extend .position-relative;
+
+    &.tooltip-top{
+        span{
+            bottom: 150%;
+            left: 50%;
+            transform: translateX(-50%);
+            &::after{
+                border-top-color: inherit !important;
+                left: 50%;
+                top: 100%;
+            }
+        }
+    }
+    &.tooltip-bottom{
+        span{
+            top: 150%;
+            left: 50%;
+            transform: translateX(-50%);
+            &::after{
+                border-bottom-color: inherit !important;
+                left: 50%;
+                bottom: 100%;
+            }
+        }
+    }
+    &.tooltip-right{
+        span{
+            left: 100%;
+            top: 50%;
+            transform: translateX(25%) translateY(-50%);
+            &::after{
+                border-right-color: inherit !important;
+                right: 100%;
+                top: 50%;
+                transform: translateX(0%) translateY(-50%);
+            }
+        }
+    }
+    &.tooltip-left{
+        span{
+            right: 100%;
+            top: 50%;
+            transform: translateX(-25%) translateY(-50%);
+            &::after{
+                border-left-color: inherit !important;
+                left: 100%;
+                top: 50%;
+                transform: translateX(50%) translateY(-50%);
+            }
+        }
+    }
+    span{
+        border-color: get-color($tooltip-triangle-color);
+        transition: $tooltip-transition;
+        white-space: nowrap;
+        pointer-events: none;
+        @extend .txt-align-center, .position-absolute, .z-index-1, .w-fit-content, .h-fit-content, .opacity-0, #{$tooltip-custom-classes};
+
+        &::after {
+            content: ""; 
+            margin-left: -5px;  
+            border-width: 5px;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            @extend .position-absolute, .border-style-solid;
+        }
+    }
+    &:hover span{
+        @extend .opacity-#{calc(1 / map.get($conf-opacity , factor))}
+    }
+}

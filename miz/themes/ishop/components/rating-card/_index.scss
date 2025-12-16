@@ -1,0 +1,84 @@
+@use "../../../../sass/kernel/" as *;
+
+$rating-card-box-shadow: inset 34px 34px 52px 29px rgba(0, 0, 0, 0.03), 90px 160px 200px -120px rgba(0, 0, 0, 0.2);
+$rating-card-custom-classes: ".gap-7, .bg-color, .radius-all-medium, .py-13, .px-10";
+$rating-card-header-custom-classes: ".gap-3, .pb-7";
+$rating-card-header-title-custom-classes: ".text-color, .font-weight-bold";
+$rating-card-header-rating-star-custom-classes: ".gap-1";
+$rating-card-header-rating-star-icon-color: #DEA444;
+$rating-card-header-rating-count-custom-classes: ".gap-1";
+$rating-card-header-rating-count-description-custom-classes: ".secondary-text-color, .txt-small, .font-weight-bold";
+$rating-card-header-rating-count-number-custom-classes: ".secondary-text-color, .txt-small, .font-weight-bold";
+$rating-card-body-custom-classes: ".gap-4";
+$rating-card-body-percentage-point-custom-classes: ".gap-2";
+$rating-card-body-percentage-point-description-container-custom-classes: ".gap-2";
+$rating-card-body-percentage-point-description-container-comment-number-custom-classes: ".secondary-text-color, .txt-subtitle, .font-weight-bold";
+$rating-card-footer-custom-classes: ".gap-2";
+$rating-card-footer-comments-number-custom-classes: ".gap-4, .pie-2, .bw-2, .border-color, .bie-style-solid";
+$rating-card-footer-comments-number-count-custom-classes: ".font-weight-bold, .txt-title, .text-color";
+$rating-card-footer-comments-number-description-custom-classes: ".txt-big, .secondary-text-color, .font-weight-bold, .txt-align-center";
+
+.rating-card{
+    box-shadow: $rating-card-box-shadow;
+    @extend .d-flex, .flex-column, .justify-content-center, .position-relative, .w-100, #{$rating-card-custom-classes};
+
+    .card-header{
+        @extend .d-flex, .flex-column, .align-items-center, #{$rating-card-header-custom-classes};
+
+        .title{
+            @extend #{$rating-card-header-title-custom-classes};
+        }
+
+        .rating-star{
+            @extend .d-flex, #{$rating-card-header-rating-star-custom-classes};
+
+            i.active{
+                color: $rating-card-header-rating-star-icon-color;
+            }
+        }
+
+        .rating-count{
+            @extend .d-flex, .justify-content-space-between, #{$rating-card-header-rating-count-custom-classes};
+
+            .description{
+                @extend #{$rating-card-header-rating-count-description-custom-classes};
+            }
+            
+            .number{
+                @extend #{$rating-card-header-rating-count-number-custom-classes};
+            }
+        }
+    }
+    
+    .card-body{
+        @extend .d-flex, .flex-column, #{$rating-card-body-custom-classes};
+
+        .percentage-point{
+            @extend .d-flex, .flex-column, #{$rating-card-body-percentage-point-custom-classes};
+
+            .description-container{
+                @extend .d-flex, .justify-content-space-between, .align-items-center, #{$rating-card-body-percentage-point-description-container-custom-classes};
+                
+                .comment-number{
+                    @extend #{$rating-card-body-percentage-point-description-container-comment-number-custom-classes};
+                }
+            }
+        }
+    }
+    
+    .card-footer{
+        @extend .d-flex, .align-items-center, .justify-content-center, #{$rating-card-footer-custom-classes};
+
+        .comments-number{
+            @extend .d-flex, .flex-column, .align-items-center, #{$rating-card-footer-comments-number-custom-classes};
+
+            .count{
+                @extend #{$rating-card-footer-comments-number-count-custom-classes};
+            }
+            
+            .description{
+                @extend #{$rating-card-footer-comments-number-description-custom-classes};
+            }
+        }
+    }
+}
