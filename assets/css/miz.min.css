@@ -576,6 +576,10 @@
   background-color: var(--disabled-dark);
 }
 
+.border-information-regular-color {
+  border-color: var(--information-regular);
+}
+
 .bg-information-regular-color, button.product-button-feature.installments {
   background-color: var(--information-regular);
 }
