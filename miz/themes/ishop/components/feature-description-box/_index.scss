@@ -1,0 +1,23 @@
+@use "../../../../sass/kernel/" as *;
+
+$feature-description-box-text-type-custom-classes: ".gap-3";
+$feature-description-box-text-type-title-custom-classes: ".txt-big, .secondary-text-color";
+// <!--* line height , text-justify , ellipsis-4 *-->
+$feature-description-box-text-type-description-custom-classes: ".secondary-text-color, .txt-big, .font-weight-bold";
+// <!--* line height , text-justify , ellipsis-4 *-->
+
+.feature-description-box.text-type{
+    @extend .d-flex, .flex-column, #{$feature-description-box-text-type-custom-classes};
+
+    .title{
+        @extend #{$feature-description-box-text-type-title-custom-classes};
+    }
+
+    .description{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        @extend #{$feature-description-box-text-type-description-custom-classes};
+    }
+}
