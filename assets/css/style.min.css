@@ -251,6 +251,14 @@
   flex-shrink: 0;
 }
 
+#about-us .line-height, #achievements .line-height, #proservices .line-height {
+  line-height: 2.5rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
 .icon-share::before {
   content: "\e92a";
   font-family: "icomoon";
@@ -416,190 +424,147 @@
     font-size: 0.8rem;
   }
 }
-#compare-page .product-sales {
-  border-bottom: none;
-  border-top: none;
-}
-
-#compare-page section {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  width: 1300px;
-}
-
-#compare-page section div > div:nth-child(4) a {
-  background-color: #16A8B3;
-}
-
-#compare-page .border-left {
-  border-left: 1px solid var(--divider-color);
-}
-
-#compare-page .border-bottom {
-  border-bottom: 1px solid var(--divider-color);
-}
-
-#compare-page section .margin-top {
-  margin-top: -10px;
-}
-
-#compare-page section .secondary-text {
-  color: #5e6a8d;
-}
-
-#compare-page .horizental-line {
-  width: 90%;
-}
-
-#conectus input, textarea {
+#contact-ways input, textarea {
   outline: none;
-  color: #020d2b;
-  border: none;
   border-bottom: 1px solid #E6E9EE;
 }
 
-#conectus #conect-ways {
+#contact-ways {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
   padding-bottom: 8rem !important;
   box-shadow: 0px 1px 1px 0px var(--shadow-color);
 }
 
-#conectus .wrapper-form {
+#contact-ways .wrapper-form {
   box-shadow: 0px 1px 1px 0px var(--shadow-color);
 }
 
-#conectus input::placeholder {
+#contact-ways input::placeholder {
   opacity: 0.8;
   color: #021959;
 }
 
-#conectus textarea::placeholder {
+#contact-ways textarea::placeholder {
   opacity: 0.8;
   color: #021959;
   line-height: 30px;
 }
 
-#conectus .icon-arrow-left::before {
+#contact-ways .icon-arrow-left::before {
   content: "\e92c";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .send-btn {
+#contact-ways .send-btn {
   background-color: #0650A3;
   transition: 0.3s;
 }
 
-#conectus .send-btn:hover {
+#contact-ways .send-btn:hover {
   box-shadow: 0 6px 9px -6px rgba(6, 80, 163, 0.8);
 }
 
-#conectus .icon-bookmark::before {
+#contact-ways .icon-bookmark::before {
   content: "\e90f";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .border-bottom {
+#contact-ways .border-bottom {
   border-bottom: 1px solid #E6E9EE;
 }
 
-#conectus .icon-envelope::before {
+#contact-ways .icon-envelope::before {
   content: "\e912";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .icon-phone::before {
+#contact-ways .icon-phone::before {
   content: "\e916";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .icon-calender::before {
+#contact-ways .icon-calender::before {
   content: "\e910";
   font-family: icomoon;
   font-style: normal;
 }
 
-#conectus .icon-twitter::before {
+#contact-ways .icon-twitter::before {
   content: "\e91c";
   font-family: icomoon;
   font-style: normal;
   color: #66749B;
 }
 
-#conectus .icon-whatsapp::before {
+#contact-ways .icon-whatsapp::before {
   content: "\e91e";
   font-family: icomoon;
   font-style: normal;
   color: #66749B;
 }
 
-#conectus .icon-telegram::before {
+#contact-ways .icon-telegram::before {
   content: "\e91b";
   font-family: icomoon;
   font-style: normal;
   color: #66749B;
 }
 
-#conectus .icon-facebook::before {
+#contact-ways .icon-facebook::before {
   content: "\e913";
   font-family: "icomoon";
   font-style: normal;
   color: #66749B;
 }
 
-#conectus .vertical-line {
+#contact-ways .vertical-line {
   background-color: #E6E9EE;
   width: 1px;
   height: 3rem;
 }
 
-#conectus iframe {
-  height: auto;
-}
-
 @media screen and (width < 1400px) {
-  #conectus #conect-ways {
+  #contact-ways {
     padding-left: 8rem !important;
     padding-right: 8rem !important;
   }
 }
 @media screen and (width < 1200px) {
-  #conect-ways > div {
+  #contact-ways > div {
     flex-wrap: wrap !important;
   }
-  #conectus .wrapper-form {
+  #contact-ways .wrapper-form {
     padding-top: 3rem !important;
   }
 }
 @media screen and (width < 992px) {
-  #conectus iframe {
+  #contact-ways iframe {
     order: 1 !important;
   }
 }
 @media screen and (width < 768px) {
-  #conectus iframe {
+  #contact-ways iframe {
     order: 0 !important;
     padding-top: 2.5rem !important;
   }
 }
 @media screen and (width < 576px) {
-  #conectus #conect-ways {
+  #contact-ways {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
   }
 }
-#faq {
-  height: 0 !important;
+#faq-wrapper .faq-search-form {
+  background-color: #f8f9fb;
 }
 
-#faq .icon-search::before {
-  content: "\e919";
-  font-family: icomoon;
-  font-style: normal;
+#faq-wrapper input::placeholder {
+  font-weight: 100;
 }
 
 #faq .faq-search-form {
@@ -717,32 +682,48 @@
   color: #9ea7be;
 }
 
-#offer #offer-wrapper p span {
+.authbox {
+  box-shadow: 0px 33px 126px 20px rgba(154, 168, 188, 0.06);
+  width: 430px;
+}
+
+.authbox form {
+  border: 1px solid var(--border);
+}
+
+.authbox input {
+  border: unset;
+  outline: none;
+}
+
+.authbox label {
+  letter-spacing: 0.9rem;
   font-weight: 600;
-  color: rgba(2, 25, 89, 0.7);
+  color: #021959;
 }
 
-#offer .product-card {
-  width: auto !important;
+.authbox > div + div + a {
+  box-shadow: 7px 7px 13px -3px rgba(232, 6, 69, 0.2392156863) !important;
 }
 
-#offer #offer-wrapper .product-card {
-  box-shadow: unset;
+.authbox > div > span > span {
+  color: #8c94a9;
 }
 
-#offer #offer-wrapper .product-card:hover {
-  background-color: #F3F5F8;
-  transition: var(--transition-duration);
+.authbox > div > span {
+  font-weight: 600;
 }
 
-#offer #offer-wrapper .product-card > div:nth-child(2) img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
+.authbox p span {
+  background: #fff077;
+  box-shadow: 0px 3px 32px 6px rgba(255, 240, 119, 0.26);
+  letter-spacing: 0.5rem;
+  margin: auto;
 }
 
-#offer #offer-wrapper .container + a {
-  background-color: #E8EBF4;
+.authbox form + p {
+  font-weight: 600;
+  font-size: 0.7rem;
 }
 
 /*
@@ -1630,6 +1611,25 @@ aside {
 ::placeholder {
   font-weight: 700;
   color: #4D5E8A;
+}
+
+.veiwall .icon-arr-left-foot {
+  box-shadow: 3px 4px 9px 0px rgba(232, 6, 69, 0.2117647059) !important;
+  border-radius: 20px 8px 8px 20px;
+}
+
+.veiwall .icon-arr-left-foot::before {
+  content: "\e908";
+  font-family: "icomoon";
+  font-style: normal;
+}
+
+.border-unset {
+  border: unset;
+}
+
+.outline-unset {
+  outline: unset;
 }
 
 @media screen and (width < 1200px) {
