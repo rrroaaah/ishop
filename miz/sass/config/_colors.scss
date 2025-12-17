@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 $backgrounds:(primary,on-primary,primary-light,primary-dark,secondary,on-secondary,secondary-light,secondary-dark,specific,button,fields,text,title-text,secondary-text,section-title-text,border,divider,shadow,icon,menu,card,background,section,hover,button-hover,text-hover,button-text-hover,danger-regular,disabled-regular,warning-regular,warning-light,warning-dark,success-regular,success-light,success-dark,danger-dark,danger-light,disabled-light,disabled-dark,information-regular,information-light,information-dark,border-secondary,unCommon,"transparent");
 $colors:(primary-light,on-primary,on-secondary,icon,text,specific,primary,secondary,highlight-text, library-icon,title-text,button-text,text-fields,secondary-text);
 $borders:(divider,border,primary,on-primary,border-fields);
-=======
+
 $backgrounds: (
     primary,
     on-primary,
@@ -84,8 +83,8 @@ $borders: (
     primary,
     on-primary,
     information-regular
+ ,border-fields
 );
->>>>>>> 63a9aa7bda4d64a8e63fdaf6b5abc3f8c7365c46
 
 $light-color-palette: (
     primary:blue,
