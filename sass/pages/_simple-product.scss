@@ -10,89 +10,44 @@
 #simple-product #productpage .divider {
     width: 2px;
     height: 100%;
-    background: var(--border-color);
+    background: var(--border);
 }
 
 #simple-product #productpage .featurebox:nth-child(4):after {
     content: "";
     width: 0px;
     height: 0%;
-    background: var(--border-color);
+    background: var(--border);
 }
 
 #simple-product #productpage .featurebox img {
     width: 25px;
 }
 
-#simple-product #productpage .product-details span {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical
-}
-
-#simple-product #productpage .dark-skinned {
-    background-color: #02195c;
-}
-
 #simple-product #productpage>div>div:nth-child(3)>div:nth-child(1)>div>div>div:nth-child(1)>span::after {
     content: "";
     width: 100%;
     height: 1px;
-    background: var(--border-color);
+    background: var(--border);
     margin-top: 1rem;
 }
 
-#simple-product #productpage .blue {
-    background-color: #0087f8;
-}
-
-#simple-product #productpage .green {
-    background-color: #3eb580;
-    color: white;
-}
-
 #simple-product #productpage>div>div:nth-child(3)>div:nth-child(1)>div:nth-child(2) {
-    border-top: 1px dashed var(--border-color);
-    border-bottom: 1px dashed var(--border-color);
-}
-
-#simple-product .brown {
-    background-color: #dda03a;
-}
-
-#simple-product #productpage>.brown {
-    background-color: #dda03a;
-}
-
-#simple-product #productpage>.red {
-    background-color: #f14559;
-}
-
-#simple-product #productpage>div>div:nth-child(3)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div>p {
-    color: #7a87b2;
-    font-weight: 600;
-}
-
-#simple-product #productpage>div>div:nth-child(3)>div:nth-child(2)>a {
-    background-color: #f14559;
-}
-
-#simple-product #productpage>div>div:nth-child(2)>span {
-    color: #a2a9be;
+    border-top: 1px dashed var(--border);
+    border-bottom: 1px dashed var(--border);
 }
 
 #simple-product #productpage>div>div:nth-child(3)>div:nth-child(1)>div>span:nth-child(1)::after {
     content: "";
     width: 100%;
     height: 1px;
-    background: var(--border-color);
+    background: var(--border);
     margin-top: 0.5rem;
 }
 
 #simple-product #productpage .horizental-line {
     width: 80%;
-    background-color: var(--divider-color);
+    background-color: var(--divider);
     height: 1px;
 }
 
@@ -107,7 +62,7 @@
 }
 
 #simple-product .swiper-slide {
-    border-right: 1px solid var(--border-color);
+    border-right: 1px solid var(--border);
 }
 
 #simple-product .swiper-slide h2 {
@@ -118,19 +73,19 @@
 }
 
 #simple-product #comented-link .product-reviews {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border);
     padding-bottom: 2.5rem;
 }
 
 #simple-product #question-link .tag-item~div {
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--border);
     padding-top: 2.5rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border);
     padding-bottom: 2.5rem;
 }
 
 #simple-product #question-link .tag-item+div+div+div .product-content~div {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border);
     padding-bottom: 2.5rem;
 }
 
@@ -152,12 +107,7 @@
 }
 
 #simple-product main>div:nth-child(1) {
-    border-bottom: 1px solid var(--border-color);
-}
-
-#simple-product main>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>span:nth-child(2) {
-    background: #FFF077;
-    border-radius: 3px;
+    border-bottom: 1px solid var(--border);
 }
 
 #simple-product main>div:nth-child(1)>div:nth-child(2)>div:nth-child(2) img {
@@ -165,17 +115,12 @@
     height: 27px;
 }
 
-#simple-product #productpage>div>div:nth-child(2) {
-    margin-top: -25px;
-}
-
 #simple-product .vertical-line {
     height: 0.5rem;
-    background-color: var(--divider-color);
+    background-color: var(--divider);
     width: 1px;
 }
 #simple-product .popup-all .pop-product .fa-solid.fa-check {
-    background-color: #3EB580;
     width: 40px;
   height: 40px;
 }
@@ -266,6 +211,29 @@
   top: 100px;
   bottom: 0px !important;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#simple-product main > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  background: #FFF077;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (width < 1400px) {}
 
 @media screen and (width < 1200px) {
