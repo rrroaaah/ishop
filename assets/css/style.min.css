@@ -1072,12 +1072,6 @@ aside {
   padding-top: 10px !important;
 }
 
-#simple-product #productpage .divider {
-  width: 2px;
-  height: 100%;
-  background: var(--border);
-}
-
 #simple-product #productpage .featurebox:nth-child(4):after {
   content: "";
   width: 0px;
@@ -1290,6 +1284,184 @@ html {
   border-radius: 3px;
 }
 
+.fa-regular + div {
+  width: 14px;
+  height: 1px;
+  background: #cdd6e3;
+}
+
+.special-Offerbox.variable-product > div:nth-child(6) > div:nth-child(1) {
+  color: #67759b;
+}
+
+.special-Offerbox.variable-product > div:nth-child(6) > div:nth-child(1) {
+  background-color: #f2f4fb;
+  opacity: 1;
+}
+
+.special-Offerbox.variable-product > div:nth-child(6) a {
+  opacity: 0.5;
+}
+
+.special-Offerbox.variable-product > div:nth-child(3)::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(to right, #dce0e7 20%, #f54b5e 20% 80%);
+  display: none;
+}
+
+.special-Offerbox.special-Offerbox-three > div:nth-child(4) > div:nth-child(1) {
+  color: #67759b;
+}
+
+.variable-product select {
+  border: none;
+  background-color: #f2f4fb;
+}
+
+.variable-product label {
+  color: #444;
+}
+
+.variable-product select {
+  color: #444;
+  font-weight: 500;
+}
+
+.special-Offerbox.variable-product > div:nth-child(5) > label + div {
+  background-color: #f2f4fb;
+}
+
+.special-Offerbox.variable-product > div:nth-child(5) > label + div + div + div {
+  background-color: #f2f4fb;
+}
+
+.special-Offerbox.variable-product > div:nth-child(4) > div:nth-child(2) {
+  background-color: #f2f4fb;
+}
+
+.special-Offerbox.variable-product > div:nth-child(4) > div:nth-child(4) {
+  background-color: #f2f4fb;
+}
+
+.special-Offerbox.variable-product > a:nth-child(5) {
+  color: #e80645 !important;
+  background-color: rgba(232, 6, 69, 0.1215686275) !important;
+}
+
+.variable-product.special-Offerbox input + label > div > div > i {
+  color: white;
+  width: 24px;
+  height: 20px;
+  opacity: 0;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(1) input + label > div {
+  background-color: #F8EAD3;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(2) input + label > div {
+  background-color: #D8F0E6;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(3) input + label > div {
+  background-color: #CCCCCC;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(4) input + label > div {
+  background-color: #FCD1D6;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(5) input + label > div {
+  background-color: #D0DAF9;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(1) input + label > div > div {
+  background: #db9521;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(2) input + label > div > div {
+  background: #3eb580;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(3) input + label > div > div {
+  background: #000;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(4) input + label > div > div {
+  background: #ee1a34;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(5) input + label > div > div {
+  background: #1544e3;
+}
+
+.variable-product.special-Offerbox input[type=radio]:checked + label > div > div > i {
+  opacity: 1;
+}
+
+.variable-product.special-Offerbox input[type=radio]:checked + label > div {
+  opacity: 1;
+  background: #db9521;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(1) input[type=radio]:checked + label > div {
+  background: #db9521;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(2) input[type=radio]:checked + label > div {
+  background: #3eb580;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(3) input[type=radio]:checked + label > div {
+  background: #000;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(4) input[type=radio]:checked + label > div {
+  background: #ee1a34;
+}
+
+.variable-product.special-Offerbox > div:nth-child(3) > div > div:nth-child(5) input[type=radio]:checked + label > div {
+  background: #1544e3;
+}
+
+.variable-product.special-Offerbox > div:nth-child(4)::after {
+  display: none;
+}
+
+.special-Offerbox > div:nth-child(2) > div::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--border) !important;
+}
+
+.special-Offerbox::after, .call-product::after {
+  background: linear-gradient(180deg, #e2e6ed, #ffffff);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  padding: 1px;
+  padding-bottom: 1px;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: add, add;
+  mask-composite: add, add;
+  mask-composite: add, add;
+  mask-composite: add, add;
+  mask-composite: exclude;
+  left: 0px;
+  top: 0px;
+  border-radius: 17px;
+  padding-bottom: 0px;
+}
+
+.special-Offerbox {
+  box-shadow: 22px 33px 90px 20px rgba(154, 168, 188, 0.06);
+}
+
 @media screen and (width < 1200px) {
   #productpage {
     padding-right: 40px !important;
@@ -1480,6 +1652,10 @@ header .logo {
   width: 115px;
 }
 
+.hidden {
+  transform: translateY(-100%);
+}
+
 header form {
   position: relative;
 }
@@ -1546,7 +1722,6 @@ header .line {
 
 header .primary-part {
   border-bottom: 1px solid #DDDDDD;
-  position: fixed;
   top: 0;
   right: 0;
   z-index: 10000000;
@@ -1554,11 +1729,10 @@ header .primary-part {
 }
 
 header .secondary-part {
-  position: sticky;
   top: 0;
   box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
   z-index: 999999;
-  margin-top: 90px;
+  transition: 100ms ease;
 }
 
 header .vertical-line {
@@ -1743,11 +1917,6 @@ header {
   line-height: 1rem;
 }
 
-@media screen and (width < 1400px) {
-  header .secondary-part {
-    margin-top: 90px;
-  }
-}
 @media screen and (width < 1200px) {
   header .secondary-part .hover-box > li:nth-child(n+2) > ul {
     width: fit-content;
@@ -1764,9 +1933,6 @@ header {
   }
 }
 @media screen and (width < 992px) {
-  header .secondary-part {
-    margin-top: 80px;
-  }
   header form input {
     width: 100%;
     opacity: 0;
@@ -1802,9 +1968,6 @@ header {
   }
 }
 @media screen and (width < 768px) {
-  header .secondary-part {
-    margin-top: 70px;
-  }
   header .primary-part {
     height: 70px;
   }
