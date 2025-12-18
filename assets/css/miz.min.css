@@ -2132,7 +2132,7 @@ html {
   width: 59%;
 }
 
-.w-60, .weblog-card.relation .cover-image, .weblog-card.newest-row .cover-image, .article-related .cover-image {
+.w-60, .weblog-card.newest-row .cover-image, .article-related .cover-image {
   width: 60%;
 }
 

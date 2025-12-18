@@ -12,7 +12,7 @@ $weblog-card-relation-image-gradient: linear-gradient(180deg, rgba(2, 25, 89, 0)
     @extend .d-flex, #{$weblog-card-relation-custom-classes};
     
     .cover-image{
-        @extend .w-60, .d-flex, .overflow-hidden, .aspect-ratio-2x1, .position-relative, #{$weblog-card-relation-cover-image-custom-classes};
+        @extend .d-flex, .overflow-hidden, .aspect-ratio-2x1, .position-relative, #{$weblog-card-relation-cover-image-custom-classes};
 
         img{
             @extend .w-100, .object-cover;
