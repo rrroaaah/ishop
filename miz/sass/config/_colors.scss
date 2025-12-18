@@ -41,7 +41,6 @@ $backgrounds: (
     danger-dark,
     danger-light,
     disabled-light,
-    
     disabled-dark,
     information-regular,
     "white",
@@ -82,8 +81,9 @@ $borders: (
     border,
     primary,
     on-primary,
-    information-regular
- ,border-fields
+    information-regular,
+    border-fields,
+    secondary
 );
 
 $light-color-palette: (
