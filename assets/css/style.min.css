@@ -119,9 +119,9 @@
 
 #amazing-offers .off {
   padding: 0.2rem 1rem;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   box-shadow: -3px 3px 0px 0px #C2D8E2;
-  color: var(--secondary-color);
+  color: var(--secondary);
   transform: rotate(-3deg);
   border-radius: 10px;
 }
@@ -135,7 +135,7 @@
 
 #box-taste .line-horizental {
   width: 1px;
-  background: var(--border-color);
+  background: var(--border);
 }
 
 #box-taste > div > div > div + p {
@@ -163,12 +163,12 @@
 
 #kala-pack .packbox.px-8.py-5 {
   height: 85px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border);
 }
 
 #kala-pack > div:nth-child(1) > div:nth-child(2) {
   overflow-y: scroll;
-  height: 170px;
+  height: 200px;
   scrollbar-color: #E80645 #F3F6F9;
 }
 
@@ -214,6 +214,24 @@
   text-wrap: nowrap;
   width: auto !important;
   text-overflow: ellipsis;
+}
+
+.h-155 {
+  height: 155%;
+}
+
+#amazing-offers > .container > div:last-child {
+  transform: translateY(50%);
+  bottom: 50%;
+  right: 2rem;
+}
+
+.w-55px {
+  width: 55px;
+}
+
+.border {
+  border: 1px solid var(--border);
 }
 
 @media screen and (width < 1200px) {
