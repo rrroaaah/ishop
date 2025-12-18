@@ -255,10 +255,6 @@
   line-height: 2.5rem;
 }
 
-.border-bottom {
-  border-bottom: 1px solid var(--border-color) !important;
-}
-
 .icon-share::before {
   content: "\e92a";
   font-family: "icomoon";
@@ -567,6 +563,10 @@
   font-weight: 100;
 }
 
+#logopage #wrapper-logo {
+  box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
+}
+
 #wrapper-logo > div {
   box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
 }
@@ -603,30 +603,6 @@
   box-shadow: 7px 7px 13px -3px rgba(232, 6, 69, 0.2392156863) !important;
 }
 
-@media screen and (width < 768px) {
-  #faq input {
-    width: 230px;
-  }
-}
-@media screen and (width < 576px) {
-  #faq input {
-    width: 120px;
-  }
-}
-#logopage #wrapper-logo {
-  box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
-}
-
-@media screen and (width < 768px) {
-  #logopage #wrapper-logo > div {
-    row-gap: 40px !important;
-  }
-}
-#my-account #login-wrapper .authbox + p {
-  color: #9ea7be;
-}
-
-#offer #offer-wrapper p span {
 .authbox > div > span > span {
   color: #8c94a9;
 }
