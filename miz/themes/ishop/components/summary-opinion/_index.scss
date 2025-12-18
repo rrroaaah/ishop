@@ -19,6 +19,10 @@ $summary-opinion-description-custom-classes: ".secondary-text-color, .txt-title,
         @extend #{$summary-opinion-title-custom-classes};
     }
 
+    .gif{
+        mix-blend-mode: darken;
+    }
+
     mark{
         background-color: $summary-opinion-mark-bg-color;
         @extend #{$summary-opinion-mark-custom-classes};

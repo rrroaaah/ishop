@@ -567,6 +567,10 @@
   box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
 }
 
+#wrapper-logo > div {
+  box-shadow: 0 3px 2px rgba(2, 25, 89, 0.02);
+}
+
 #my-account .authbox + p {
   color: #9ea7be;
 }

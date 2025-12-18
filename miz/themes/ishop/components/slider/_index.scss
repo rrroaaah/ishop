@@ -1,0 +1,54 @@
+@use "../../../../sass/kernel/" as *;
+
+$slider-custom-classes: ".flex-column, .align-items-center";
+$slider-wrapper-custom-classes: ".w-100, .aspect-ratio-1x1";
+$slider-content-custom-classes: ".d-flex";
+$slider-content-transition: 0.5s linear;
+$slider-arrows-custom-classes: ".d-flex";
+$slider-arrow-next-custom-classes: ".w-100, .cursor-pointer";
+$slider-arrow-prev-custom-classes: ".w-100, .cursor-pointer";
+$slider-toggles-custom-classes: ".d-flex";
+$slider-toggle-custom-classes: ".w-100, .cursor-pointer";
+
+.slider{
+    @extend .d-flex, #{$slider-custom-classes};
+
+    .slider-wrapper{
+        @extend .position-relative, .overflow-hidden, #{$slider-wrapper-custom-classes};
+        
+        .slider-content{
+            transition: $slider-content-transition;
+            left: calc(var(--number) * 100%);
+            @extend .position-absolute, .w-100, .h-100, #{$slider-content-custom-classes};
+        }
+        
+        &.slider-column{
+            @extend .d-flex, .flex-column;
+
+            .slider-content{
+                left: unset;
+                top: calc(var(--number) * 100%);
+            }
+        }
+    }
+
+    .slider-arrows{
+        @extend #{$slider-arrows-custom-classes};
+
+        .slider-arrows-next{
+            @extend #{$slider-arrow-next-custom-classes};
+        }
+        
+        .slider-arrows-prev{
+            @extend #{$slider-arrow-prev-custom-classes};
+        }
+    }
+
+    .slider-toggles{
+        @extend #{$slider-toggles-custom-classes};
+
+        .slider-toggle{
+            @extend #{$slider-toggle-custom-classes};
+        }
+    }
+}
