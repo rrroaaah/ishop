@@ -2,82 +2,31 @@
 @use "../../../../sass/kernel/" as *;
 @use 'sass:map';
 
-$tooltip-custom-classes:".px-2, .py-1, .on-primary-color, .radius-all-small, .bg-primary-color";
-$tooltip-triangle-color:"primary";
-$tooltip-transition:0.2s linear;
+$information-tooltip-custom-classes: ".px-2, .py-1, .on-primary-color, .radius-all-small, .bg-white-color, .on-secondary-color, .txt-big";
+$information-tooltip-transition: 0.2s linear;
+$information-tooltip-triangle-space-from-card: 1.8rem;
+$information-tooltip-box-shadow: 0px 5px 19px -5px rgba(0, 0, 0, 0.17);
 
-.tooltip{
-    @extend .position-relative;
+.information-tooltip{
+    @extend .position-relative, .w-fit-content, .h-fit-content, .d-flex, .justify-content-center, .align-items-center;
 
     &.tooltip-top{
-        span{
-            bottom: 150%;
+        span.box{
+            bottom: calc(100% + $information-tooltip-triangle-space-from-card);
             left: 50%;
             transform: translateX(-50%);
-            &::after{
-                border-top-color: inherit !important;
-                left: 50%;
-                top: 100%;
-            }
         }
     }
-    &.tooltip-bottom{
-        span{
-            top: 150%;
-            left: 50%;
-            transform: translateX(-50%);
-            &::after{
-                border-bottom-color: inherit !important;
-                left: 50%;
-                bottom: 100%;
-            }
-        }
-    }
-    &.tooltip-right{
-        span{
-            left: 100%;
-            top: 50%;
-            transform: translateX(25%) translateY(-50%);
-            &::after{
-                border-right-color: inherit !important;
-                right: 100%;
-                top: 50%;
-                transform: translateX(0%) translateY(-50%);
-            }
-        }
-    }
-    &.tooltip-left{
-        span{
-            right: 100%;
-            top: 50%;
-            transform: translateX(-25%) translateY(-50%);
-            &::after{
-                border-left-color: inherit !important;
-                left: 100%;
-                top: 50%;
-                transform: translateX(50%) translateY(-50%);
-            }
-        }
-    }
-    span{
-        border-color: get-color($tooltip-triangle-color);
-        transition: $tooltip-transition;
+    
+    span.box{
+        transition: $information-tooltip-transition;
         white-space: nowrap;
-        pointer-events: none;
-        @extend .txt-align-center, .position-absolute, .z-index-1, .w-fit-content, .h-fit-content, .opacity-0, #{$tooltip-custom-classes};
-
-        &::after {
-            content: ""; 
-            margin-left: -5px;  
-            border-width: 5px;
-            border-top-color: transparent;
-            border-right-color: transparent;
-            border-bottom-color: transparent;
-            border-left-color: transparent;
-            @extend .position-absolute, .border-style-solid;
-        }
+        box-shadow: $information-tooltip-box-shadow;
+        visibility: hidden;
+        @extend .txt-align-center, .position-absolute, .z-index-1, .w-fit-content, .h-fit-content, .opacity-0, #{$information-tooltip-custom-classes};
     }
-    &:hover span{
-        @extend .opacity-#{calc(1 / map.get($conf-opacity , factor))}
+    &:hover span.box{
+        visibility: visible;
+        @extend .opacity-#{calc(1 / map.get($conf-opacity , factor))};
     }
 }

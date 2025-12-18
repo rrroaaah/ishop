@@ -164,11 +164,11 @@
   height: 0vh;
 }
 
-.w-fit-content, .tooltip span, .product-comment .features-container .show-more, .product-details {
+.w-fit-content, .information-tooltip, .information-tooltip span.box, .product-comment .features-container .show-more, .product-details {
   width: fit-content;
 }
 
-.h-fit-content, .tooltip span {
+.h-fit-content, .information-tooltip, .information-tooltip span.box {
   height: fit-content;
 }
 
@@ -308,6 +308,31 @@
   font-family: var(--font-secondary), sans-serif, 'Courier New', Courier, monospace;
 }
 
+html {
+  --html-font-size: 1rem;
+  font-size: var(--html-font-size);
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    --html-font-size: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  html {
+    --html-font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    --html-font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  html {
+    --html-font-size: 0.7rem;
+  }
+}
 .border-primary-color {
   border-color: var(--primary);
 }
@@ -316,7 +341,7 @@
   color: var(--primary);
 }
 
-.bg-primary-color, .tooltip span, .product-comment .information-comment .user-type, .progress-bar, .product-card .countdown, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.warranty {
+.bg-primary-color, .product-comment .information-comment .user-type, .progress-bar, .product-card .countdown, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.warranty {
   background-color: var(--primary);
 }
 
@@ -324,7 +349,7 @@
   border-color: var(--on-primary);
 }
 
-.on-primary-color, .tooltip span, .product-qa .answer-container .answer-description .user-name .user-type, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.installments, .article-banner-weblog {
+.on-primary-color, .information-tooltip span.box, .product-qa .answer-container .answer-description .user-name .user-type, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.installments, .article-banner-weblog {
   color: var(--on-primary);
 }
 
@@ -352,7 +377,7 @@
   background-color: var(--secondary);
 }
 
-.on-secondary-color, .product-category, button.product-button-feature.payable-credit {
+.on-secondary-color, .information-tooltip span.box, .product-category, button.product-button-feature.payable-credit {
   color: var(--on-secondary);
 }
 
@@ -488,7 +513,7 @@
   color: var(--text-fields);
 }
 
-.bg-white-color {
+.bg-white-color, .information-tooltip span.box {
   background-color: var(--white);
 }
 
@@ -828,7 +853,7 @@
   border-end-end-radius: 8px;
 }
 
-.radius-all-small, .tooltip span, .product-qa .answer-container .btn-answer, .product-comment .features-container .show-more .btn, .product-comment .comment-gallery img, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container .modal-content, .product-details, .product-details.rating, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments, .accordion-group .accordion, .privilege, .biography, .biography::after, .article-related .cover-image img, .article-banner-weblog::after {
+.radius-all-small, .information-tooltip span.box, .product-qa .answer-container .btn-answer, .product-comment .features-container .show-more .btn, .product-comment .comment-gallery img, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container .modal-content, .product-details, .product-details.rating, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments, .accordion-group .accordion, .privilege, .biography, .biography::after, .article-related .cover-image img, .article-banner-weblog::after {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -1054,7 +1079,7 @@
   border-inline-end-style: solid;
 }
 
-.border-style-solid, .tooltip span::after, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit {
+.border-style-solid, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit {
   border-top-style: solid;
   border-left-style: solid;
   border-bottom-style: solid;
@@ -1503,7 +1528,7 @@
   display: none;
 }
 
-.d-flex, .slider, .slider .slider-wrapper .slider-content, .slider .slider-wrapper.slider-column, .slider .slider-arrows, .slider .slider-toggles, .product-gallery.slider, .product-qa, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment, .product-comment .information-comment, .product-comment .information-comment .rating-star, .product-comment .information-comment .btn, .product-comment .text-container, .product-comment .features-container, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container .modal-content, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .return-condition-box, .rating-card, .rating-card .card-header, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress, .progress-bar, .product-details, .product-category, .product-card .image-container, .product-card .image-container .image-box, .product-card .card-body, .product-card .card-body .discount-box, .product-card .card-body .discount-box .discount-percentage, .logo-banner, .logo-banner .under-banner, .feature-description-box.text-type, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .contact-us-information, .privilege, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content {
+.d-flex, .badge-wrapper .badge, .badge-wrapper .badge-inside, .slider, .slider .slider-wrapper .slider-content, .slider .slider-wrapper.slider-column, .slider .slider-arrows, .slider .slider-toggles, .information-tooltip, .product-gallery.slider, .product-qa, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment, .product-comment .information-comment, .product-comment .information-comment .rating-star, .product-comment .information-comment .btn, .product-comment .text-container, .product-comment .features-container, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container .modal-content, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .return-condition-box, .rating-card, .rating-card .card-header, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress, .progress-bar, .product-details, .product-category, .product-card .image-container, .product-card .image-container .image-box, .product-card .card-body, .product-card .card-body .discount-box, .product-card .card-body .discount-box .discount-percentage, .logo-banner, .logo-banner .under-banner, .feature-description-box.text-type, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .contact-us-information, .privilege, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content {
   display: flex;
 }
 
@@ -2839,7 +2864,7 @@
   height: 100%;
 }
 
-.flex-row, .progress, .product-details.rating, .accordion-group .accordion .accordion-box .accordion-header {
+.flex-row, .badge-wrapper .badge, .badge-wrapper .badge-inside, .progress, .product-details.rating, .accordion-group .accordion .accordion-box .accordion-header {
   flex-direction: row;
 }
 
@@ -2879,7 +2904,7 @@
   justify-content: flex-start;
 }
 
-.justify-content-center, .product-comment .features-container .show-more .btn, .modal-container, .rating-card, .rating-card .card-footer, .progress-bar, .product-category, .product-card .image-container, .product-card .image-container .image-box {
+.justify-content-center, .badge-wrapper .badge, .badge-wrapper .badge-inside, .information-tooltip, .product-comment .features-container .show-more .btn, .modal-container, .rating-card, .rating-card .card-footer, .progress-bar, .product-category, .product-card .image-container, .product-card .image-container .image-box {
   justify-content: center;
 }
 
@@ -3159,7 +3184,7 @@
   align-items: flex-start;
 }
 
-.align-items-center, .slider, .product-gallery.slider, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .modal-container, .rating-card .card-header, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress-bar, .product-details.rating, .product-category, .product-card .card-body .discount-box .discount-percentage, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .article-related {
+.align-items-center, .badge-wrapper .badge, .badge-wrapper .badge-inside, .slider, .information-tooltip, .product-gallery.slider, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .modal-container, .rating-card .card-header, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress-bar, .product-details.rating, .product-category, .product-card .card-body .discount-box .discount-percentage, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .article-related {
   align-items: center;
 }
 
@@ -4715,7 +4740,7 @@
   padding-right: 0.25rem;
 }
 
-.px-2, .tooltip span, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
+.px-2, .information-tooltip span.box, .product-comment .information-comment .user-type, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .btn-add-to-cart, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -5015,7 +5040,7 @@
   padding-bottom: 0rem;
 }
 
-.py-1, .tooltip span, .product-comment .information-comment .user-type, .summary-opinion mark, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
+.py-1, .information-tooltip span.box, .product-comment .information-comment .user-type, .summary-opinion mark, .product-card .countdown, .product-card .image-container .feature.checkpay, .product-card .card-body .credit-purchase-box img, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.payable-credit, button.product-button-feature.installments {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
@@ -9701,7 +9726,7 @@
   font-size: 0.75rem;
 }
 
-.txt-big, .product-qa .answer-container .btn-answer, .product-qa .answer-container .answer-description .user-name, .product-qa .answer-container .answer-description .user-name .user-type, .weblog-card.newest-column .card-body .description, .return-condition-box .description, .rating-card .card-footer .comments-number .description, .product-details .title, .product-category, .product-card .card-body .btn-add-to-cart, .feature-description-box.text-type .title, .feature-description-box.text-type .description, .article-related .description {
+.txt-big, .information-tooltip span.box, .product-qa .answer-container .btn-answer, .product-qa .answer-container .answer-description .user-name, .product-qa .answer-container .answer-description .user-name .user-type, .weblog-card.newest-column .card-body .description, .return-condition-box .description, .rating-card .card-footer .comments-number .description, .product-details .title, .product-category, .product-card .card-body .btn-add-to-cart, .feature-description-box.text-type .title, .feature-description-box.text-type .description, .article-related .description {
   font-size: 0.814rem;
 }
 
@@ -9773,7 +9798,7 @@
   text-transform: capitalize;
 }
 
-.txt-align-center, .tooltip span, .rating-card .card-footer .comments-number .description {
+.txt-align-center, .badge-wrapper .badge, .badge-wrapper .badge-inside, .information-tooltip span.box, .rating-card .card-footer .comments-number .description {
   text-align: center;
 }
 
@@ -22684,7 +22709,7 @@ dialog {
   background: none;
 }
 
-.cursor-pointer, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider .slider-toggles .slider-toggle, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .accordion-group .accordion .accordion-box {
+.cursor-pointer, .badge-wrapper, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider .slider-toggles .slider-toggle, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .accordion-group .accordion .accordion-box {
   cursor: pointer;
 }
 
@@ -22724,7 +22749,7 @@ dialog {
   aspect-ratio: 3/3;
 }
 
-.opacity-0, .tooltip span, .accordion-group .accordion .accordion-box .accordion-body, .accordion-group .accordion .accordion-body {
+.opacity-0, .information-tooltip span.box, .accordion-group .accordion .accordion-box .accordion-body, .accordion-group .accordion .accordion-body {
   opacity: 0;
 }
 
@@ -22764,7 +22789,7 @@ dialog {
   opacity: 0.9;
 }
 
-.opacity-10, .tooltip:hover span, .accordion-group .accordion.active .accordion-body {
+.opacity-10, .information-tooltip:hover span.box, .accordion-group .accordion.active .accordion-body {
   opacity: 1;
 }
 
@@ -22792,11 +22817,11 @@ dialog {
   overflow-y: hidden;
 }
 
-.position-relative, .slider .slider-wrapper, .tooltip, .product-gallery.slider .slider-wrapper, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
+.position-relative, .badge-wrapper, .slider .slider-wrapper, .information-tooltip, .product-gallery.slider .slider-wrapper, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
   position: relative;
 }
 
-.position-absolute, .slider .slider-wrapper .slider-content, .tooltip span, .tooltip span::after, .product-card .product-colors, .product-card .image-container .feature, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
+.position-absolute, .badge-wrapper .badge, .badge-wrapper .badge-inside, .slider .slider-wrapper .slider-content, .information-tooltip span.box, .product-card .product-colors, .product-card .image-container .feature, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
   position: absolute;
 }
 
@@ -22828,7 +22853,7 @@ dialog {
   z-index: 0;
 }
 
-.z-index-1, .tooltip span, .biography::after, .article-banner-weblog::after {
+.z-index-1, .information-tooltip span.box, .biography::after, .article-banner-weblog::after {
   z-index: 1;
 }
 
@@ -23064,69 +23089,30 @@ dialog {
   border-radius: 50%;
 }
 
+.summary-opinion .gif {
+  mix-blend-mode: darken;
+}
 .summary-opinion mark {
   background-color: #FFF077;
 }
 .product-comment .information-comment .rating-star i.active {
   color: #DEA444;
 }
-.tooltip.tooltip-top span {
-  bottom: 150%;
+.information-tooltip.tooltip-top span.box {
+  bottom: calc(100% + 1.8rem);
   left: 50%;
   transform: translateX(-50%);
 }
-.tooltip.tooltip-top span::after {
-  border-top-color: inherit !important;
-  left: 50%;
-  top: 100%;
-}
-.tooltip.tooltip-bottom span {
-  top: 150%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.tooltip.tooltip-bottom span::after {
-  border-bottom-color: inherit !important;
-  left: 50%;
-  bottom: 100%;
-}
-.tooltip.tooltip-right span {
-  left: 100%;
-  top: 50%;
-  transform: translateX(25%) translateY(-50%);
-}
-.tooltip.tooltip-right span::after {
-  border-right-color: inherit !important;
-  right: 100%;
-  top: 50%;
-  transform: translateX(0%) translateY(-50%);
-}
-.tooltip.tooltip-left span {
-  right: 100%;
-  top: 50%;
-  transform: translateX(-25%) translateY(-50%);
-}
-.tooltip.tooltip-left span::after {
-  border-left-color: inherit !important;
-  left: 100%;
-  top: 50%;
-  transform: translateX(50%) translateY(-50%);
-}
-.tooltip span {
-  border-color: var(--primary);
+.information-tooltip span.box {
   transition: 0.2s linear;
   white-space: nowrap;
-  pointer-events: none;
+  box-shadow: 0px 5px 19px -5px rgba(0, 0, 0, 0.17);
+  visibility: hidden;
 }
-.tooltip span::after {
-  content: "";
-  margin-left: -5px;
-  border-width: 5px;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  border-left-color: transparent;
+.information-tooltip:hover span.box {
+  visibility: visible;
 }
+
 .slider .slider-wrapper .slider-content {
   transition: 0.5s linear;
   left: calc(var(--number) * 100%);
@@ -23134,6 +23120,27 @@ dialog {
 .slider .slider-wrapper.slider-column .slider-content {
   left: unset;
   top: calc(var(--number) * 100%);
+}
+.badge-wrapper .badge, .badge-wrapper .badge-inside {
+  padding: 10px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+.badge-wrapper .badge.top-0.left-0, .badge-wrapper .top-0.left-0.badge-inside {
+  transform: translate(-50%, -50%);
+}
+.badge-wrapper .badge.top-0.right-0, .badge-wrapper .top-0.right-0.badge-inside {
+  transform: translate(50%, -50%);
+}
+.badge-wrapper .badge.bottom-0.left-0, .badge-wrapper .bottom-0.left-0.badge-inside {
+  transform: translate(-50%, 50%);
+}
+.badge-wrapper .badge.bottom-0.right-0, .badge-wrapper .bottom-0.right-0.badge-inside {
+  transform: translate(50%, 50%);
+}
+.badge-wrapper .badge-inside {
+  position: unset !important;
+  transform: unset !important;
 }
 
 /*# sourceMappingURL=miz.min.css.map */
