@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary: #E80645;
   --on-primary: #FFFFFF;
@@ -23164,6 +23165,29 @@ dialog {
 
 .product-gallery .slider-content:hover img {
   transform: scale(2);
+}
+
+.slider-frame {
+  overflow: hidden;
+  height: 2rem; /* ارتفاع کافی برای h3 */
+  position: relative;
+  width: 150px;
+}
+
+.slider-frame h3 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.slider-frame h3.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=miz.min.css.map */
