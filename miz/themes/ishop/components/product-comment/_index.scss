@@ -21,7 +21,7 @@ $product-comment-comment-gallery-custom-classes: ".grid-3, .w-22, .gap-2";
 $product-comment-comment-gallery-image-custom-classes: ".radius-all-small";
 
 .product-comment{
-    @extend .d-flex, .flex-column , .w-100, #{$product-comment-custom-classes};
+    @extend .d-flex, .flex-column , .w-100 , #{$product-comment-custom-classes};
 
     .information-comment{
         @extend .d-flex, .justify-content-space-between, #{$product-comment-information-comment-custom-classes};
