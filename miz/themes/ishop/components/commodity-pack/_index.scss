@@ -2,7 +2,9 @@
 @use "../../../../sass/kernel" as *;
 @use "sass:list";
 
-$badge-size: 10px;
+$badge-size: 8px;
+$commodity-pack-custom-classes: ".gap-4, .px-8, .py-5, .cursor-pointer";
+$commodity-pack-transition: 0.2s linear;
 
 .badge-wrapper{
     @extend .position-relative, .cursor-pointer;
@@ -29,5 +31,30 @@ $badge-size: 10px;
         @extend .badge;
         position: unset !important;
         transform: unset !important;
+    }
+}
+
+.commodity-pack{
+    @extend .d-flex, .align-items-center, .w-100, #{$commodity-pack-custom-classes};
+
+    &:hover{
+        background-image:linear-gradient(90deg, #FFF 0%, #F4F5F7 100%);
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-image: linear-gradient(90deg, #FFF 0%, #F4F5F7 100%);
+        transition: $commodity-pack-transition;
+    }
+
+    &:hover::after{
+        opacity: 1;
     }
 }

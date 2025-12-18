@@ -1528,7 +1528,7 @@ html {
   display: none;
 }
 
-.d-flex, .badge-wrapper .badge, .badge-wrapper .badge-inside, .slider, .slider .slider-wrapper .slider-content, .slider .slider-wrapper.slider-column, .slider .slider-arrows, .slider .slider-toggles, .information-tooltip, .product-gallery.slider, .product-qa, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment, .product-comment .information-comment, .product-comment .information-comment .rating-star, .product-comment .information-comment .btn, .product-comment .text-container, .product-comment .features-container, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container .modal-content, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .return-condition-box, .rating-card, .rating-card .card-header, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress, .progress-bar, .product-details, .product-category, .product-card .image-container, .product-card .image-container .image-box, .product-card .card-body, .product-card .card-body .discount-box, .product-card .card-body .discount-box .discount-percentage, .logo-banner, .logo-banner .under-banner, .feature-description-box.text-type, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .contact-us-information, .privilege, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content {
+.d-flex, .badge-wrapper .badge, .badge-wrapper .badge-inside, .commodity-pack, .slider, .slider .slider-wrapper .slider-content, .slider .slider-wrapper.slider-column, .slider .slider-arrows, .slider .slider-toggles, .information-tooltip, .product-gallery.slider, .product-qa, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment, .product-comment .information-comment, .product-comment .information-comment .rating-star, .product-comment .information-comment .btn, .product-comment .text-container, .product-comment .features-container, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container .modal-content, .modal-container .modal-content .modal-header, .modal-container .modal-content .modal-body, .modal-container .modal-content .modal-footer, .return-condition-box, .rating-card, .rating-card .card-header, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress, .progress-bar, .product-details, .product-category, .product-card .image-container, .product-card .image-container .image-box, .product-card .card-body, .product-card .card-body .discount-box, .product-card .card-body .discount-box .discount-percentage, .logo-banner, .logo-banner .under-banner, .feature-description-box.text-type, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .contact-us-information, .privilege, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content {
   display: flex;
 }
 
@@ -3184,7 +3184,7 @@ html {
   align-items: flex-start;
 }
 
-.align-items-center, .badge-wrapper .badge, .badge-wrapper .badge-inside, .slider, .information-tooltip, .product-gallery.slider, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .modal-container, .rating-card .card-header, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress-bar, .product-details.rating, .product-category, .product-card .card-body .discount-box .discount-percentage, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .article-related {
+.align-items-center, .badge-wrapper .badge, .badge-wrapper .badge-inside, .commodity-pack, .slider, .information-tooltip, .product-gallery.slider, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .modal-container, .rating-card .card-header, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress-bar, .product-details.rating, .product-category, .product-card .card-body .discount-box .discount-percentage, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .article-related {
   align-items: center;
 }
 
@@ -4800,7 +4800,7 @@ html {
   padding-right: 1.75rem;
 }
 
-.px-8, .return-condition-box {
+.px-8, .commodity-pack, .return-condition-box {
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -5080,7 +5080,7 @@ html {
   padding-bottom: 1rem;
 }
 
-.py-5 {
+.py-5, .commodity-pack {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
@@ -8224,7 +8224,7 @@ html {
   gap: 0.75rem;
 }
 
-.gap-4, .product-gallery.slider, .product-comment .features-container .features .feature, .return-condition-box, .rating-card .card-body, .rating-card .card-footer .comments-number, .accordion-group, .contact-us-information {
+.gap-4, .commodity-pack, .product-gallery.slider, .product-comment .features-container .features .feature, .return-condition-box, .rating-card .card-body, .rating-card .card-footer .comments-number, .accordion-group, .contact-us-information {
   gap: 1rem;
 }
 
@@ -22709,7 +22709,7 @@ dialog {
   background: none;
 }
 
-.cursor-pointer, .badge-wrapper, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider .slider-toggles .slider-toggle, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .accordion-group .accordion .accordion-box {
+.cursor-pointer, .badge-wrapper, .commodity-pack, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider .slider-toggles .slider-toggle, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .modal-container .modal-close, .product-category, .product-card .card-body .btn-add-to-cart, .accordion-group .accordion .accordion-box {
   cursor: pointer;
 }
 
@@ -23122,7 +23122,7 @@ dialog {
   top: calc(var(--number) * 100%);
 }
 .badge-wrapper .badge, .badge-wrapper .badge-inside {
-  padding: 10px;
+  padding: 8px;
   text-transform: uppercase;
   line-height: 0;
 }
@@ -23141,6 +23141,25 @@ dialog {
 .badge-wrapper .badge-inside {
   position: unset !important;
   transform: unset !important;
+}
+
+.commodity-pack:hover {
+  background-image: linear-gradient(90deg, #FFF 0%, #F4F5F7 100%);
+}
+.commodity-pack::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-image: linear-gradient(90deg, #FFF 0%, #F4F5F7 100%);
+  transition: 0.2s linear;
+}
+.commodity-pack:hover::after {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=miz.min.css.map */
