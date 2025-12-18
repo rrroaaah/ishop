@@ -1,3 +1,4 @@
+@use "../../../config/_responsive" as *;
 @use "../../kernel-functions/_break-point" as *;
 @use "../functions/responsive" as *;
 @use "../../../config/paths" as *;
@@ -121,3 +122,38 @@ $generate-text-decoration-style : generate-text-style(text-decoration-style , $t
 $generate-font-style : generate-text-style(font-style , $font-style , style);
 
 @include make-font-face;
+
+
+@function get-greatest-break-point(){
+    $max-size:0;
+    @each $key , $value in $break-points{
+        @if map.get($break-points, $key) > $max-size{
+            $max-size : map.get($break-points, $key);
+        }
+    }
+    @return $max-size;
+}
+
+@mixin generate-font-size-responsive(){
+    $break-point-values:map.values($break-points);
+    @for $i from 1 through list.length($conf-font-size-responsive){
+        $break-point-value:list.nth($break-point-values,$i);
+        $font-value:list.nth($conf-font-size-responsive,$i);
+        @if get-greatest-break-point() == $break-point-value{
+            html{
+                --html-font-size: #{$font-value};
+                font-size:var(--html-font-size);
+            }
+        }
+
+        @else{
+            @media screen and (max-width:$break-point-value){
+                html{
+                    --html-font-size: #{$font-value};
+                }
+            }
+        }
+    }
+}
+
+@include generate-font-size-responsive();
