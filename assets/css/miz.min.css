@@ -20183,7 +20183,7 @@ html {
   .grid-sm-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .grid-sm-2 {
+  .grid-sm-2, .product-comment .comment-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
   .grid-sm-3 {
