@@ -1083,12 +1083,6 @@ aside {
   padding-top: 10px !important;
 }
 
-#simple-product #productpage .divider {
-  width: 2px;
-  height: 100%;
-  background: var(--border);
-}
-
 #simple-product #productpage .featurebox:nth-child(4):after {
   content: "";
   width: 0px;
@@ -1305,6 +1299,18 @@ html {
 #simple-product main > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
   background: #FFF077;
   border-radius: 3px;
+}
+
+.fa-regular ~ div {
+  width: 14px;
+  height: 1px;
+  background: #cdd6e3;
+}
+
+#simple-product #productpage .divider {
+  width: 2px;
+  height: 60px;
+  background: var(--border);
 }
 
 @media screen and (width < 1200px) {

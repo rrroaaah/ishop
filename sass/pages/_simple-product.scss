@@ -7,12 +7,6 @@
     padding-top: 10px !important;
 }
 
-#simple-product #productpage .divider {
-    width: 2px;
-    height: 100%;
-    background: var(--border);
-}
-
 #simple-product #productpage .featurebox:nth-child(4):after {
     content: "";
     width: 0px;
@@ -212,6 +206,9 @@
   bottom: 0px !important;
 }
 
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -222,9 +219,17 @@ html {
   border-radius: 3px;
 }
 
+.fa-regular ~ div {
+  width: 14px;
+  height: 1px;
+  background: #cdd6e3;
+}
 
-
-
+#simple-product #productpage .divider {
+    width: 2px;
+    height: 60px;
+    background: var(--border);
+}
 
 
 
