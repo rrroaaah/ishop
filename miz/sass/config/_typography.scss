@@ -1,4 +1,11 @@
 $font-prefix : "txt";
+$font-size:(small : 0.625rem,subtitle : 0.688rem,normal : 0.75rem, big : 0.814rem, title : 0.875rem, mid-title : 0.938rem, high-title : 1.125rem, big-title : 1.313rem, extra-title : 1rem, );
+$text-align : (center,end,start,left,right,justify);
+$text-transform : (lowercase,none,uppercase,capitalize);
+$text-decoration-line : (line-through,none,overline,underline,wavy);
+$text-decoration-style:(dashed,dotted,double,solid);
+$font-style:(italic,);
+
 $font-size: (
     small : 0.625rem,
     subtitle : 0.688rem,
