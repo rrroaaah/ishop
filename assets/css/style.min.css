@@ -615,6 +615,11 @@
   font-size: 0.7rem;
 }
 
+@media screen and (width < 768px) {
+  .authbox {
+    width: 100%;
+  }
+}
 #shop .archive-header .vertical-line {
   height: 0.5rem;
 }
