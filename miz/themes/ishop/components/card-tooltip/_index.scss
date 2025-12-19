@@ -1,0 +1,32 @@
+@use "../../../../sass/config/_dims" as *;
+@use "../../../../sass/kernel/" as *;
+@use 'sass:map';
+
+$information-tooltip-custom-classes: ".px-2, .py-1, .on-primary-color, .radius-all-small, .bg-white-color, .on-secondary-color, .txt-big";
+$information-tooltip-transition: 0.2s linear;
+$information-tooltip-triangle-space-from-card: 1.8rem;
+$information-tooltip-box-shadow: 0px 5px 19px -5px rgba(0, 0, 0, 0.17);
+
+.information-tooltip{
+    @extend .position-relative, .w-fit-content, .h-fit-content, .d-flex, .justify-content-center, .align-items-center;
+
+    &.tooltip-top{
+        span.box{
+            bottom: calc(100% + $information-tooltip-triangle-space-from-card);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    
+    span.box{
+        transition: $information-tooltip-transition;
+        white-space: nowrap;
+        box-shadow: $information-tooltip-box-shadow;
+        visibility: hidden;
+        @extend .txt-align-center, .position-absolute, .z-index-1, .w-fit-content, .h-fit-content, .opacity-0, #{$information-tooltip-custom-classes};
+    }
+    &:hover span.box{
+        visibility: visible;
+        @extend .opacity-#{calc(1 / map.get($conf-opacity , factor))};
+    }
+}
