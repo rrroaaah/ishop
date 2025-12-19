@@ -3,11 +3,6 @@
     height: 6px;
 }
 
-#shoppingcart #process .horizontal-line {
-    background-color: #EDF2F9;
-    height: 1px;
-}
-
 #shoppingcart .back-svg {
     width: 3rem;
     height: 3rem;
@@ -54,7 +49,11 @@
     border-bottom: 1px solid #f5f7f995;
 }
 
-
+#shoppingcart #process .horizontal-line {
+  background-color: #EDF2F9;
+  height: 1px;
+  width: 40px;
+}
 
 
 @media screen and (width < 1400px) {
@@ -82,9 +81,7 @@
         padding-bottom: 5rem !important;
     }
 
-    #shoppingcart aside {
-        width: 33%;
-    }
+    
 }
 
 @media screen and (width < 992px) {

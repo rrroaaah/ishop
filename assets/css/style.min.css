@@ -307,11 +307,6 @@
   height: 6px;
 }
 
-#shoppingcart #process .horizontal-line {
-  background-color: #EDF2F9;
-  height: 1px;
-}
-
 #shoppingcart .back-svg {
   width: 3rem;
   height: 3rem;
@@ -357,6 +352,12 @@
   border-bottom: 1px solid rgba(245, 247, 249, 0.5843137255);
 }
 
+#shoppingcart #process .horizontal-line {
+  background-color: #EDF2F9;
+  height: 1px;
+  width: 40px;
+}
+
 @media screen and (width < 1400px) {
   #shoppingcart .box {
     padding-right: 8rem !important;
@@ -376,9 +377,6 @@
   #shoppingcart #process {
     padding-top: 1rem !important;
     padding-bottom: 5rem !important;
-  }
-  #shoppingcart aside {
-    width: 33%;
   }
 }
 @media screen and (width < 992px) {
@@ -1039,6 +1037,34 @@ aside {
   font-weight: 600;
 }
 
+.description-wrapper a:hover {
+  border-bottom: 1px dashed var(--secondary-text);
+  transition: all 200ms linear;
+}
+
+.reviewsubmit::after {
+  background: linear-gradient(180deg, #e2e6ed, #ffffff);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  padding: 1px;
+  padding-bottom: 1px;
+  padding-bottom: 1px;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: add, add;
+  mask-composite: add, add;
+  mask-composite: add, add;
+  mask-composite: add, add;
+  mask-composite: add, add;
+  mask-composite: exclude;
+  left: 0px;
+  top: 0px;
+  border-radius: 17px;
+  padding-bottom: 0px;
+}
+
 #simple-product #productpage {
   flex-direction: row !important;
   padding-top: 10px !important;
@@ -1074,12 +1100,6 @@ aside {
   height: 1px;
   background: var(--border);
   margin-top: 0.5rem;
-}
-
-#simple-product #productpage .horizental-line {
-  width: 80%;
-  background-color: var(--divider);
-  height: 1px;
 }
 
 #simple-product #productpage .swiper-slide {
@@ -1538,6 +1558,9 @@ html {
   }
   #simple-product main > div:nth-child(1) span {
     font-size: 0.8rem;
+  }
+  .comment-gallery {
+    width: 35%;
   }
 }
 #ununavailable #simple-product .unavailable {
