@@ -1,0 +1,11 @@
+@use "../../../../sass/config/_dims" as *;
+@use "../../../../sass/config/_typography" as *;
+@use "../../../../sass/kernel" as *;
+@use "../../config" as *;
+@use 'sass:map';
+
+$countdown-custom-classes : ".bg-primary-color, .radius-all-extra-small, .py-1, .px-2, .on-primary-color, .font-weight-bold, .gap-1";
+
+.countdown{
+    @extend .d-flex, .rtl, #{$countdown-custom-classes};
+}
