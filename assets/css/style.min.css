@@ -1912,6 +1912,10 @@ header .logo {
   width: 115px;
 }
 
+.hidden {
+  transform: translateY(-100%);
+}
+
 header form {
   position: relative;
 }
@@ -1978,7 +1982,6 @@ header .line {
 
 header .primary-part {
   border-bottom: 1px solid #DDDDDD;
-  position: fixed;
   top: 0;
   right: 0;
   z-index: 10000000;
@@ -1986,11 +1989,10 @@ header .primary-part {
 }
 
 header .secondary-part {
-  position: sticky;
   top: 0;
   box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
   z-index: 999999;
-  margin-top: 90px;
+  transition: 100ms ease;
 }
 
 header .vertical-line {
@@ -2175,11 +2177,6 @@ header {
   line-height: 1rem;
 }
 
-@media screen and (width < 1400px) {
-  header .secondary-part {
-    margin-top: 90px;
-  }
-}
 @media screen and (width < 1200px) {
   header .secondary-part .hover-box > li:nth-child(n+2) > ul {
     width: fit-content;
@@ -2196,9 +2193,6 @@ header {
   }
 }
 @media screen and (width < 992px) {
-  header .secondary-part {
-    margin-top: 80px;
-  }
   header form input {
     width: 100%;
     opacity: 0;
@@ -2234,9 +2228,6 @@ header {
   }
 }
 @media screen and (width < 768px) {
-  header .secondary-part {
-    margin-top: 70px;
-  }
   header .primary-part {
     height: 70px;
   }

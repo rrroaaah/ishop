@@ -23236,4 +23236,8 @@ dialog {
   opacity: 1;
 }
 
+.hide-submenu {
+  transform: translateY(-100%);
+}
+
 /*# sourceMappingURL=miz.min.css.map */
