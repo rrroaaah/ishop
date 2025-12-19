@@ -453,6 +453,10 @@ html {
   background-color: var(--border);
 }
 
+.bg-border-color {
+  background-color: var(--border);
+}
+
 .border-divider-color {
   border-color: var(--divider);
 }
@@ -479,6 +483,14 @@ html {
 
 .bg-card-color, button.product-button-feature.payable-credit, .accordion-group .accordion .accordion-box .accordion-body {
   background-color: var(--card);
+}
+
+.footer-text-color {
+  color: var(--footer-text);
+}
+
+.bg-footer-link-hover-color {
+  background-color: var(--footer-link-hover);
 }
 
 .bg-color, .rating-card, .accordion-group .accordion {

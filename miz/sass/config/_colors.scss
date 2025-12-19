@@ -41,7 +41,7 @@ $backgrounds: (
     danger-dark,
     danger-light,
     disabled-light,
-    
+    footer-link-hover,
     disabled-dark,
     information-regular,
     "white",
@@ -49,7 +49,8 @@ $backgrounds: (
     information-dark,
     border-secondary,
     unCommon,
-    "transparent"
+    "transparent",
+    border,
 );
 $colors: (
     primary-light,
@@ -76,6 +77,7 @@ $colors: (
     success-dark,
     danger-dark,
     danger-light,
+     footer-text ,
 );
 $borders: (
     divider,
