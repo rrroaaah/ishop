@@ -1,0 +1,5 @@
+@use "../../../../sass/kernel/" as *;
+
+.product-gallery .slider-content:hover img{
+    transform: scale(2);
+}

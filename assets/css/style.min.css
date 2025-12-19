@@ -1,3 +1,258 @@
+/* footer-navbar */
+.footer-navbar a:hover {
+  color: var(--icon-hover);
+}
+
+.footer-navbar a {
+  transition: 300ms;
+}
+
+.grid-1-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-2-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid-2-3 {
+  grid-template-columns: 2fr 3fr;
+}
+
+.symbol-trust {
+  width: 160px;
+}
+
+.symbol-logo {
+  width: 80px;
+}
+
+/* footer */
+#footer {
+  box-shadow: 0 0 20px rgba(2, 25, 89, 0.05);
+}
+
+#footer .line {
+  height: 1px;
+  width: 100%;
+  background-color: #DDDDDD;
+}
+
+#footer .service-box img {
+  width: 55px;
+}
+
+#footer .line.btn-parent > a {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%);
+  top: 50%;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+}
+
+#footer .primary-footer-btn {
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer .primary-footer-btn img {
+  height: 30px;
+}
+
+.swiper-slide {
+  width: 276px;
+}
+
+.swiper-slide:hover {
+  background-color: #F3F5F8;
+  transition: all 200ms linear;
+}
+
+.swiper-slide .border {
+  border: 1px solid #EEF2F9;
+}
+
+.swiper-slide .checkpay {
+  top: 10px;
+}
+
+.swiper-slide .box-shadow {
+  box-shadow: 2px 3px 4px -3px var(--primary-color);
+}
+
+.swiper-slide .off {
+  text-decoration: line-through;
+}
+
+.swiper-slide .off-percent {
+  height: 19px;
+}
+
+.swiper-slide .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.swiper-slide .red {
+  background-color: #EE1A34;
+}
+
+.swiper-slide .blue {
+  background-color: #1544E3;
+}
+
+.swiper-slide .btn-pay {
+  width: 45px;
+  height: 45px;
+}
+
+.bottom-6 {
+  bottom: calc(var(--space-factor) * 6);
+}
+
+.bottom-10 {
+  bottom: calc(var(--space-factor) * 10);
+}
+
+.left-4 {
+  left: calc(var(--space-factor) * 4);
+}
+
+.right-10 {
+  right: calc(var(--space-factor) * 10);
+}
+
+.bio h3 {
+  color: #0650A3;
+}
+
+.privilege {
+  box-shadow: 2px 2px 5px 3px var(--shadow-color);
+}
+
+.privilege p:nth-child(1) {
+  color: #0650A3;
+}
+
+.article::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, rgba(2, 25, 89, 0) 0%, #021959 100%);
+  opacity: 0.7;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.icon-user::before {
+  content: "\e91d";
+  font-family: "icomoon";
+  font-style: normal;
+}
+
+.icon-calender::before {
+  content: "\e910";
+  font-family: "icomoon";
+  font-style: normal;
+}
+
+.icon-comment::before {
+  content: "\e911";
+  font-family: "icomoon";
+  font-style: normal;
+}
+
+.icon-clock::before {
+  content: "\e905";
+  font-family: "icomoon";
+  font-style: normal;
+}
+
+.icon-view::before {
+  content: "\e92f";
+  font-family: "icomoon";
+  font-style: normal;
+}
+
+.article-seondary p {
+  line-height: 1.8rem;
+}
+
+.article-seondary img {
+  object-fit: cover;
+}
+
+.article-seondary {
+  width: 650px;
+  height: 208px;
+}
+
+.article-variantly {
+  line-height: 1.7rem;
+}
+
+.article-variantly p {
+  line-height: 1.4rem;
+}
+
+.article-variantly img {
+  object-fit: cover;
+  aspect-ratio: 1.4;
+}
+
+.horizental-line {
+  width: 85%;
+  background-color: var(--divider-color);
+  height: 1px;
+}
+
+.vertical-line {
+  height: 1.5rem;
+  background-color: var(--divider-color);
+  width: 1px;
+}
+
+.table .border-bottom {
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.table .border-right {
+  border-right: 1px solid var(--divider-color);
+}
+
+.table > div:nth-child(1) {
+  margin-bottom: -0.6rem;
+}
+
+.table-variantly .line {
+  width: 85%;
+  background-color: var(--divider-color);
+  height: 1px;
+}
+
+.table-variantly .border-bottom {
+  border-bottom: 1px solid var(--divider-color);
+}
+
+@media screen and (width < 1200px) {
+  .grid-xl-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 992px) {
+  .grid-lg-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 /* hero */
 #hero > div {
   overflow: hidden;
@@ -617,6 +872,11 @@
   font-size: 0.7rem;
 }
 
+@media screen and (width < 768px) {
+  .authbox {
+    width: 100%;
+  }
+}
 #shop .archive-header .vertical-line {
   height: 0.5rem;
 }
