@@ -1463,16 +1463,16 @@ html {
   }
 }
 .section {
-  --padding-left: 5rem;
-  --padding-right: 5rem;
+  --padding-left: 1rem;
+  --padding-right: 1rem;
   padding-left: var(--padding-left);
   padding-right: var(--padding-right);
 }
 
 @media screen and (max-width: 1200px) {
   .section {
-    --padding-left: 1rem;
-    --padding-right: 1rem;
+    --padding-left: 5rem;
+    --padding-right: 5rem;
   }
 }
 @media screen and (max-width: 992px) {
