@@ -1134,7 +1134,7 @@ aside {
   background-color: #021959;
   padding-top: 1px;
   padding-bottom: 2px;
-  color: var(--button-text-color);
+  color: var(--on-primary);
 }
 
 #simple-product main > div:nth-child(1) {
