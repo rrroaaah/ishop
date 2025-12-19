@@ -2448,7 +2448,7 @@ html {
   width: 99%;
 }
 
-.w-100, .product-gallery.slider, .product-gallery.slider .slider-wrapper, .product-gallery.slider .slider-wrapper .slider-content img, .product-gallery.slider .slider-toggles .slider-toggle, .product-comment, .product-comment .comment-gallery img, .weblog-card.newest-row .cover-image img, .rating-card, .progress, .product-category img, .product-card .image-container .image-box img, .logo-banner img, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .privilege, .privilege img, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after {
+.w-100, .slider .slider-wrapper, .slider .slider-wrapper .slider-content, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider, .product-gallery.slider .slider-wrapper, .product-gallery.slider .slider-wrapper .slider-content img, .product-gallery.slider .slider-toggles .slider-toggle, .product-comment, .product-comment .comment-gallery img, .weblog-card.newest-row .cover-image img, .rating-card, .progress, .product-category img, .product-card .image-container .image-box img, .logo-banner img, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .privilege, .privilege img, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after {
   width: 100%;
 }
 
