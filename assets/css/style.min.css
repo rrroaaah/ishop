@@ -292,6 +292,10 @@
   font-style: normal;
 }
 
+.dinasty {
+  white-space: nowrap;
+}
+
 @media screen and (width < 992px) {
   .flex-lg-column-reverse {
     flex-direction: column-reverse;
