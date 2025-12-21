@@ -35,7 +35,7 @@ $commodity-pack-transition: 0.2s linear;
 }
 
 .commodity-pack{
-    @extend .d-flex, .align-items-center, .w-100, #{$commodity-pack-custom-classes};
+    @extend .d-flex, .align-items-center, .w-100, .position-relative, #{$commodity-pack-custom-classes};
 
     &:hover{
         background-image:linear-gradient(90deg, #FFF 0%, #F4F5F7 100%);
