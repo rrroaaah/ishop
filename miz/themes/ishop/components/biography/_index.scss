@@ -7,6 +7,7 @@ $biography-title-custom-classes: ".txt-big-title, .secondary-color, .font-weight
 $biography-description-custom-classes: ".secondary-color, .txt-mid-title";
 $biography-cover-on-image-custom-classes: ".gap-2, .px-4, .py-6, .font-weight-bold";
 
+
 .biography{
     @extend .position-relative, .d-flex, #{$biography-custom-classes};
 
@@ -14,7 +15,7 @@ $biography-cover-on-image-custom-classes: ".gap-2, .px-4, .py-6, .font-weight-bo
         content: "";
         background-image: $biography-weblog-gradient;
         @extend .position-absolute, .right-0, .top-0, .w-100, .h-100, .z-index-1, #{$biography-after-custom-classes};
-    }
+    } 
 
     .title{
         @extend #{$biography-title-custom-classes};
