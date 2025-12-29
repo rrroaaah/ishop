@@ -26674,7 +26674,7 @@ dialog {
   overflow-y: hidden;
 }
 
-.position-relative, .badge-wrapper, .slider .slider-wrapper, .information-tooltip, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .story-content, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
+.position-relative, .badge-wrapper, .commodity-pack, .slider .slider-wrapper, .information-tooltip, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .story-content, .rating-card, .product-card, .product-card .image-container, .privilege, .biography, .article-banner-weblog {
   position: relative;
 }
 
@@ -27030,9 +27030,6 @@ dialog {
   transform: unset !important;
 }
 
-.commodity-pack:hover {
-  background-image: linear-gradient(90deg, #FFF 0%, #F4F5F7 100%);
-}
 .commodity-pack::after {
   content: "";
   position: absolute;
