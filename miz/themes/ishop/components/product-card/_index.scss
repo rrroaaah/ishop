@@ -1,4 +1,5 @@
 @use "../../../../sass/kernel/" as *;
+@use "no-percent";
 @use "sass:map";
 
 $product-card-transition: all 0.2s ease-out;
