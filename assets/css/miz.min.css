@@ -26857,6 +26857,7 @@ dialog {
 .product-card .card-body .btn-add-to-cart .vector-5 {
   top: 1px;
   border-top-right-radius: 7px;
+  border-radius: 9px;
 }
 .product-card .card-body .btn-percent .icon {
   width: 70%;
