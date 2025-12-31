@@ -254,68 +254,16 @@
   }
 }
 /* hero */
-#hero > div {
-  overflow: hidden;
-  border-radius: 20px;
+#hero .slider-wrapper {
+  aspect-ratio: 3;
 }
 
-.mt-42px {
-  margin-top: 42px !important;
-}
-
-#hero input + label {
+#hero .slider-arrows {
   top: 50%;
-  transform: translateY(-50%);
+  bottom: 50%;
 }
 
-#hero input#right + label {
-  margin-right: -1px;
-}
-
-#hero input#left + label {
-  margin-left: -1px;
-}
-
-#hero .slider {
-  transition: transform 300ms linear;
-}
-
-#hero:has(input#left:checked) .slider {
-  transform: translateX(100%);
-}
-
-#hero:has(input#right:checked) .slider {
-  transform: translateX(0%);
-}
-
-#hero .page-mark {
-  top: 25px;
-  right: 25px;
-}
-
-#hero .page-mark > div {
-  background-color: white;
-  height: 10px;
-  border-radius: 1000px;
-  transition: width 200ms linear;
-}
-
-#hero:has(input#right:checked) .page-mark .one {
-  width: 30px;
-}
-
-#hero:has(input#right:checked) .page-mark .two {
-  width: 10px;
-}
-
-#hero:has(input#left:checked) .page-mark .one {
-  width: 10px;
-}
-
-#hero:has(input#left:checked) .page-mark .two {
-  width: 30px;
-}
-
+/* hero */
 .hedding {
   width: 100%;
   height: 1px;

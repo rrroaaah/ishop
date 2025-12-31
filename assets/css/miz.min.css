@@ -23165,8 +23165,7 @@ dialog {
   left: calc(var(--number) * 100%);
 }
 .slider .slider-wrapper.slider-column .slider-content {
-  left: unset;
-  top: calc(var(--number) * 100%);
+  left: calc(var(--number) * 100%);
 }
 .badge-wrapper .badge, .badge-wrapper .badge-inside {
   padding: 8px;

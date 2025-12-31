@@ -26,8 +26,7 @@ $slider-toggle-custom-classes: ".w-100, .cursor-pointer";
             @extend .d-flex, .flex-column;
 
             .slider-content{
-                left: unset;
-                top: calc(var(--number) * 100%);
+               left: calc(var(--number) * 100%);
             }
         }
     }
