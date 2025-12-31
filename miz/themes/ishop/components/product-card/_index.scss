@@ -1,14 +1,13 @@
 @use "../../../../sass/kernel/" as *;
+@use "no-percent";
 @use "sass:map";
 
 $product-card-transition: all 0.2s ease-out;
-$product-card-custom-classes: ".px-7, .py-7, .radius-all-medium, .bw-1, .border-color, .border-style-solid";
-$product-card-image-container-custom-classes: ".pt-1, .pb-5, .px-3";
-$product-card-image-box-custom-classes: ".w-70";
-$features:(
-    checkpay : ".py-1, .px-2, .bg-on-secondary-color, .radius-all-small, .on-primary-color, .txt-normal, .font-weight-bold",
-);
-$product-card-countdown-custom-classes: ".bg-primary-color, .radius-all-extra-small, .py-1, .px-2, .on-primary-color, .font-weight-bold";
+$product-card-custom-classes: ".px-7, .pb-7, .pt-4, .radius-all-medium, .bw-1, .border-color, .border-style-solid";
+$product-card-logo-container: ".border-primary-color, .justify-content-space-between";
+$product-card-countdown-custom-classes: ".primary-color,.bg-on-primary-color, .font-weight-bold";
+$product-card-image-container-custom-classes: ".pt-7, .pb-5, .px-3";
+$product-card-image-box-custom-classes: ".w-100";
 $product-card-card-body-custom-classes: ".text-color, .gap-5";
 $product-card-card-body-title-custom-classes: ".txt-extra-title, .font-weight-bold";
 $product-card-card-body-available-number-custom-classes: ".font-weight-bold, .txt-mid-title";
@@ -18,15 +17,24 @@ $product-card-discount-percentage-custom-classes: ".font-weight-bold, .on-primar
 $product-card-special-price-custom-classes: ".font-weight-bold, .text-color, .txt-high-title";
 $product-card-credit-purchase-box-custom-classes: ".secondary-text-color, .txt-small, .font-weight-bold";
 $product-card-credit-purchase-image-custom-classes: ".py-1, .px-2, .radius-all-small";
-$product-card-product-colors-width: 10px;
+$product-card-product-colors-width: 8px;
 
 .product-card{
     transition: $product-card-transition;
     @extend .position-relative, #{$product-card-custom-classes};
 
-    &:hover{
-        background-color: get-color(card);
-    }
+    // &:hover{
+    //     background-color: get-color(card);
+    // }
+
+        .logo-container{
+            @extend .d-flex, .bw-2, .bb-style-solid,.align-items-center , #{$product-card-logo-container};
+
+            .logo{
+                @extend .w-20, .py-3;
+            }
+        }
+    
 
     .countdown{
         @extend #{$product-card-countdown-custom-classes};
@@ -47,11 +55,6 @@ $product-card-product-colors-width: 10px;
         .feature{
             @extend .position-absolute, .left-0;
     
-            @each $feature-class , $feature-custom-classes in $features{
-                &.#{$feature-class}{
-                    @extend #{$feature-custom-classes};
-                }
-            }
         }
 
         .image-box{
@@ -63,6 +66,7 @@ $product-card-product-colors-width: 10px;
         }
     }
 
+
     .card-body{
         @extend .d-flex, .flex-column, #{$product-card-card-body-custom-classes};
         
@@ -73,17 +77,54 @@ $product-card-product-colors-width: 10px;
         .available-number{
             @extend #{$product-card-card-body-available-number-custom-classes};
         }
+
+        .fast-shipping{
+            @extend .d-flex, .w-70, .align-items-center;
+
+            span{
+                @extend .txt-big;
+            }
+        }
         
         .btn-add-to-cart{
-            box-shadow: 2px 3px 4px -3px get-color(primary);
-            @extend #{$product-card-card-body-btn-cart-custom-classes};
+            
+            @extend .position-relative ,#{$product-card-card-body-btn-cart-custom-classes};
+
+            .vector,img{
+                @extend .position-absolute, .right-0, .top-0, .w-100, .h-100;
+            }
+
+            span{
+                @extend .position-relative, .z-index-5;
+            }
+
+            .vector-5{
+                top:1px;
+                border-top-right-radius: 7px;
+                border-radius: 9px;
+            }
+        }
+
+        .btn-percent .icon{
+            width: 70%;
+            position: relative;
+            z-index: 5;
+        }
+
+
+        .btn-percent{
+            width: 42px;
+            height: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .discount-box{
             @extend .d-flex, .flex-column;
             
             .original-price{
-                @extend #{$product-card-original-price-custom-classes};
+                @extend .txt-decoration-line-through, #{$product-card-original-price-custom-classes};
             }
             
             .discount-percentage{

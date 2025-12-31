@@ -1,0 +1,10 @@
+@use "../../../../../sass/kernel/" as *;
+@use "sass:map";
+
+.logo-container{
+    @extend .justify-content-center;
+}
+
+.btn-percent .icon{
+    width: 50%;
+}
