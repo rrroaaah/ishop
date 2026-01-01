@@ -1,0 +1,75 @@
+@use "../../../../../sass/kernel/" as *;
+
+$air-banner-content-contain-button-custom-classes: ".justify-content-center";
+$air-banner-content-product-product-image-custome-classes: ".w-65";
+$air-banner-content-product-text-box-custome-classes: ".rtl";
+$air-banner-content-product-text-box-frame-custome-classes: ".rtl , .top-0 , .right-0";
+$air-banner-content-product-text-box-description-custome-classes: ".rtl , .text-color , .font-weight-medium";
+$air-banner-content-product-text-box-name-custome-classes: ".ltr , .text-color , .txt-title , .font-weight-light";
+$air-banner-content-contain-product-custom-classes: ".justify-content-space-between , .align-items-center";
+$air-banner-description-font-size: "2.5rem";
+.air-banner {
+    @extend .position-relative , .w-100 , .overflow-hidden , .radius-all-medium;
+
+    .cover {
+        @extend .position-absolute , .bottom-0 , .left-0 , .z-index-2 , .w-100; 
+    }
+
+    .content {
+        @extend .w-100 , .position-relative;
+
+        .product {
+            @extend .d-flex , .w-80 , #{$air-banner-content-contain-product-custom-classes}  ;
+
+            .product-image {
+                @extend  #{$air-banner-content-product-product-image-custome-classes};
+            }
+
+            .text-box {
+                @extend .position-relative , .d-flex , .flex-column , .py-2 , .px-3 , #{$air-banner-content-product-text-box-custome-classes};
+
+                .frame {
+                    @extend .position-absolute , #{$air-banner-content-product-text-box-frame-custome-classes};
+                }
+
+                .description {
+                    @extend #{$air-banner-content-product-text-box-description-custome-classes} ;
+
+                    & {
+                        font-size: #{$air-banner-description-font-size};
+                    }
+                }
+
+                .name {
+                    @extend #{$air-banner-content-product-text-box-name-custome-classes};
+                }
+
+                & {
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .contain-button {
+            @extend .w-20 , .d-flex , .align-items-center , #{$air-banner-content-contain-button-custom-classes}; 
+        }
+    }
+
+    &::before {
+        content: '';
+        background-image: url('../../assets/media/images/banner/iphone-banner.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        @extend .w-100 , .h-100 , .position-absolute , .bottom-0 , .left-0;
+    }
+
+    &::after {
+        content: '';
+        background-image: url('../../assets/media/images/banner/Vector-12.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        @extend .w-100 , .h-100 , .position-absolute , .bottom-0 , .left-0 ;
+    }
+
+
+}
