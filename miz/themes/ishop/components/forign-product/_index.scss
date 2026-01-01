@@ -1,0 +1,63 @@
+@use "../../../../sass/kernel/" as *;
+
+$forign-product-custom-class:".position-relative, .top-0, .px-7, .pt-6 , .py-7, .w-25";
+$sale-btn-custom-class:".px-5, .py-5, .bg-button-color, .button-text-color, .font-weight-bold, .radius-all-small";
+$price-percent-custom-class:".font-weight-bold, .text-color, .txt-big-title";
+
+.forign-product{
+    @extend  .d-flex, .flex-column, .gap-5 , #{$forign-product-custom-class};
+
+    .wrapper-text-send{
+        @extend .d-flex, .flex-column, .gap-5;
+
+        .wrapper-send{
+            @extend .d-flex, .flex-row, .justify-content-space-between;
+
+            .text{
+                @extend .txt-title, .text-color, .font-weight-bold;
+            }
+        }
+    }
+
+    .wrapper-text-sale{
+        @extend .d-flex, .flex-column, .gap-5, .pt-4 ;
+
+        .wrapper-sale{
+            @extend .d-flex, .flex-column, .gap-3;
+
+            .text{
+                @extend .txt-mid-title, .text-color, .font-weight-bold;
+            }
+
+        }
+    }
+
+    .wrapper-sale-btn{
+         @extend .d-flex, .flex-column, .gap-3 ;
+
+        .sale-btn{
+            @extend #{$sale-btn-custom-class};
+        }
+    }
+
+    .container-price{
+        @extend .d-flex, .flex-column, .align-items-end, .gap-2, .pt-5;
+
+        .wrapper-price{
+            @extend .d-flex, .gap-1, .align-items-center;
+
+            .price{
+                @extend .secondary-text-color, .font-weight-bold;
+            }
+        }
+
+        .wrapper-price-percent{
+            @extend .d-flex, .align-items-center, .justify-content-end;
+
+            .price-percent{
+                @extend #{$price-percent-custom-class};
+            }
+        }
+    }
+}
+
