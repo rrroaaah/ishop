@@ -1,0 +1,64 @@
+@use "../../../../../sass/kernel/" as *;
+$focused-card-custom-classes: ".radius-all-large";
+$focused-card-after-gradiant-custom-classes:  radial-gradient(at center , #F6F7F8 1%, #B4CBD8 ) ;
+$focused-card-content-custom-classes: ".py-10 , .px-18";
+$focused-card-hover-custom-classes: radial-gradient(get-color(primary)) ;
+$focused-card-transition-custume-classes: all 300ms;
+
+
+.focused-card {
+    background-image:  url("../../assets/media/images/category/Vector-7.svg") ,#{$focused-card-after-gradiant-custom-classes};
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: $focused-card-transition-custume-classes;
+    @extend .position-relative , .d-flex ,  .overflow-hidden , .w-90 , .h-100 , #{$focused-card-custom-classes} ;
+
+    &:hover::before {
+        content: '';
+        width: 105%;
+        height: 105%;
+    }
+
+    &:hover::after {
+        content: '';
+        width: 98%;
+        height: 98%;
+        
+    }
+
+    &::before {
+        content: '';
+        background-image: url("../../assets/media/images/category/Vector-6.svg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: $focused-card-transition-custume-classes;
+        @extend .w-100 , .h-100 , .position-absolute , .bottom-0 , .right-0 , .z-index-3 ;
+    }
+
+    &::after {
+        content: '';
+        background-image: url("../../assets/media/images/category/Vector-5.svg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: $focused-card-transition-custume-classes;
+        @extend .w-100 , .h-100 , .position-absolute , .bottom-0 , .right-0 , .z-index-3 ;
+    }
+
+    &:hover .product-image {
+        transform: scale(1.2);
+    }
+
+    .content {
+        @extend .position-relative , .flex-column , .w-100 , .d-flex , .align-items-center , .justify-content-center , #{$focused-card-content-custom-classes};
+
+        .product-image {
+            transition: $focused-card-transition-custume-classes;
+            @extend .w-90 , .z-index-4;
+        }
+
+    }
+
+    &:hover {
+        background-image: url("../../assets/media/images/category/Vector-7.svg") , #{$focused-card-hover-custom-classes};
+    }
+}
