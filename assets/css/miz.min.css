@@ -26844,6 +26844,10 @@ dialog {
   -webkit-box-orient: vertical;
 }
 
+.btn-percent .icon {
+  width: 50%;
+}
+
 .product-card {
   transition: all 0.2s ease-out;
 }
@@ -26853,6 +26857,7 @@ dialog {
 .product-card .card-body .btn-add-to-cart .vector-5 {
   top: 1px;
   border-top-right-radius: 7px;
+  border-radius: 9px;
 }
 .product-card .card-body .btn-percent .icon {
   width: 70%;
@@ -27040,9 +27045,6 @@ dialog {
   transform: unset !important;
 }
 
-.commodity-pack:hover {
-  background-image: linear-gradient(90deg, #FFF 0%, #F4F5F7 100%);
-}
 .commodity-pack::after {
   content: "";
   position: absolute;
