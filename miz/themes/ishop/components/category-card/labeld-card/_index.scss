@@ -1,0 +1,77 @@
+@use "../../../../../sass/kernel/" as *;
+
+$labeld-card-custom-classes: ".radius-all-large";
+$labeld-card-after-gradiant-custom-classes:  radial-gradient(at center , #F6F7F8 1%, #B4CBD8 ) ;
+$labeld-card-content-custom-classes: ".py-10 , .px-18";
+$labeld-card-content-product-name-custom-classes:".on-primary-color , .font-weight-black , .txt-big-title";
+$labeld-card-content-product-name-font-size-custom-classes: 1.5rem;
+$labeld-card-hover-custom-classes: radial-gradient(get-color(primary)) ;
+$labeld-card-transition-custome-classes: all 300ms;
+
+
+.labeld-card {
+    background-image:  url("../../assets/media/images/category/Vector-7.svg") , #{$labeld-card-after-gradiant-custom-classes};
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: $labeld-card-transition-custome-classes;
+    @extend .position-relative , .d-flex ,  .overflow-hidden , .w-90 , .h-100 , #{$labeld-card-custom-classes} ;
+
+    &:hover::before {
+        content: '';
+        width: 105%;
+        height: 105%;
+    }
+
+    &:hover::after {
+        content: '';
+        width: 98%;
+        height: 98%;
+        
+    }
+
+    &::before {
+        content: '';
+        background-image: url("../../assets/media/images/category/Vector-6.svg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: $labeld-card-transition-custome-classes;
+        @extend .w-100 , .h-100 , .position-absolute , .bottom-0 , .right-0 , .z-index-3 ;
+    }
+
+    &::after {
+        content: '';
+        background-image: url("../../assets/media/images/category/Vector-5.svg") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: $labeld-card-transition-custome-classes;
+        @extend .w-100 , .h-100 , .position-absolute , .bottom-0 , .right-0 , .z-index-3 ;
+    }
+
+    &:hover .product-image {
+        transform: translateY(2.5rem);
+    }
+
+    &:hover .product-name {
+        transform: translateY(-2.5rem);
+        @extend .opacity-10;
+    }
+
+    .content {
+        @extend .position-relative , .flex-column , .w-100 , .d-flex , .align-items-center , .justify-content-center , #{$labeld-card-content-custom-classes};
+
+        .product-image {
+            transition: $labeld-card-transition-custome-classes;
+            @extend .w-90 , .z-index-4;
+        }
+
+        .product-name {
+            transition: $labeld-card-transition-custome-classes;
+            font-size: $labeld-card-content-product-name-font-size-custom-classes;
+            @extend .opacity-0 , .position-absolute , .z-index-4 , #{$labeld-card-content-product-name-custom-classes} ;
+        } 
+    }
+
+    &:hover {
+        background-image: url("../../assets/media/images/category/Vector-7.svg") , #{$labeld-card-hover-custom-classes};
+    }
+}
