@@ -1,0 +1,51 @@
+@use "../../../../sass/kernel/" as *;
+
+.variable-product {
+    z-index: 999;
+    box-shadow: 0px 3px 57px 6px rgba(154, 168, 188, 0.1);
+
+    @extend .position-sticky, .top-0, .d-flex, .flex-column, .gap-2, .px-7, .z-index-2, .radius-all-medium, .py-7, .w-100;
+
+    .product-main-content {
+        @extend .d-flex, .flex-column, .gap-5;
+
+        .product-main-content-buy {
+            @extend .d-flex, .flex-row, .justify-content-space-between;
+
+            .product-main-content-buy-text {
+                @extend .txt-title, .text-color, .font-weight-bold;
+            }
+
+            .product-main-content-buy-text-send {
+                @extend .txt-big, .text-color, .font-weight-bold;
+            }
+        }
+    }
+
+    .container-sales-per-week {
+        @extend .d-flex, .flex-column, .gap-2, .pt-4;
+
+        .sales-per-week {
+            @extend .d-flex, .flex-column, .gap-3, .bb-style-solid, .border-color, .bw-1, .py-4;
+
+            .sales-per-week-text {
+                @extend .txt-mid-title, .text-color, .font-weight-bold;
+
+                .text {
+                    @extend .font-weight-bold, .txt-mid-title, .text-color;
+                }
+            }
+        }
+    }
+
+    .container-variation-color {
+        @extend .d-flex, .flex-column, .align-items-start, .gap-2;
+
+        .variation-color-text {
+            @extend .txt-title, .font-weight-bold, .txt-align-center;
+        }
+ 
+        
+    }
+}
+

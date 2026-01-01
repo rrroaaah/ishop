@@ -1,0 +1,27 @@
+@use "../../../../sass/kernel/" as *;
+
+$unavailable-custom-class: " .bw-1, .border-style-solid, .border-color, .radius-all-medium, .position-sticky, .top-0, .w-25";
+$login-btn-custom-class:".bg-primary-color, .on-primary-color, .w-100, .txt-extra-title, .radius-all-small, .mb-10";
+$wrapper-unavailable-custom-class:".border-color, .py-8, .w-100";
+
+.unavailable {
+    @extend .d-flex, .flex-column, .px-8,#{$unavailable-custom-class};
+
+    .wrapper-unavailable {
+        @extend .d-flex, .justify-content-space-between, .align-items-center, .bw-1, .bb-style-solid, #{$wrapper-unavailable-custom-class} ;
+
+        .unavailable-text {
+            @extend .text-color, .font-weight-bold, .txt-big, .w-70;
+        }
+    }
+    
+    .filter {
+        filter: blur(2px);
+
+        @extend .d-flex, .flex-column, .gap-3, .py-6;
+    }
+
+    .login-btn{
+        @extend .d-flex, .justify-content-center, .mt-1, .py-4, .font-weight-bold , #{$login-btn-custom-class};
+    }
+}
