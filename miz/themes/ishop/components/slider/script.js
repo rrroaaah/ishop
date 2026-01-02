@@ -14,7 +14,7 @@ class Slider {
             const containers = document.querySelectorAll(".slider");
             containers.forEach(container => {
                 this.instances.push(this.createSliderInstance(container));
-            });
+            }); 
         }
         
         // If no instances were created, log error

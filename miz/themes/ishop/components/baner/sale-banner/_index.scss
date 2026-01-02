@@ -1,0 +1,19 @@
+@use "../../../../../sass/kernel/" as *;
+
+$sale-baner-custom-classes: ".bg-primary-color";
+$sale-baner-text-color-custom-class: ".on-primary-color";
+
+.exclusive-sale-banner{
+    @extend .w-100 , .radius-all-medium, .d-flex, .flex-column, .align-items-center, #{$sale-baner-custom-classes};
+
+    .wrapper-image{
+        @extend .w-100, .pt-10;
+    }
+
+    .view-all{
+        bottom: 10%;
+        left:40%;
+        @extend .position-relative ,.z-index-5, .font-weight-extra-bold, #{$sale-baner-text-color-custom-class};
+    }
+}
+
