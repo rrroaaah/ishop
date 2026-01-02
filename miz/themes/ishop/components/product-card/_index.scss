@@ -1,4 +1,5 @@
 @use "../../../../sass/kernel/" as *;
+@use "no-percent";
 @use "sass:map";
 
 $product-card-transition: all 0.2s ease-out;
@@ -100,6 +101,7 @@ $product-card-product-colors-width: 8px;
             .vector-5{
                 top:1px;
                 border-top-right-radius: 7px;
+                border-radius: 9px;
             }
         }
 
