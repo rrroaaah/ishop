@@ -101,7 +101,7 @@
   direction: rtl;
 }
 
-.ltr, .air-banner .content .product .text-box .name {
+.ltr, .iphone-banner .product .text-box .name, .air-banner .content .product .text-box .name {
   direction: ltr;
 }
 
@@ -201,7 +201,7 @@
   border: none !important;
 }
 
-.font-weight-black, .labeld-card .content .product-name {
+.font-weight-black, .labeld-card .content .product-name, .iphone-banner .product .text-box .description {
   font-weight: 900;
 }
 
@@ -217,7 +217,7 @@
   font-weight: 600;
 }
 
-.font-weight-medium, .air-banner .content .product .text-box .description, .product-qa .answer-container .answer-description, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, .article-banner-weblog {
+.font-weight-medium, .iphone-banner .product .text-box .name, .air-banner .content .product .text-box .description, .product-qa .answer-container .answer-description, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, .article-banner-weblog {
   font-weight: 500;
 }
 
@@ -1825,7 +1825,7 @@ html {
   width: 19%;
 }
 
-.w-20, .air-banner .content .contain-button, .banner .cantainer-image .image-product, .product-card .logo-container .logo {
+.w-20, .iphone-banner .contain-button, .air-banner .content .contain-button, .banner .cantainer-image .image-product, .product-card .logo-container .logo {
   width: 20%;
 }
 
@@ -2305,7 +2305,7 @@ html {
   width: 79%;
 }
 
-.w-80, .air-banner .content .product {
+.w-80, .iphone-banner .product, .air-banner .content .product {
   width: 80%;
 }
 
@@ -2465,7 +2465,7 @@ html {
   width: 99%;
 }
 
-.w-100, .labeld-card::before, .labeld-card::after, .labeld-card .content, .focused-card::before, .focused-card::after, .focused-card .content, .air-banner, .air-banner .cover, .air-banner .content, .air-banner::before, .air-banner::after, .exclusive-sale-banner, .exclusive-sale-banner .wrapper-image, .banner, .banner .cantainer-image, .banner .cantainer-image .waterfall, .banner .cantainer-image .red-caver, .commodity-pack, .slider .slider-wrapper, .slider .slider-wrapper .slider-content, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider, .product-gallery.slider .slider-wrapper, .product-gallery.slider .slider-wrapper .slider-content img, .product-gallery.slider .slider-toggles .slider-toggle, .product-comment, .product-comment .comment-gallery img, .weblog-card.relation .cover-image img, .weblog-card.relation .cover-image::after, .weblog-card.newest-row .cover-image img, .story-content .story-timelines .timeline, .modal-container.story-modal .modal-content, .rating-card, .progress, .product-category img, .product-card .image-container .image-box, .product-card .image-container .image-box img, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .logo-banner img, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .privilege, .privilege img, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after {
+.w-100, .labeld-card::before, .labeld-card::after, .labeld-card .content, .focused-card::before, .focused-card::after, .focused-card .content, .iphone-banner, .iphone-banner::after, .iphone-banner::before, .air-banner, .air-banner .cover, .air-banner .content, .air-banner::before, .air-banner::after, .exclusive-sale-banner, .exclusive-sale-banner .wrapper-image, .banner, .banner .cantainer-image, .banner .cantainer-image .waterfall, .banner .cantainer-image .red-caver, .commodity-pack, .slider .slider-wrapper, .slider .slider-wrapper .slider-content, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider, .product-gallery.slider .slider-wrapper, .product-gallery.slider .slider-wrapper .slider-content img, .product-gallery.slider .slider-toggles .slider-toggle, .product-comment, .product-comment .comment-gallery img, .weblog-card.relation .cover-image img, .weblog-card.relation .cover-image::after, .weblog-card.newest-row .cover-image img, .story-content .story-timelines .timeline, .modal-container.story-modal .modal-content, .rating-card, .progress, .product-category img, .product-card .image-container .image-box, .product-card .image-container .image-box img, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .logo-banner img, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .privilege, .privilege img, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after {
   width: 100%;
 }
 
@@ -2873,7 +2873,7 @@ html {
   height: 98%;
 }
 
-.h-100, .labeld-card, .labeld-card::before, .labeld-card::after, .focused-card, .focused-card::before, .focused-card::after, .air-banner::before, .air-banner::after, .slider .slider-wrapper .slider-content, .product-gallery.slider .slider-wrapper .slider-content img, .weblog-card.relation .cover-image::after, .modal-container.story-modal .modal-content, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .biography::after, .article-banner-weblog::after {
+.h-100, .labeld-card, .labeld-card::before, .labeld-card::after, .focused-card, .focused-card::before, .focused-card::after, .iphone-banner::after, .iphone-banner::before, .air-banner::before, .air-banner::after, .slider .slider-wrapper .slider-content, .product-gallery.slider .slider-wrapper .slider-content img, .weblog-card.relation .cover-image::after, .modal-container.story-modal .modal-content, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .biography::after, .article-banner-weblog::after {
   height: 100%;
 }
 
@@ -2889,7 +2889,7 @@ html {
   flex-direction: row;
 }
 
-.flex-row-reverse, .contact-us-information {
+.flex-row-reverse, .iphone-banner .product, .contact-us-information {
   flex-direction: row-reverse;
 }
 
@@ -2921,7 +2921,7 @@ html {
   justify-content: flex-start;
 }
 
-.justify-content-center, .labeld-card .content, .focused-card .content, .air-banner .content .contain-button, .badge-wrapper .badge, .badge-wrapper .badge-inside, .information-tooltip, .product-comment .features-container .show-more .btn, .modal-container.story-modal, .rating-card, .rating-card .card-footer, .progress-bar, .product-category, .product-card .image-container, .product-card .image-container .image-box {
+.justify-content-center, .labeld-card .content, .focused-card .content, .iphone-banner .contain-button, .air-banner .content .contain-button, .badge-wrapper .badge, .badge-wrapper .badge-inside, .information-tooltip, .product-comment .features-container .show-more .btn, .modal-container.story-modal, .rating-card, .rating-card .card-footer, .progress-bar, .product-category, .product-card .image-container, .product-card .image-container .image-box, .logo-container {
   justify-content: center;
 }
 
@@ -2969,7 +2969,7 @@ html {
   justify-content: space-around;
 }
 
-.justify-content-space-evenly {
+.justify-content-space-evenly, .iphone-banner .product {
   justify-content: space-evenly;
 }
 
@@ -5449,7 +5449,7 @@ html {
   padding-right: 9.75rem;
 }
 
-.pr-40 {
+.pr-40, .iphone-banner .product {
   padding-right: 10rem;
 }
 
@@ -5567,7 +5567,7 @@ html {
   padding-right: 0.5rem;
 }
 
-.px-3, .call-product .wrapper-btn .call-btn, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-card .image-container {
+.px-3, .iphone-banner .product .text-box, .air-banner .content .product .text-box, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-card .image-container {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
@@ -6067,7 +6067,7 @@ html {
   padding-bottom: 0.25rem;
 }
 
-.py-2, .air-banner .content .product .text-box {
+.py-2, .iphone-banner .product .text-box, .air-banner .content .product .text-box {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -26654,7 +26654,7 @@ dialog {
   overflow: scroll;
 }
 
-.overflow-hidden, .labeld-card, .focused-card, .air-banner, .slider .slider-wrapper, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container.story-modal, .modal-container.story-modal .modal-content, .progress, .progress-bar, .accordion-group.accordion-compact, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-body, .biography, .article-banner-weblog {
+.overflow-hidden, .labeld-card, .focused-card, .iphone-banner, .air-banner, .slider .slider-wrapper, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .weblog-card.newest-row .cover-image, .weblog-card.newest-column, .modal-container.story-modal, .modal-container.story-modal .modal-content, .progress, .progress-bar, .accordion-group.accordion-compact, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-body, .biography, .article-banner-weblog {
   overflow: hidden;
 }
 
@@ -26674,11 +26674,11 @@ dialog {
   overflow-y: hidden;
 }
 
-.position-relative, .labeld-card, .labeld-card .content, .focused-card, .focused-card .content, .air-banner, .air-banner .content, .air-banner .content .product .text-box, .exclusive-sale-banner .view-all, .banner, .banner .cantainer-text, .banner .cantainer-text .subtitle, .banner .cantainer-text .name-product, .badge-wrapper, .commodity-pack, .slider .slider-wrapper, .information-tooltip, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .story-content, .rating-card, .product-card, .product-card .image-container, .product-card .card-body .btn-add-to-cart, .product-card .card-body .btn-add-to-cart span, .privilege, .biography, .article-banner-weblog {
+.position-relative, .labeld-card, .labeld-card .content, .focused-card, .focused-card .content, .iphone-banner, .iphone-banner .product .text-box, .air-banner, .air-banner .content, .air-banner .content .product .text-box, .exclusive-sale-banner .view-all, .banner, .banner .cantainer-text, .banner .cantainer-text .subtitle, .banner .cantainer-text .name-product, .badge-wrapper, .commodity-pack, .slider .slider-wrapper, .information-tooltip, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .story-content, .rating-card, .product-card, .product-card .image-container, .product-card .card-body .btn-add-to-cart, .product-card .card-body .btn-add-to-cart span, .privilege, .biography, .article-banner-weblog {
   position: relative;
 }
 
-.position-absolute, .labeld-card::before, .labeld-card::after, .labeld-card .content .product-name, .focused-card::before, .focused-card::after, .air-banner .cover, .air-banner .content .product .text-box .frame, .air-banner::before, .air-banner::after, .banner .cantainer-image img, .banner .cantainer-text .angle-right, .banner .cantainer-text .angle-left, .badge-wrapper .badge, .badge-wrapper .badge-inside, .slider .slider-wrapper .slider-content, .information-tooltip span.box, .weblog-card.relation .cover-image::after, .modal-container.story-modal .modal-content, .product-card .product-colors, .product-card .image-container .feature, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
+.position-absolute, .labeld-card::before, .labeld-card::after, .labeld-card .content .product-name, .focused-card::before, .focused-card::after, .iphone-banner::after, .iphone-banner::before, .air-banner .cover, .air-banner .content .product .text-box .frame, .air-banner::before, .air-banner::after, .banner .cantainer-image img, .banner .cantainer-text .angle-right, .banner .cantainer-text .angle-left, .badge-wrapper .badge, .badge-wrapper .badge-inside, .slider .slider-wrapper .slider-content, .information-tooltip span.box, .weblog-card.relation .cover-image::after, .modal-container.story-modal .modal-content, .product-card .product-colors, .product-card .image-container .feature, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
   position: absolute;
 }
 
@@ -26714,7 +26714,7 @@ dialog {
   z-index: 1;
 }
 
-.z-index-2, .variable-product, .biography .cover-on-image, .article-banner-weblog .banner-content {
+.z-index-2, .iphone-banner::after, .iphone-banner::before, .air-banner .cover, .biography .cover-on-image, .article-banner-weblog .banner-content {
   z-index: 2;
 }
 
@@ -27139,6 +27139,35 @@ dialog {
   background-image: url("../../assets/media/images/banner/Vector-12.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.iphone-banner {
+  background-image: url("../../assets/media/images/banner/iphone-secondary-banner.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.iphone-banner .product .text-box {
+  background-image: url("../../assets/media/images/banner/Vector-9.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 100% 0%;
+  white-space: nowrap;
+}
+.iphone-banner .product .text-box .description {
+  font-size: 2.5rem;
+}
+.iphone-banner::after {
+  content: "";
+  background-image: url("../../assets/media/images/banner/Vector-12.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.iphone-banner::before {
+  content: "";
+  background-image: url("../../assets/media/images/banner/Vector-15.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 1%;
 }
 
 .focused-card {
