@@ -94,9 +94,10 @@ header .secondary-part {
 }
 
 header .vertical-line {
-  width: 0.05rem;
-  height: 50px;
-  background-color: #DDDDDD;
+  width: 0.1rem;
+  height: 30px;
+  background-color: var(--primary);
+  margin-top: 1rem;
 }
 
 header .secondary-part .hover-box>li {
@@ -275,6 +276,70 @@ header{
   line-height: 1rem;
 }
 
+header .btn-line{
+  width: 2px;
+  height: 25px;
+  background-color: var(--text);
+  border-radius: 50px;
+}
+
+header .cart-button{
+  background-image: url("../../assets/media/images/Group 193.png");
+  background-size: cover;
+  background-position: center;
+}
+
+header .location-btn{
+  background-color: #B4CAD7;
+  background-image: url("../../assets/media/images/Group 193 (1).png");
+  background-size: cover;
+  background-position: center;
+}
+
+header .nav-items-logo{
+  height: 12px;
+  transform: translateY(-2px);
+}
+
+.w-max-content{
+  width: max-content;
+}
+
+header .megamenu .submenu-parent:hover> div:first-child> img:first-child{
+  display: none;
+}
+
+header .megamenu .submenu-parent:hover> div:first-child> img:last-child{
+  display: block;
+}
+
+header .megamenu> ul> .submenu-parent:last-child{
+  border-bottom-right-radius: 15px;
+}
+
+header .megamenu> ul> .submenu-parent:first-child{
+  background-color: var(--on-primary);
+}
+
+header .megamenu> ul> .submenu-parent:first-child> div:first-child> img:first-child{
+  display: none;
+}
+
+header .megamenu> ul> .submenu-parent:first-child> div:first-child> img:last-child{
+  display: block;
+}
+
+header .megamenu> ul:has(> .submenu-parent:nth-child(n+2):hover)> .submenu-parent:first-child {
+  background-color: transparent;
+}
+
+header .megamenu> ul:has(> .submenu-parent:nth-child(n+2):hover)> .submenu-parent:first-child> div:first-child> img:first-child{
+  display: block;
+}
+
+header .megamenu> ul:has(> .submenu-parent:nth-child(n+2):hover)> .submenu-parent:first-child> div:first-child> img:last-child{
+  display: none;
+}
 
 
 @media screen and (width < 1200px) {
@@ -380,7 +445,7 @@ header{
   }
 
   header .categories .megamenu .submenu-parent .submenu ul {
-    height: 1000%;
+    height: unset;
   }
 
   .d-sm-none {
