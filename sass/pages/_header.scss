@@ -342,6 +342,11 @@ header .megamenu> ul:has(> .submenu-parent:nth-child(n+2):hover)> .submenu-paren
 }
 
 
+header{
+  z-index: 100000;
+}
+
+
 @media screen and (width < 1200px) {
   header .secondary-part .hover-box>li:nth-child(n+2)>ul {
     width: fit-content;
