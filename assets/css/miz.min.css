@@ -27191,6 +27191,22 @@ dialog {
   background-size: contain;
 }
 
+.call-product {
+  box-shadow: 0px 0px 9px -3px rgb(205, 205, 205);
+}
+.call-product .container-price .last-price {
+  line-height: 2;
+}
+.call-product .explanation-text {
+  line-height: 2;
+}
+.variable-product {
+  z-index: 999;
+  box-shadow: 0px 3px 57px 6px rgba(154, 168, 188, 0.1);
+}
+.unavailable .filter {
+  filter: blur(2px);
+}
 .iphone-banner {
   background-image: url("../../assets/media/images/banner/iphone-secondary-banner.svg");
   background-repeat: no-repeat;
