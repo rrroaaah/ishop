@@ -1,0 +1,34 @@
+@use "../../../../sass/kernel/" as *;
+
+$devicebanner-custom-classes: ".radius-all-large, .px-5";
+$devicebanner-title-custom-classes: ".txt-mega-title, .font-weight-bold, .on-primary-color";
+$devicebanner-background-custom-classes: radial-gradient(at center, #F6F7F8 1%, #B4CBD8);
+$devicebanner-transition-custome-classes: all 300ms;
+
+.devicebanner {
+    background-image: #{$devicebanner-background-custom-classes};
+    @extend .d-flex, .flex-column, .align-items-center, .justify-content-center, .overflow-hidden, #{$devicebanner-custom-classes};
+
+    &:hover .title {
+        transform: translateY(120px);  
+         @extend .opacity-10;
+    }
+
+    &:hover img {
+        transform: translateY(130px);
+    }
+
+    .title {
+        @extend .opacity-0, #{$devicebanner-title-custom-classes};
+        transform: translateY(200px);
+        transition: $devicebanner-transition-custome-classes;
+    }
+
+    img {
+        transform: translateY(70px);
+        width: 100%;
+        height: 100%;
+        transition: $devicebanner-transition-custome-classes;
+    }
+
+}

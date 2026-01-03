@@ -1,0 +1,76 @@
+@use "../../../../sass/kernel/" as *;
+
+$topseller-custom-classes: ".border-style-solid, .border-color, .px-6, .py-5, .radius-all-medium";
+$topseller-after-gradiant-custom-classes: radial-gradient(at center, #F6F7F8 1%, #B4CBD8);
+$topseller-content-custom-classes: ".py-5";
+$topseller-hover-custom-classes: radial-gradient(get-color(primary));
+$topseller-transition-custume-classes: all 300ms;
+$topseller-number-custom-classes: ".text-color, .font-weight-bold, .txt-big-title";
+$topseller-title-custom-classes: ".txt-mid-title, .pr-6, .text-color, .font-weight-bold";
+$topseller-number-spaces-custom-classes: ".mx-5, .border-color";
+
+.topseller {
+    background-image: url("../../assets/media/images/category/back.svg"), #{$topseller-after-gradiant-custom-classes};
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: $topseller-transition-custume-classes;
+    @extend .position-relative, .overflow-hidden, #{$topseller-custom-classes};
+
+    &:hover {
+         transition: $topseller-transition-custume-classes;
+         background-color: var(--primary-color);
+    }
+
+    &:hover .number {
+  color: var(--on-primary);
+}
+   &:hover .title {
+  color: var(--on-primary);
+}
+
+    &::before {
+        content: '';
+        background-image: url("../../assets/media/images/category/back2.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: $topseller-transition-custume-classes;
+        @extend .w-100, .h-100, .position-absolute, .bottom-0, .right-0, .z-index-2;
+    }
+
+    &::after {
+        content: '';
+        background-image: url("../../assets/media/images/category/back3.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: $topseller-transition-custume-classes;
+        @extend .w-100, .h-100, .position-absolute, .bottom-0, .right-0;
+    }
+
+    .details {
+        @extend .d-flex, .justify-content-space-between, .position-relative, .z-index-10;
+
+        .content {
+            @extend .d-flex, .align-items-center;
+
+            .number {
+                @extend .d-flex, .align-items-center, #{$topseller-number-custom-classes};
+
+                &::after {
+                    content: "";
+                    width: 2px;
+                    height: 20px;
+                    @extend #{$topseller-number-spaces-custom-classes};
+                }
+            }
+
+            .title {
+                @extend #{$topseller-title-custom-classes};
+            }
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+}

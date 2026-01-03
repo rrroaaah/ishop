@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* footer-navbar */
 .footer-navbar a:hover {
   color: var(--icon-hover);
@@ -253,6 +254,12 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.border-device {
+  width: 100%;
+  background: var(--border);
+  height: 1px;
+}
+
 /*story*/
 .story {
   width: 100px;
@@ -268,10 +275,129 @@
   bottom: 50%;
 }
 
+#exceptional-offers > div > div {
+  background-image: url("../../assets/media/images/بنر شگفت انگیز.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.view-all {
+  bottom: 10%;
+}
+
 .text-nowrap {
   text-wrap: nowrap;
 }
 
+#credit-purchase > div {
+  grid-template-columns: 1fr 2fr;
+}
+
+#kala-pack > div:nth-child(1) > div:nth-child(2) {
+  overflow-y: scroll;
+  height: 300px;
+  scrollbar-color: #E80645 #F3F6F9;
+}
+
+#kala-pack .image-box {
+  left: 20%;
+  bottom: 30%;
+}
+
+#kala-pack .image-box p {
+  overflow: hidden;
+  text-wrap: nowrap;
+  width: 130px;
+  text-overflow: ellipsis;
+}
+
+.article img {
+  object-fit: cover;
+}
+
+#brand-wrapper .border-left {
+  border-left: 1px solid var(--border);
+}
+
+#brand-wrapper .prev {
+  top: calc(50% - 25.5px);
+  right: -2px;
+}
+
+#brand-wrapper .next {
+  top: calc(50% - 25.5px);
+  left: -2px;
+}
+
+#credit-purchase .slider-wrapper {
+  height: 420px !important;
+}
+
+#credit-purchase .slider .slider-wrapper.slider-column .slider-content {
+  top: calc(var(--number) * 100%) !important;
+  left: auto;
+}
+
+#new-products .product-card {
+  width: 300px;
+}
+
+#brand-wrapper > div > div + div.container {
+  border-color: #D5D5D5;
+}
+
+#brand-wrapper .logo {
+  width: 180px;
+  object-fit: contain;
+  height: 100px;
+}
+
+@media screen and (width < 1200px) {
+  #credit-purchase > div {
+    grid-template-columns: 1fr;
+  }
+  #credit-purchase #sliderOne {
+    position: static;
+  }
+  #credit-purchase #sliderTwo {
+    position: static;
+  }
+  #credit-purchase .slider-wrapper {
+    flex-direction: row;
+  }
+}
+@media screen and (width < 992px) {
+  #credit-purchase .slider-wrapper {
+    height: 370px !important;
+  }
+}
+@media screen and (width < 576px) {
+  #credit-purchase #sliderOne {
+    position: absolute;
+  }
+  #credit-purchase #sliderTwo {
+    position: absolute;
+  }
+  #credit-purchase .slider-wrapper {
+    flex-direction: column;
+  }
+  #credit-purchase .slider-wrapper {
+    height: 370px !important;
+  }
+  #credit-purchase .devicebanner:hover img {
+    transform: translateY(70px);
+  }
+  #credit-purchase .devicebanner img {
+    transform: translateY(30px);
+  }
+  #credit-purchase .devicebanner:hover .title {
+    transform: translateY(60px);
+  }
+  #credit-purchase .slider-wrapper {
+    height: 300px !important;
+  }
+}
 #page-404 {
   background-image: url("../../assets/media/images/404bg.png");
   background-size: cover;
