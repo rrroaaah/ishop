@@ -1,4 +1,4 @@
-@use "../../../../sass/kernel/" as *;
+@use "../../../../../sass/kernel/" as *;
 @use "sass:map";
 
 .logo-container{
@@ -8,5 +8,3 @@
 .btn-percent .icon{
     width: 50%;
 }
-
-

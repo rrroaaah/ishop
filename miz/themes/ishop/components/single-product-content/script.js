@@ -46,7 +46,7 @@ class SectionScroller {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const scroller = new SectionScroller({
+    new SectionScroller({
         upArrowSelector: ".arrow-controls .fa-angle-up",
         downArrowSelector: ".arrow-controls .fa-angle-down",
         titleSelector: ".slider-frame h3",

@@ -1,21 +1,4 @@
 #page-404 {
-  background-image: url("../../assets/media/images/404bg.png");
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(160deg,#B8B6FF,#2A2AFE);
 }
 
-#page-404 .timer {
-  border: 3px solid var(--on-primary);
-  width: 60px;
-}
-
-#page-404 input {
-  height: 55px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-}
-
-.font-initial{
-  font-family: initial;
-}
