@@ -1,0 +1,64 @@
+@use "../../../../sass/kernel/" as *;
+
+$call-product-class:".position-sticky, .px-10, .py-10, .radius-all-medium, .w-25";
+$date-custom-classes:".text-color, .txt-normal, .font-weight-bold ";
+$price-custom-classes:".font-weight-bold, .text-color, .txt-big-title"; 
+$call-btn-custom-classes:".bg-button-color, .button-text-color, .font-weight-bold,  .radius-all-small, ";
+
+.call-product{
+    box-shadow: 0px 0px 9px -3px rgb(205, 205, 205);
+    @extend  .top-0,  .d-flex, .align-items-center, .flex-column, .gap-10 , #{$call-product-class};
+
+    .container-price {
+        @extend .div, .justify-content-space-between, .gap-2, .w-100;
+
+        .last-price{
+            line-height: 2;
+            @extend .txt-big ,.text-color ,.font-weight-bold;
+        }
+
+        .wrapper-date{
+            @extend .d-flex, .flex-column, .align-items-end, .gap-2 ;
+
+            .date{
+                @extend #{$date-custom-classes} ;
+            }
+
+            .wrapper-price{
+                @extend .d-flex, .align-items-center, .justify-content-end ; 
+
+                .price{
+                    @extend #{$price-custom-classes} ;
+                }
+            }
+        }
+    }
+
+    .explanation-text{
+        line-height: 2;
+
+        @extend .txt-big, .text-color, .font-weight-bold ;
+    }
+
+    .wrapper-btn{
+        @extend .div, .justify-content-space-between, .w-100 ;
+
+        .call-btn{
+            @extend .py-3, .px-3, #{$call-btn-custom-classes};
+        }
+
+        .wrapper-call{
+           @extend .div, .flex-column, .justify-content-space-between;
+
+           .text-call{
+            @extend .txt-big, .text-color, .font-weight-bold;
+           }
+
+           .phone-number{
+            @extend .font-weight-bold, .text-color, .txt-big-title ;
+           }
+        }
+    }
+
+}
+
