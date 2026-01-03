@@ -79,6 +79,7 @@
 #simple-product .popup-all #card-shop-open[type="radio"]:checked+input+div+.pop-product {
   display: flex !important;
 }
+<<<<<<< HEAD
 #simple-product .popup-all .special-Offerbox label p{
     cursor: pointer;
 }
@@ -184,6 +185,8 @@ html {
   border-bottom: 1px solid var(--border);
   padding-bottom: 8px;
 }
+=======
+>>>>>>> 8481be97972c2e29ef4645d68e8a66e997386f49
 
 div:has(>.rating-card) {
     top: 2rem ;
