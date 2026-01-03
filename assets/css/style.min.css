@@ -312,10 +312,6 @@
   text-overflow: ellipsis;
 }
 
-.article img {
-  object-fit: cover;
-}
-
 #brand-wrapper .border-left {
   border-left: 1px solid var(--border);
 }
@@ -717,6 +713,10 @@
   }
 }
 #faq-wrapper .faq-search-form {
+  background-color: #f8f9fb;
+}
+
+.accordion-group .accordion {
   background-color: #f8f9fb;
 }
 

@@ -9,8 +9,8 @@ $accordion-rotate-icon: 180deg;
 $accordion-transition: 0.3s;
 $accordion-group-custom-classes: ".d-flex, .flex-column, .gap-4";
 $accordion-custom-classes: ".bg-color, .secondary-color, .#{$font-prefix}-normal, .radius-all-small,";
-$accordion-body-custom-classes: ".bg-card-color, .text-color, .font-weight-bold, .px-4, .py-6, .#{$font-prefix}-title, .radius-all-extra-small";
-$accordion-header-custom-classes: ".title-text-color, .font-weight-bold, .pb-1, .#{$font-prefix}-extra-title, .pt-2, .pl-2, .pb-6";
+$accordion-body-custom-classes: ".text-color, .font-weight-bold, .px-4, .py-6, .#{$font-prefix}-title, .radius-all-extra-small";
+$accordion-header-custom-classes: ".title-text-color, .font-weight-bold, .pb-1, .#{$font-prefix}-extra-title, .pt-2, .pl-2";
 $accordion-box-custom-classes: ".gap-1, .py-3, .px-4";
 $accordion-zebra-custom-classes: ".bg-secondary-light-color, .secondary-color";
 $accordion-zebra-nth-child: "2n-1";
@@ -35,7 +35,6 @@ $accordion-zebra-nth-child: "2n-1";
     }
 
     .accordion {
-        box-shadow: 0px 3px 10px 0px get-color(shadow);
         @extend .w-100, .overflow-hidden, #{$accordion-custom-classes};
 
         .accordion-box {
