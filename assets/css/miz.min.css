@@ -27086,6 +27086,10 @@ dialog {
   opacity: 1;
 }
 
+.hide-submenu {
+  transform: translateY(-100%);
+}
+
 .banner .cantainer-image .image-product {
   left: 15%;
 }
