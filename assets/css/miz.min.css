@@ -486,7 +486,7 @@ html {
   background-color: var(--menu);
 }
 
-.bg-card-color, button.product-button-feature.payable-credit, .accordion-group .accordion .accordion-box .accordion-body {
+.bg-card-color, button.product-button-feature.payable-credit {
   background-color: var(--card);
 }
 
@@ -4361,7 +4361,7 @@ html {
   padding-bottom: 1.25rem;
 }
 
-.pb-6, .weblog-card.newest-column .card-body, .accordion-group .accordion .accordion-box .accordion-header {
+.pb-6, .weblog-card.newest-column .card-body {
   padding-bottom: 1.5rem;
 }
 
@@ -26815,9 +26815,6 @@ dialog {
 }
 .accordion-group.accordion-outline .accordion {
   background-color: transparent !important;
-}
-.accordion-group .accordion {
-  box-shadow: 0px 3px 10px 0px var(--shadow);
 }
 .accordion-group .accordion .accordion-box {
   transition: 0.3s;
