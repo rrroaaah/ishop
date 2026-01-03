@@ -1,0 +1,13 @@
+@use "../../../../sass/kernel/" as *;
+
+$baner-mobile-custom-classes: ".radius-all-large, .px-5, .bg-primary-color";
+$baner-mobile-title-custom-classes: ".txt-mega-title, .font-weight-bold, .on-primary-color";
+
+.baner-mobile {
+    @extend .d-flex, .flex-column, .align-items-center, .justify-content-center, .overflow-hidden, #{$baner-mobile-custom-classes};
+
+    .title {
+        @extend #{$baner-mobile-title-custom-classes};
+    }
+
+}

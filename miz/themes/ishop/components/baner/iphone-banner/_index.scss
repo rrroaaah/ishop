@@ -1,0 +1,67 @@
+@use "../../../../../sass/kernel/" as *;
+
+$iphone-banner-contain-button-custom-classes: ".justify-content-center";
+$iphone-banner-product-product-image-custome-classes: ".w-25";
+$iphone-banner-product-text-box-custome-classes: "";
+$iphone-banner-product-text-box-description-custome-classes: ".text-color , .font-weight-black";
+$iphone-banner-product-text-box-name-custome-classes: " .ltr , .text-color , .txt-title , .font-weight-medium";
+$iphone-banner-contain-product-custom-classes: ".justify-content-space-evenly , .align-items-center , .pr-40 , .flex-row-reverse , .w-80";
+$iphone-banner-description-font-size-custom-classes: 2.5rem;
+
+
+.iphone-banner {
+    background-image: url('../../assets/media/images/banner/iphone-secondary-banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend .position-relative , .w-100 , .overflow-hidden , .radius-all-medium , .d-flex ;
+
+    .product {
+        @extend .d-flex , #{$iphone-banner-contain-product-custom-classes};
+
+        .product-image {
+            @extend #{$iphone-banner-product-product-image-custome-classes};
+        }
+
+        .text-box {
+            background-image: url('../../assets/media/images/banner/Vector-9.svg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 100% 0%;
+            white-space: nowrap;
+            @extend .position-relative , .d-flex , .flex-column , .py-2 , .px-3 ;
+
+            .description {
+                font-size: $iphone-banner-description-font-size-custom-classes;
+                @extend #{$iphone-banner-product-text-box-description-custome-classes} ;
+            }
+
+            .name {
+                @extend #{$iphone-banner-product-text-box-name-custome-classes};
+            }
+
+
+
+        }
+    }
+
+    .contain-button {
+        @extend .w-20 , .d-flex , .align-items-center , #{$iphone-banner-contain-button-custom-classes}; 
+    }
+
+    &::after {
+        content: '';
+        background-image: url('../../assets/media/images/banner/Vector-12.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        @extend .position-absolute , .w-100 , .h-100 , .z-index-2 ;
+    }
+
+    &::before {
+        content: '';
+        background-image:  url('../../assets/media/images/banner/Vector-15.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 100% 1%;
+        @extend .position-absolute , .w-100 , .h-100 , .z-index-2 ;
+    }
+}

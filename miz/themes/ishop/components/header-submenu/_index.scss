@@ -1,0 +1,9 @@
+@use "../../../../sass/config/_dims" as *;
+@use "../../../../sass/config/_typography" as *;
+@use "../../../../sass/kernel" as *;
+@use "../../config" as *;
+@use 'sass:map';
+
+.hide-submenu{
+    transform: translateY(-100%);
+}
