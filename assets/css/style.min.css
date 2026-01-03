@@ -237,7 +237,6 @@ footer .top-line {
 
 .icon-share::before {
   content: "\e92a";
-  font-family: "icomoon";
   font-style: normal;
 }
 
@@ -272,8 +271,25 @@ footer .top-line {
   font-style: normal;
 }
 
-.dinasty {
+#article .dinasty {
   white-space: nowrap;
+}
+
+#article {
+  line-height: 1.5rem;
+}
+
+#article .dinasty {
+  white-space: nowrap;
+}
+
+#article #more-article > div:nth-child(1) p {
+  white-space: nowrap;
+}
+
+#article .article-title p {
+  text-align: justify;
+  line-height: 2.2rem;
 }
 
 @media screen and (width < 992px) {

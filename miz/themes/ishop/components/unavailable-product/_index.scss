@@ -1,6 +1,6 @@
 @use "../../../../sass/kernel/" as *;
 
-$unavailable-custom-class: " .bw-1, .border-style-solid, .border-color, .radius-all-medium, .position-sticky, .top-0, .w-25";
+$unavailable-custom-class: " .bw-1, .border-style-solid, .border-color, .radius-all-medium, .position-sticky, .top-0, .w-100";
 $login-btn-custom-class:".bg-primary-color, .on-primary-color, .w-100, .txt-extra-title, .radius-all-small, .mb-10";
 $wrapper-unavailable-custom-class:".border-color, .py-8, .w-100";
 
@@ -14,6 +14,7 @@ $wrapper-unavailable-custom-class:".border-color, .py-8, .w-100";
             @extend .text-color, .font-weight-bold, .txt-big, .w-70;
         }
     }
+
     
     .filter {
         filter: blur(2px);
