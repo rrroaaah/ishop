@@ -30,8 +30,10 @@
 
 #shop .palet-color .light {
     background-color: transparent;
-    right: 1rem ;
-    top: 1rem;
+    right: 0.5rem ;
+    top: 0.5rem;
+    width: 5px;
+    aspect-ratio: 1;
 }
 
 #shop .palet-color:has(.color-alarm:checked) .light {
@@ -69,8 +71,10 @@
 
 #shop .palet-brand .light {
     background-color: transparent;
-    right: 1rem ;
-    top: 1rem;
+    right: 0.5rem ;
+    top: 0.5rem;
+    width: 5px;
+    aspect-ratio: 1;
 }
 
 #shop .palet-brand:has(.color-alarm:checked) .light {
@@ -109,8 +113,10 @@
 
 #shop .palet-category .light {
     background-color: transparent;
-    right: 1rem ;
-    top: 1rem;
+    right: 0.5rem ;
+    top: 0.5rem;
+    width: 5px;
+    aspect-ratio: 1;
 }
 
 #shop .palet-category:has(.color-alarm:checked) .light {
@@ -367,6 +373,23 @@ aside {
     
 .card-information {
     background-color: #F5F9FA;
+}
+
+#category .labeld-card{
+    width: 120px;
+    aspect-ratio: 1 !important;
+}
+
+#category .labeld-card .content{
+    padding: 0;
+}
+
+#category .labeld-card .content .product-image{
+    width: 40%;
+}
+
+#category .labeld-card .content .product-name{
+    font-size: 1rem;
 }
 
 
