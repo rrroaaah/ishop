@@ -2897,7 +2897,7 @@ html {
   flex-direction: row-reverse;
 }
 
-.flex-column, .forign-product, .forign-product .wrapper-text-send, .forign-product .wrapper-text-sale, .forign-product .wrapper-text-sale .wrapper-sale, .forign-product .wrapper-sale-btn, .forign-product .container-price, .unavailable, .unavailable .filter, .variable-product, .variable-product .product-main-content, .variable-product .container-sales-per-week, .variable-product .container-sales-per-week .sales-per-week, .variable-product .container-variation-color, .call-product, .call-product .container-price .wrapper-date, .call-product .wrapper-btn .wrapper-call, .product-toolbar, .product-toolbar .rate-box, .product-toolbar .icons-box, .baner-mobile, .devicebanner, .labeld-card .content, .focused-card .content, .iphone-banner .product .text-box, .air-banner .content .product .text-box, .exclusive-sale-banner, .slider, .slider .slider-wrapper.slider-column, .product-gallery.slider, .product-qa, .product-qa .answer-container .answer-description, .product-comment, .product-comment .text-container, .weblog-card.relation .card-body, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container.story-modal .modal-content, .rating-card, .rating-card .card-header, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-footer .comments-number, .product-details, .product-category, .product-card .card-body, .product-card .card-body .discount-box, .logo-banner, .feature-description-box.text-type, .accordion-group, .contact-us-social-media, .privilege, .biography .cover-on-image, .article-banner-weblog {
+.flex-column, .forign-product, .forign-product .wrapper-text-send, .forign-product .wrapper-text-sale, .forign-product .wrapper-text-sale .wrapper-sale, .forign-product .wrapper-sale-btn, .forign-product .container-price, .unavailable, .unavailable .filter, .variable-product, .variable-product .product-main-content, .variable-product .container-sales-per-week, .variable-product .container-sales-per-week .sales-per-week, .variable-product .container-variation-color, .call-product, .call-product .container-price .wrapper-date, .call-product .wrapper-btn .wrapper-call, .product-toolbar, .product-toolbar .rate-box, .product-toolbar .icons-box, .labeld-card .content, .focused-card .content, .iphone-banner .product .text-box, .air-banner .content .product .text-box, .exclusive-sale-banner, .slider, .slider .slider-wrapper.slider-column, .product-gallery.slider, .product-qa, .product-qa .answer-container .answer-description, .product-comment, .product-comment .text-container, .weblog-card.relation .card-body, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container.story-modal .modal-content, .rating-card, .rating-card .card-header, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-footer .comments-number, .product-details, .product-category, .product-card .card-body, .product-card .card-body .discount-box, .logo-banner, .feature-description-box.text-type, .accordion-group, .contact-us-social-media, .privilege, .biography .cover-on-image, .article-banner-weblog, .article-banner-weblog .banner-content {
   flex-direction: column;
 }
 
@@ -6147,7 +6147,7 @@ html {
   padding-bottom: 2.25rem;
 }
 
-.py-10, .call-product, .labeld-card .content, .summary-opinion {
+.py-10, .call-product, .labeld-card .content, .focused-card .content, .summary-opinion {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -27188,6 +27188,22 @@ dialog {
   background-size: contain;
 }
 
+.call-product {
+  box-shadow: 0px 0px 9px -3px rgb(205, 205, 205);
+}
+.call-product .container-price .last-price {
+  line-height: 2;
+}
+.call-product .explanation-text {
+  line-height: 2;
+}
+.variable-product {
+  z-index: 999;
+  box-shadow: 0px 3px 57px 6px rgba(154, 168, 188, 0.1);
+}
+.unavailable .filter {
+  filter: blur(2px);
+}
 .iphone-banner {
   background-image: url("../../assets/media/images/banner/iphone-secondary-banner.svg");
   background-repeat: no-repeat;
