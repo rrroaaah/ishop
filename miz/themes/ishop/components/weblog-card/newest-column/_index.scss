@@ -1,6 +1,6 @@
 @use "../../../../../sass/kernel/" as *;
 
-$weblog-card-newest-column-custom-classes:".radius-all-small, .gap-6, .bw-1, .border-color, .border-style-solid";
+$weblog-card-newest-column-custom-classes: ".radius-all-small, .gap-6, .bw-1, .border-color, .border-style-solid";
 $weblog-card-newest-column-title-custom-classes: ".txt-mid-title, .text-color, .font-weight-bold";
 $weblog-card-newest-column-card-body-custom-classes: ".gap-3, .px-5, .pb-6";
 $weblog-card-newest-column-card-body-description-custom-classes: ".txt-big, .title-text-color";
@@ -8,14 +8,30 @@ $weblog-card-newest-column-card-body-description-custom-classes: ".txt-big, .tit
 .weblog-card.newest-column {
     @extend .overflow-hidden, .d-flex, .flex-column, #{$weblog-card-newest-column-custom-classes};
 
+    .feature-image {
+        @extend .position-relative;
+    }
+
+    .feature-image::after {
+        content: "";
+        background-image: url("../../assets/media/images/component/Group 195.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+
+    }
+
     & .title {
         @extend .txt-ellipsis, #{$weblog-card-newest-column-title-custom-classes};
     }
 
-    & .card-body{
+    & .card-body {
         @extend .d-flex, .flex-column, #{$weblog-card-newest-column-card-body-custom-classes};
-        
-        .description{
+
+        .description {
             @extend #{$weblog-card-newest-column-card-body-description-custom-classes};
         }
     }

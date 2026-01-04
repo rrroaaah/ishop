@@ -1,8 +1,8 @@
 @use "../../../../../sass/kernel/" as *;
 
-$weblog-card-newest-row-custom-classes: ".bw-1, .border-color, .border-style-solid, .radius-all-small, .font-weight-regular";
+$weblog-card-newest-row-custom-classes: " .font-weight-regular";
 $weblog-card-newest-row-cover-image-custom-classes: ".radius-all-small";
-$weblog-card-newest-row-card-body-custom-classes: ".gap-6, .px-6, .py-6";
+$weblog-card-newest-row-card-body-custom-classes: ".gap-3, .px-6";
 $weblog-card-newest-row-card-body-title-custom-classes: ".text-color, .txt-extra-title, .font-weight-bold";
 $weblog-card-newest-row-card-body-description-custom-classes: ".title-text-color, .txt-title";
 
@@ -10,7 +10,16 @@ $weblog-card-newest-row-card-body-description-custom-classes: ".title-text-color
     @extend .d-flex, #{$weblog-card-newest-row-custom-classes};
     
     .cover-image{
-        @extend .w-60, .d-flex, .overflow-hidden, .aspect-ratio-2x1, #{$weblog-card-newest-row-cover-image-custom-classes};
+        @extend .w-60, .d-flex, .overflow-hidden, .aspect-ratio-2x1, .position-relative, #{$weblog-card-newest-row-cover-image-custom-classes};
+
+
+        &::after {
+        content: "";
+        background-image: url("../../assets/media/images/component/Group 195.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        @extend .position-absolute, .right-0, .top-0, .w-100, .h-100, .z-index-1;
+    }
 
         img{
             @extend .w-100, .object-cover;

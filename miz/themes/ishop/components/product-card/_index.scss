@@ -61,7 +61,8 @@ $product-card-product-colors-width: 8px;
             @extend .d-flex, .justify-content-center, #{$product-card-image-box-custom-classes};
 
             img{
-                @extend .w-100;
+                width: 190px;
+                height: 200px
             }
         }
     }
