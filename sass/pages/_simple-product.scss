@@ -28,33 +28,13 @@
     margin-top: 0.5rem;
 }
 
-
-
-#simple-product #question-link .tag-item~div {
-    border-top: 1px solid var(--border);
-    padding-top: 2.5rem;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 2.5rem;
-}
-
-#simple-product #question-link .tag-item+div+div+div .product-content~div {
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 2.5rem;
-}
-
 #simple-product #productpage .swiper-slide {
     width: 260px;
 }
 
 #simple-product .tag-item input[type="radio"]:checked+label {
     background-color: #021959;
-    padding-top: 1px;
-    padding-bottom: 2px;
     color: var(--on-primary);
-}
-
-#simple-product main>div:nth-child(1) {
-    border-bottom: 1px solid var(--border);
 }
 
 #simple-product main>div:nth-child(1)>div:nth-child(2)>div:nth-child(2) img {
@@ -67,83 +47,13 @@
     background-color: var(--divider);
     width: 1px;
 }
-#simple-product .popup-all .pop-product .fa-solid.fa-check {
-    width: 40px;
-  height: 40px;
-}
-#simple-product .popup-all .pop-product>div >div>img {
-   width: 40px;
-}#simple-product .popup-all .pop-product {
-  z-index: 999;
-}
-#simple-product .popup-all #card-shop-open[type="radio"]:checked+input+div+.pop-product {
-  display: flex !important;
-}
-<<<<<<< HEAD
-#simple-product .popup-all .special-Offerbox label p{
-    cursor: pointer;
-}
-#simple-product body:has(>main .popup-all #card-shop-open:checked) { 
-    height: 100vh !important;
-    overflow: hidden !important;
-    filter: blur(0.3);
-}
-#simple-product .popup-all #card-shop-open[type="radio"]:checked + input + div + .pop-product {
-  width: 100%;
-  height: 100%;
-  background-color: #d4d7db50;
-  
-  left: 0px !important;
-  top: 0px !important;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  z-index: 10000;
-}
-#simple-product .popup-all #card-shop-open[type="radio"]:checked + input + div + .pop-product>div {
-  height: auto;
-}
-#simple-product body:has(>main .popup-all #card-shop-open:checked) { 
-        height: 100vh !important;
-    overflow: hidden !important;
-    filter: blur(0.3);
-}
-#simple-product body::after:has(>main .popup-all #card-shop-open+#card-shop-close:checked) {
-    content: "";
-    width: 100%;
-    height: 100%;
-    height: 100% !important;
-    overflow: hidden !important;
-    position: absolute;
-    top:0px;
-    
 
+#simple-product main > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
+  background: #FFF077;
 }
-#simple-product body::after:has(>main .popup-all #card-shop-open+#card-shop-close:checked) {
-    content: "";
-    width: 100%;
-    height: 100%;
-    height: 100vh !important;
-    overflow: hidden !important;
-    position: absolute;
-    top:0px;
-}
-#simple-product body::after:has(>main .popup-all #card-shop-open+#card-shop-close:checked) {
-    content: "";
-    width: 100%;
-    height: 100%;
-    height: 100% !important;
-    overflow: hidden !important;
-    position: absolute;
-    top:0px;
-    
 
-}
-#simple-product .popup-all #card-shop-open[type="radio"]:checked + input + div + .pop-product {
-  display: flex !important;
-  left: calc(100% - 65%);
-  top:25%;
-}
+
+
 
 
 
@@ -156,37 +66,11 @@ html {
     scroll-behavior: smooth;
 }
 
-#simple-product main > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) {
-  background: #FFF077;
-}
-
 .fa-regular + div {
   width: 14px;
   height: 1px;
   background: #cdd6e3;
 }
-
-.special-Offerbox > div:nth-child(2) > div::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: var(--border) !important;
-}
-
-.special-Offerbox {
-  box-shadow: 0px 8px 5px -6px rgba(223, 228, 235, 0.5) , 0px -1px 1px 0px rgba(126, 127, 128, 0.5);
-  top: 8rem;
-}
-
-.special-Offerbox > div:nth-child(4)::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 8px;
-}
-=======
->>>>>>> 8481be97972c2e29ef4645d68e8a66e997386f49
 
 div:has(>.rating-card) {
     top: 2rem ;
@@ -216,6 +100,32 @@ div:has(.ratingbox) {
  box-shadow: 0px 11px 5px -6px rgba(223, 228, 235, 0.5), 0px -1px 2px 0px rgba(126, 127, 128, 0.5);
 }
 
+
+
+//card
+
+.special-Offerbox > div:nth-child(2) > div::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: var(--border) !important;
+}
+
+.special-Offerbox {
+  box-shadow: 0px 8px 5px -6px rgba(223, 228, 235, 0.5) , 0px -1px 1px 0px rgba(126, 127, 128, 0.5);
+}
+
+div:has(> .special-Offerbox) {
+    top: 3rem;
+}
+
+.special-Offerbox > div:nth-child(4)::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
 
 
 

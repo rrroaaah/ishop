@@ -450,7 +450,7 @@ html {
   background-color: var(--section-title-text);
 }
 
-.border-color, .unavailable, .unavailable .wrapper-unavailable, .variable-product .container-sales-per-week .sales-per-week, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .return-condition-box, .rating-card .card-footer .comments-number, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
+.border-color, .unavailable, .unavailable .wrapper-unavailable, .variable-product .container-sales-per-week .sales-per-week, .product-gallery.slider .slider-wrapper, .product-qa, .weblog-card.newest-row, .weblog-card.newest-column, .return-condition-box, .rating-card .card-footer .comments-number, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
   border-color: var(--border);
 }
 
@@ -720,7 +720,7 @@ html {
   border-width: 0px;
 }
 
-.bw-1, .unavailable, .unavailable .wrapper-unavailable, .variable-product .container-sales-per-week .sales-per-week, .product-gallery.slider .slider-wrapper, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
+.bw-1, .unavailable, .unavailable .wrapper-unavailable, .variable-product .container-sales-per-week .sales-per-week, .product-gallery.slider .slider-wrapper, .product-qa, .weblog-card.newest-row, .weblog-card.newest-column, .product-details, .product-details.rating, .product-card, button.product-button-feature.payable-credit, .article-related {
   border-width: 1px;
 }
 
@@ -1080,11 +1080,11 @@ html {
   border-right-style: solid;
 }
 
-.bt-style-solid, .story-content .story-timelines .timeline {
+.bt-style-solid, .product-qa, .story-content .story-timelines .timeline {
   border-top-style: solid;
 }
 
-.bb-style-solid, .unavailable .wrapper-unavailable, .variable-product .container-sales-per-week .sales-per-week, .product-card .logo-container, .article-related {
+.bb-style-solid, .unavailable .wrapper-unavailable, .variable-product .container-sales-per-week .sales-per-week, .product-qa, .product-card .logo-container, .article-related {
   border-bottom-style: solid;
 }
 
@@ -6147,7 +6147,7 @@ html {
   padding-bottom: 2.25rem;
 }
 
-.py-10, .call-product, .labeld-card .content, .focused-card .content, .summary-opinion {
+.py-10, .call-product, .labeld-card .content, .focused-card .content, .product-qa, .summary-opinion {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -11287,7 +11287,7 @@ html {
   font-size: 0.938rem;
 }
 
-.txt-high-title, .product-comment .text-container .title, .product-card .card-body .discount-box .special-price {
+.txt-high-title, .countdown, .product-comment .text-container .title, .product-card .card-body .discount-box .special-price {
   font-size: 1.125rem;
 }
 

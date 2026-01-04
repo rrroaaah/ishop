@@ -4,7 +4,7 @@
 @use "../../config" as *;
 @use 'sass:map';
 
-$countdown-custom-classes : ".bg-primary-color, .radius-all-extra-small, .py-1, .px-2, .on-primary-color, .font-weight-bold, .gap-1";
+$countdown-custom-classes : ".bg-primary-color, .radius-all-extra-small, .py-1, .px-2, .on-primary-color, .font-weight-bold, .gap-1 , .txt-high-title";
 
 .countdown{
     @extend .d-flex, .rtl, #{$countdown-custom-classes};
