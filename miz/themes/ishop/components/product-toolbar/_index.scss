@@ -1,0 +1,51 @@
+@use "../../../../sass/kernel/" as *;
+
+$product-toolbar-icon-box-label-name-custom-classes: ".txt-big , .font-weight-bold , .px-2 , .py-1 , .radius-all-small , .z-index-2" ;
+$product-toolbar-icon-box-label-custom-classes: all 300ms;
+
+
+
+.product-toolbar {
+    @extend .d-flex , .flex-column , .gap-6 , .align-items-center ;
+
+    .rate-box {
+        @extend .d-flex , .flex-column , .gap-2 , .align-items-center , .font-weight-medium , .txt-title ;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: var(--border);
+        }
+    }
+
+    .icons-box {
+        @extend .d-flex , .flex-column , .gap-5 , .align-items-center ;
+
+        .label {
+            transition: $product-toolbar-icon-box-label-custom-classes ;
+            @extend .position-relative ;
+
+            .label-name {
+                white-space: nowrap;
+                right: 35px;
+                bottom: 5px;
+                background-color: get-color(primary) ;
+                @extend .d-none , .position-absolute , .on-primary-color , .right-0 , #{$product-toolbar-icon-box-label-name-custom-classes}; 
+            }
+
+            &:hover .label-name {
+                @extend .d-flex ;
+            }
+        }
+    }
+}
+
+.product-toolbar .label.like.is-active svg path {
+    stroke: #E80645;
+  }
+  
+  .product-toolbar .label.like.is-active svg path[fill] {
+    fill: #E80645;
+  }
+  
