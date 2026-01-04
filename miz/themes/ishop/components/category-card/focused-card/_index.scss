@@ -1,17 +1,17 @@
 @use "../../../../../sass/kernel/" as *;
-$focused-card-custom-classes: ".radius-all-large";
-$focused-card-after-gradiant-custom-classes:  radial-gradient(at center , #F6F7F8 1%, #B4CBD8 ) ;
-$focused-card-content-custom-classes: ".py-10 , .px-18";
+$focused-card-custom-classes: ".radius-all-medium";
+$focused-card-after-gradiant-custom-classes: radial-gradient(at center , #F6F7F8 1%, #B4CBD8 ) ;
+$focused-card-content-custom-classes: ".py-5";
 $focused-card-hover-custom-classes: radial-gradient(get-color(primary)) ;
 $focused-card-transition-custume-classes: all 300ms;
 
 
 .focused-card {
-    background-image:  url("../../assets/media/images/category/Vector-7.svg") ,#{$focused-card-after-gradiant-custom-classes};
+    background-image: url("../../assets/media/images/category/Vector-7.svg") ,#{$focused-card-after-gradiant-custom-classes};
     background-repeat: no-repeat;
     background-size: cover;
     transition: $focused-card-transition-custume-classes;
-    @extend .position-relative , .d-flex ,  .overflow-hidden , .w-90 , .h-100 , #{$focused-card-custom-classes} ;
+    @extend .position-relative , .d-flex ,  .overflow-hidden , .w-100 , .h-100 , #{$focused-card-custom-classes} ;
 
     &:hover::before {
         content: '';
@@ -23,7 +23,6 @@ $focused-card-transition-custume-classes: all 300ms;
         content: '';
         width: 98%;
         height: 98%;
-        
     }
 
     &::before {
@@ -53,7 +52,7 @@ $focused-card-transition-custume-classes: all 300ms;
 
         .product-image {
             transition: $focused-card-transition-custume-classes;
-            @extend .w-90 , .z-index-4;
+            @extend .z-index-4;
         }
 
     }

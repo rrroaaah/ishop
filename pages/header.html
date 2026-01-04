@@ -12,11 +12,10 @@
   <link rel="icon" type="image/x-icon" href="../assets/media/images/logo.png">
 </head>
 
-<body>
-  <header id="header" class="section py-0 w-100 px-0">
+<body style="height: 500vh;">
+  <header id="header" class="section py-0 w-100 px-0 position-sticky top-0">
     <div class="container d-grid grid-1 w-100">
-      <div
-        class="primary-part w-100 d-flex px-4 gap-5 gap-sm-2 justify-content-sm-center flex-row align-items-center justify-content-space-between bg-color">
+      <div class="primary-part w-100 d-flex px-4 gap-5 gap-sm-2 justify-content-sm-center flex-row align-items-center justify-content-space-between bg-color">
         <div class="d-flex flex-row align-items-center justify-content-space-between gap-5 gap-sm-2">
           <img src="../assets/media/images/Logo.svg" alt="" class="logo h-75">
           <form>
@@ -50,15 +49,18 @@
           <div class="back d-none"></div>
         </div>
         <div class="d-flex flex-row align-items-center gap-5 gap-sm-2">
+            <img src="../assets/media/images/Vector2.svg" alt="">
           <a href="#"
-            class="d-flex flex-row align-items-center gap-6 gap-md-3 py-4 py-sm-3 px-4 bg-secondary-color radius-all-small">
-            <span class="txt-big text-color font-weight-bold">ورودو عضویت</span>
-            <i class="fa-regular fa-user txt-title text-color d-sm-none"></i>
+            class="d-flex flex-row align-items-center gap-2 gap-md-3 py-3 py-sm-3 px-4 bg-secondary-color radius-all-small">
+            <img src="../assets/media/images/Vector.svg" alt="">
+            <span class="font-weight-bold text-color">وورود</span>
+            <div class="btn-line"></div>
+            <span class="font-weight-bold text-color">عضویت</span>
           </a>
           <a href="#"
-            class="d-flex flex-row align-items-center gap-6 gap-md-3 py-3 py-sm-3 px-4 bg-secondary-color radius-all-small bg-button-color">
-            <span class="txt-title button-text-color font-weight-bold">سبد‌خرید</span>
-            <span class="txt-big-title button-text-color font-weight-bold d-sm-none">(:</span>
+            class="cart-button d-flex flex-row align-items-center gap-2 gap-md-3 py-3 py-sm-3 px-4 bg-secondary-color radius-all-small bg-button-color">
+            <span class="button-text-color font-weight-bold">سبد‌خرید</span>
+            <img src="../assets/media/images/Vector1.svg" alt="">
           </a>
         </div>
       </div>
@@ -70,8 +72,7 @@
 
 
 
-      <div
-        class="secondary-part px-4 w-100 bg-color d-flex flex-row align-items-center justify-content-space-between">
+      <div class="secondary-part px-4 w-100 bg-color d-flex flex-row align-items-center justify-content-space-between">
         <nav>
           <ul class="hover-box d-flex flex-row align-items-stretch gap-6 gap-sm-4">
             <li class="categories d-flex flex-row gap-4 align-items-center py-6">
@@ -80,9 +81,12 @@
               <div class="megamenu d-none flex-row align-items-stretch">
                 <ul class="d-flex flex-column bg-secondary-color position-relative">
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop-4.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/material-symbols-light_mobile-2-outline.svg" alt="">
+                        <img src="../assets/media/images/submenu/material-symbols-light_mobile-2.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">موبایل</span>
-                    <div class="submenu one position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
+                    <div class="submenu one position-absolute d-flex flex-column align-items-stretch gap-6 px-10 py-12">
                       <span class="txt-mid-title text-color font-weight-bold line-height-3">مشاهده
                         همه محصولات
                         موبایل</span>
@@ -335,7 +339,10 @@
                     </div>
                   </li>
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop-3-1.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/material-symbols-light_laptop-mac-outline.svg" alt="">
+                        <img src="../assets/media/images/submenu/material-symbols-light_laptop-mac.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">لپ
                       تاپ</span>
                     <div class="submenu two position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
@@ -630,7 +637,10 @@
                     </div>
                   </li>
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop10-1.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/ion_headset-outline.svg" alt="">
+                        <img src="../assets/media/images/submenu/ion_headset.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">هدفون</span>
                     <div class="submenu three position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
                       <span class="txt-mid-title text-color font-weight-bold line-height-3">مشاهده
@@ -794,7 +804,10 @@
                     </div>
                   </li>
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop7.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/ion_game-controller-outline.svg" alt="">
+                        <img src="../assets/media/images/submenu/ion_game-controller.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">گیمینگ</span>
                     <div class="submenu four position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
                       <span class="txt-mid-title text-color font-weight-bold line-height-3">مشاهده
@@ -1023,7 +1036,10 @@
                     </div>
                   </li>
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop4.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/ion_watch-outline.svg" alt="">
+                        <img src="../assets/media/images/submenu/ion_watch.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">ساعت
                       هوشمند</span>
                     <div class="submenu five position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
@@ -1227,7 +1243,10 @@
                     </div>
                   </li>
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop9.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/bi_speaker.svg" alt="">
+                        <img src="../assets/media/images/submenu/bi_speaker-fill.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">اسپیکر</span>
                     <div class="submenu six position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
                       <span class="txt-mid-title text-color font-weight-bold line-height-3">مشاهده
@@ -1406,7 +1425,10 @@
                     </div>
                   </li>
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop6.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/fluent_battery-7-32-regular.svg" alt="">
+                        <img src="../assets/media/images/submenu/fluent_battery-7-32-filled.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">پاوربانک</span>
                     <div class="submenu seven position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
                       <span class="txt-mid-title text-color font-weight-bold line-height-3">مشاهده
@@ -1589,7 +1611,10 @@
                     </div>
                   </li>
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop8.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/stash_tablet-light.svg" alt="">
+                        <img src="../assets/media/images/submenu/stash_tablet-solid.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">تبلت</span>
                     <div class="submenu eight position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
                       <span class="txt-mid-title text-color font-weight-bold line-height-3">مشاهده
@@ -1780,7 +1805,10 @@
                     </div>
                   </li>
                   <li class="submenu-parent px-sm-2 py-xl-3 d-flex flex-row align-items-center py-4 px-5 gap-2">
-                    <img src="../assets/media/images/ishop111.png" alt="">
+                    <div>
+                        <img src="../assets/media/images/submenu/teenyicons_computer-outline.svg" alt="">
+                        <img src="../assets/media/images/submenu/teenyicons_computer-solid.svg" alt="" class="d-none">
+                    </div>
                     <span class="text-color txt-mid-title font-weight-bold">کامپیوتر</span>
                     <div class="submenu nine position-absolute d-none flex-column align-items-stretch gap-6 px-10 py-12">
                       <span class="txt-mid-title text-color font-weight-bold line-height-3">مشاهده
@@ -1965,15 +1993,21 @@
                 </ul>
               </div>
             </li>
-            <div class="vertical-line mt-2"></div>
+            <div class="vertical-line"></div>
             <li class="d-flex flex-row align-items-center">
-              <a href="#" class="txt-big font-weight-bold text-color">صفحه اصلی</a>
+              <a href="#" class="d-flex flex-row align-items-center gap-2">
+                <img src="../assets/media/images/Vector4.svg" alt="" class="nav-items-logo">
+                <span class="txt-title font-weight-bold text-color">صفحه اصلی</span>
+              </a>
             </li>
             <li class="d-flex flex-row align-items-center">
-              <a href="#" class="txt-big font-weight-bold text-color">فروشگاه</a>
+              <a href="#" class="d-flex flex-row align-items-center gap-2">
+                <img src="../assets/media/images/Vector5.svg" alt="" class="nav-items-logo">
+                <span class="txt-big font-weight-bold text-color">فروشگاه</span>
+              </a>
             </li>
             <li class="d-flex flex-row gap-2 align-items-center">
-              <i class="fa-regular fa-bolt primary-color d-sm-none"></i>
+              <img src="../assets/media/images/Vector6.svg" alt="" class="nav-items-logo">
               <span class="text-color txt-big font-weight-bold">انواع صفحات محصول</span>
               <i class="fa-solid fa-chevron-down txt-normal text-color"></i>
               <ul
@@ -2005,10 +2039,11 @@
               </ul>
             </li>
             <li class="d-flex flex-row gap-2 align-items-center">
+                <img src="../assets/media/images/Vector7.svg" alt="" class="nav-items-logo">
               <span class="text-color txt-big font-weight-bold">دیگر صفحات</span>
               <i class="fa-solid fa-chevron-down txt-normal text-color"></i>
               <ul
-                class="position-absolute bottom-0 right-0 left-sm-0 pr-8 pl-16 pl-xl-0 px-xl-8 py-8 bg-color d-none flex-column flex-wrap gap-6 gap-xl-4">
+                class="position-absolute w-max-content bottom-0 right-0 left-sm-0 pr-8 pl-16 pl-xl-0 px-xl-8 py-8 bg-color d-none flex-column flex-wrap gap-6 gap-xl-4">
                 <li>
                   <a href="#" class="text-color txt-title font-weight-bold">صفحه
                     فروشگاه</a>
@@ -2067,45 +2102,30 @@
                 </li>
               </ul>
             </li>
+            
+            <div class="vertical-line"></div>
+
+            <li class="d-flex flex-row gap-2 align-items-center">
+                <a href="#" class="text-color txt-big font-weight-bold">فروشنده شو!</a>
+            </li>
+
           </ul>
         </nav>
 
-        <div class="d-flex flex-row align-items-center gap-5 d-lg-none">
-          <div class="vertical-line h-100"></div>
-          <div class="d-flex flex-column align-items-stretch">
-            <div class="d-flex flex-row align-items-center justify-content-space-between">
-              <span class="txt-subtitle text-color font-weight-bold">جمعه‌سیاه</span>
-              <span class="txt-subtitle text-color font-weight-bold">فرصت باقی
-                مانده</span>
-            </div>
-            <span class="d-flex flex-row align-items-center">
-              <span class="time bg-primary-color on-primary-color txt-normal">3</span>
-              <span class="time bg-primary-color on-primary-color txt-normal">3</span>
-              <span class="text txt-big-title font-weight-bold">:</span>
-              <span class="time bg-primary-color on-primary-color txt-normal">3</span>
-              <span class="time bg-primary-color on-primary-color txt-normal">3</span>
-              <span class="text txt-big-title font-weight-bold">:</span>
-              <span class="time bg-primary-color on-primary-color txt-normal">3</span>
-              <span class="time bg-primary-color on-primary-color txt-normal">3</span>
-              <span class="text txt-big-title font-weight-bold">:</span>
-              <span class="time bg-primary-color on-primary-color txt-normal">3</span>
-              <span class="time bg-primary-color on-primary-color txt-normal">3</span>
-            </span>
-          </div>
-          <div class="vertical-line h-100"></div>
-          <div class="d-flex flex-column gap-1 align-items-center">
-            <span class="text-color font-weight-bold txt-title">شـــــگفت</span>
-            <div class="d-flex flex-row align-items-center">
-              <span class="text-color font-weight-bold txt-big">انگیزت</span>
-              <span class="bg-primary-color on-primary-color percent txt-subtitle font-weight-bold">%</span>
-            </div>
-          </div>
-        </div>
+
+        <a href="#" class="location-btn d-flex flex-row align-items-center gap-2 px-8 py-3 radius-all-medium">
+            <span class="text-color font-weight-bold txt-title d-sm-none">شهر خود را وارد کنید</span>
+            <img src="../assets/media/images/Vector3.svg" alt="">
+        </a>
+
+        
       </div>
 
     </div>
 
   </header>
+
+<script src="../assets/js/mizchin.min.js"></script>
 </body>
 
 </html>

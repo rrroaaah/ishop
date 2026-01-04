@@ -2,27 +2,32 @@
 
 $article-banner-weblog-custom-classes: ".radius-all-medium, .w-48, .w-xl-100, .h-50, .h-md-100, .on-primary-color, .font-weight-medium";
 $article-banner-weblog-gradient: linear-gradient(180deg, rgba(2, 25, 89, 0) 0%, #021959 100%);
-$article-banner-weblog-banner-content-custom-classes: ".z-index-2, .m-10, .gap-5";
-$article-banner-weblog-banner-content-title-custom-classes: ".txt-big-title, .font-weight-bold";
+$article-banner-weblog-banner-content-title-custom-classes: ".mr-5, .mt-5, .font-weight-bold, .txt-high-title";
+$article-banner-weblog-banner-content-details-custom-classes: ".ml-5, .mb-5, .gap-lg-1, .gap-3";
 
-.article-banner-weblog{
-    @extend .d-flex, .flex-column, .position-relative, .overflow-hidden, #{$article-banner-weblog-custom-classes};
+.article-banner-weblog {
+    @extend .d-flex, .flex-column, .position-relative, .overflow-hidden, .w-100, .h-100, #{$article-banner-weblog-custom-classes};
 
-    img{
-        @extend .w-100, .object-cover;
+    img {
+        @extend .w-100, .object-cover, .h-100;
     }
 
-    &::after{
+    &::after {
         content: "";
-        background-image: $article-banner-weblog-gradient;
+        background-image: url("../../assets/media/images/component/Group 195.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         @extend .position-absolute, .opacity-7, .right-0, .top-0, .w-100, .h-100, .z-index-1, .radius-all-small;
     }
 
-    .banner-content{
-        @extend .d-flex, .align-items-start, .flex-column, .position-absolute, .bottom-0, .right-0, #{$article-banner-weblog-banner-content-custom-classes};
+    & .banner-content {
+
+       .title {
+        @extend .position-absolute, .top-0, .right-0, .z-index-2, .txt-align-start, #{$article-banner-weblog-banner-content-title-custom-classes};
     }
 
-    .title{
-        @extend #{$article-banner-weblog-banner-content-title-custom-classes};
+       .details {
+        @extend .d-grid, .grid-1, .grid-lg-2, .align-items-center, .position-absolute, .left-0, .bottom-0, .z-index-2, #{$article-banner-weblog-banner-content-details-custom-classes};
     }
+}
 }
