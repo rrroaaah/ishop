@@ -350,7 +350,7 @@ html {
   border-color: var(--on-primary);
 }
 
-.on-primary-color, .unavailable .login-btn, .exclusive-sale-banner .view-all, .banner .cantainer-text p, .countdown, .information-tooltip span.box, .product-qa .answer-container .answer-description .user-name .user-type, .product-comment .information-comment .user-type, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.installments, .article-banner-weblog {
+.on-primary-color, .labeld-card .content .product-name, .unavailable .login-btn, .exclusive-sale-banner .view-all, .banner .cantainer-text p, .countdown, .information-tooltip span.box, .product-qa .answer-container .answer-description .user-name .user-type, .product-comment .information-comment .user-type, .product-card .card-body .btn-add-to-cart, .product-card .card-body .discount-box .discount-percentage, button.product-button-feature.check-payment, button.product-button-feature.original, button.product-button-feature.fake, button.product-button-feature.warranty, button.product-button-feature.installments, .article-banner-weblog {
   color: var(--on-primary);
 }
 
@@ -418,7 +418,7 @@ html {
   color: var(--library-icon);
 }
 
-.text-color, .forign-product .wrapper-text-send .wrapper-send .text, .forign-product .wrapper-text-sale .wrapper-sale .text, .forign-product .container-price .wrapper-price-percent .price-percent, .unavailable .wrapper-unavailable .unavailable-text, .variable-product .product-main-content .product-main-content-buy .product-main-content-buy-text, .variable-product .product-main-content .product-main-content-buy .product-main-content-buy-text-send, .variable-product .container-sales-per-week .sales-per-week .sales-per-week-text, .variable-product .container-sales-per-week .sales-per-week .sales-per-week-text .text, .call-product .container-price .last-price, .call-product .container-price .wrapper-date .date, .call-product .container-price .wrapper-date .wrapper-price .price, .call-product .explanation-text, .call-product .wrapper-btn .wrapper-call .text-call, .call-product .wrapper-btn .wrapper-call .phone-number, .product-qa .question-container .text-quesiton, .product-comment .information-comment .user-name, .product-comment .information-comment .date-time, .product-comment .text-container .title, .product-comment .features-container .show-more .text-show-more, .weblog-card.relation .card-body .title, .weblog-card.newest-row .card-body .title, .weblog-card.newest-column .title, .summary-opinion .title, .summary-opinion mark, .rating-card .card-header .title, .rating-card .card-footer .comments-number .count, .product-card .card-body, .product-card .card-body .discount-box .special-price, .accordion-group .accordion .accordion-box .accordion-body, .contact-us-information .direction, .article-related .description {
+.text-color, .forign-product .wrapper-text-send .wrapper-send .text, .forign-product .wrapper-text-sale .wrapper-sale .text, .forign-product .container-price .wrapper-price-percent .price-percent, .unavailable .wrapper-unavailable .unavailable-text, .variable-product .product-main-content .product-main-content-buy .product-main-content-buy-text, .variable-product .product-main-content .product-main-content-buy .product-main-content-buy-text-send, .variable-product .container-sales-per-week .sales-per-week .sales-per-week-text, .variable-product .container-sales-per-week .sales-per-week .sales-per-week-text .text, .call-product .container-price .last-price, .call-product .container-price .wrapper-date .date, .call-product .container-price .wrapper-date .wrapper-price .price, .call-product .explanation-text, .call-product .wrapper-btn .wrapper-call .text-call, .call-product .wrapper-btn .wrapper-call .phone-number, .air-banner .content .product .text-box .description, .air-banner .content .product .text-box .name, .product-qa .question-container .text-quesiton, .product-comment .information-comment .user-name, .product-comment .information-comment .date-time, .product-comment .text-container .title, .product-comment .features-container .show-more .text-show-more, .weblog-card.relation .card-body .title, .weblog-card.newest-row .card-body .title, .weblog-card.newest-column .title, .summary-opinion .title, .summary-opinion mark, .rating-card .card-header .title, .rating-card .card-footer .comments-number .count, .product-card .card-body, .product-card .card-body .discount-box .special-price, .accordion-group .accordion .accordion-box .accordion-body, .contact-us-information .direction, .article-related .description {
   color: var(--text);
 }
 
@@ -909,7 +909,7 @@ html {
   border-end-end-radius: 17px;
 }
 
-.radius-all-medium, .unavailable, .variable-product, .call-product, .exclusive-sale-banner, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .return-condition-box, .rating-card, .product-category, .product-card, .logo-banner img, .article-banner-weblog {
+.radius-all-medium, .unavailable, .variable-product, .call-product, .air-banner, .exclusive-sale-banner, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .return-condition-box, .rating-card, .product-category, .product-card, .logo-banner img, .article-banner-weblog {
   border-top-left-radius: 17px;
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
@@ -1545,7 +1545,7 @@ html {
   display: none;
 }
 
-.d-flex, .forign-product, .forign-product .wrapper-text-send, .forign-product .wrapper-text-send .wrapper-send, .forign-product .wrapper-text-sale, .forign-product .wrapper-text-sale .wrapper-sale, .forign-product .wrapper-sale-btn, .forign-product .container-price, .forign-product .container-price .wrapper-price, .forign-product .container-price .wrapper-price-percent, .unavailable, .unavailable .wrapper-unavailable, .unavailable .filter, .unavailable .login-btn, .variable-product, .variable-product .product-main-content, .variable-product .product-main-content .product-main-content-buy, .variable-product .container-sales-per-week, .variable-product .container-sales-per-week .sales-per-week, .variable-product .container-variation-color, .call-product, .call-product .container-price .wrapper-date, .call-product .container-price .wrapper-date .wrapper-price, .exclusive-sale-banner, .countdown, .badge-wrapper .badge, .badge-wrapper .badge-inside, .commodity-pack, .slider, .slider .slider-wrapper .slider-content, .slider .slider-wrapper.slider-column, .slider .slider-arrows, .slider .slider-toggles, .information-tooltip, .product-gallery.slider, .product-qa, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment, .product-comment .information-comment, .product-comment .information-comment .rating-star, .product-comment .information-comment .btn, .product-comment .text-container, .product-comment .features-container, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.relation, .weblog-card.relation .cover-image, .weblog-card.relation .card-body, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .story-content .story-timelines, .modal-container.story-modal .modal-content, .return-condition-box, .rating-card, .rating-card .card-header, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress, .progress-bar, .product-details, .product-category, .product-card .logo-container, .product-card .image-container, .product-card .image-container .image-box, .product-card .card-body, .product-card .card-body .fast-shipping, .product-card .card-body .discount-box, .product-card .card-body .discount-box .discount-percentage, .logo-banner, .logo-banner .under-banner, .feature-description-box.text-type, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .contact-us-information, .privilege, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content {
+.d-flex, .labeld-card, .labeld-card .content, .focused-card, .focused-card .content, .forign-product, .forign-product .wrapper-text-send, .forign-product .wrapper-text-send .wrapper-send, .forign-product .wrapper-text-sale, .forign-product .wrapper-text-sale .wrapper-sale, .forign-product .wrapper-sale-btn, .forign-product .container-price, .forign-product .container-price .wrapper-price, .forign-product .container-price .wrapper-price-percent, .unavailable, .unavailable .wrapper-unavailable, .unavailable .filter, .unavailable .login-btn, .variable-product, .variable-product .product-main-content, .variable-product .product-main-content .product-main-content-buy, .variable-product .container-sales-per-week, .variable-product .container-sales-per-week .sales-per-week, .variable-product .container-variation-color, .call-product, .call-product .container-price .wrapper-date, .call-product .container-price .wrapper-date .wrapper-price, .air-banner .content .product, .air-banner .content .product .text-box, .air-banner .content .contain-button, .exclusive-sale-banner, .countdown, .badge-wrapper .badge, .badge-wrapper .badge-inside, .commodity-pack, .slider, .slider .slider-wrapper .slider-content, .slider .slider-wrapper.slider-column, .slider .slider-arrows, .slider .slider-toggles, .information-tooltip, .product-gallery.slider, .product-qa, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container, .product-qa .answer-container .answer-description, .product-qa .answer-container .answer-description .user-name, .product-comment, .product-comment .information-comment, .product-comment .information-comment .rating-star, .product-comment .information-comment .btn, .product-comment .text-container, .product-comment .features-container, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.relation, .weblog-card.relation .cover-image, .weblog-card.relation .card-body, .weblog-card.newest-row, .weblog-card.newest-row .cover-image, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .story-content .story-timelines, .modal-container.story-modal .modal-content, .return-condition-box, .rating-card, .rating-card .card-header, .rating-card .card-header .rating-star, .rating-card .card-header .rating-count, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress, .progress-bar, .product-details, .product-category, .product-card .logo-container, .product-card .image-container, .product-card .image-container .image-box, .product-card .card-body, .product-card .card-body .fast-shipping, .product-card .card-body .discount-box, .product-card .card-body .discount-box .discount-percentage, .logo-banner, .logo-banner .under-banner, .feature-description-box.text-type, .accordion-group, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .contact-us-information, .privilege, .biography, .biography .cover-on-image, .article-related, .article-related .cover-image, .article-banner-weblog, .article-banner-weblog .banner-content {
   display: flex;
 }
 
@@ -2465,7 +2465,7 @@ html {
   width: 99%;
 }
 
-.w-100, .labeld-card::before, .labeld-card::after, .labeld-card .content, .focused-card::before, .focused-card::after, .focused-card .content, .air-banner, .air-banner .cover, .air-banner .content, .air-banner::before, .air-banner::after, .exclusive-sale-banner, .exclusive-sale-banner .wrapper-image, .banner, .banner .cantainer-image, .banner .cantainer-image .waterfall, .banner .cantainer-image .red-caver, .commodity-pack, .slider .slider-wrapper, .slider .slider-wrapper .slider-content, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider, .product-gallery.slider .slider-wrapper, .product-gallery.slider .slider-wrapper .slider-content img, .product-gallery.slider .slider-toggles .slider-toggle, .product-comment, .product-comment .comment-gallery img, .weblog-card.relation .cover-image img, .weblog-card.relation .cover-image::after, .weblog-card.newest-row .cover-image img, .story-content .story-timelines .timeline, .modal-container.story-modal .modal-content, .rating-card, .progress, .product-category img, .product-card .image-container .image-box, .product-card .image-container .image-box img, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .logo-banner img, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .privilege, .privilege img, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after {
+.w-100, .labeld-card::before, .labeld-card::after, .labeld-card .content, .focused-card::before, .focused-card::after, .focused-card .content, .unavailable .wrapper-unavailable, .unavailable .login-btn, .variable-product, .call-product .container-price, .call-product .wrapper-btn, .air-banner, .air-banner .cover, .air-banner .content, .air-banner::before, .air-banner::after, .exclusive-sale-banner, .exclusive-sale-banner .wrapper-image, .banner, .banner .cantainer-image, .banner .cantainer-image .waterfall, .banner .cantainer-image .red-caver, .commodity-pack, .slider .slider-wrapper, .slider .slider-wrapper .slider-content, .slider .slider-arrows .slider-arrows-next, .slider .slider-arrows .slider-arrows-prev, .slider .slider-toggles .slider-toggle, .product-gallery.slider, .product-gallery.slider .slider-wrapper, .product-gallery.slider .slider-wrapper .slider-content img, .product-gallery.slider .slider-toggles .slider-toggle, .product-comment, .product-comment .comment-gallery img, .weblog-card.relation .cover-image img, .weblog-card.relation .cover-image::after, .weblog-card.newest-row .cover-image img, .story-content .story-timelines .timeline, .modal-container.story-modal .modal-content, .rating-card, .progress, .product-category img, .product-card .image-container .image-box, .product-card .image-container .image-box img, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .logo-banner img, .accordion-group .accordion, .accordion-group .accordion .accordion-box .accordion-header, .privilege, .privilege img, .biography::after, .article-related .cover-image img, .article-banner-weblog img, .article-banner-weblog::after {
   width: 100%;
 }
 
@@ -2897,7 +2897,7 @@ html {
   flex-direction: row-reverse;
 }
 
-.flex-column, .forign-product, .forign-product .wrapper-text-send, .forign-product .wrapper-text-sale, .forign-product .wrapper-text-sale .wrapper-sale, .forign-product .wrapper-sale-btn, .forign-product .container-price, .unavailable, .unavailable .filter, .variable-product, .variable-product .product-main-content, .variable-product .container-sales-per-week, .variable-product .container-sales-per-week .sales-per-week, .variable-product .container-variation-color, .call-product, .call-product .container-price .wrapper-date, .call-product .wrapper-btn .wrapper-call, .exclusive-sale-banner, .slider, .slider .slider-wrapper.slider-column, .product-gallery.slider, .product-qa, .product-qa .answer-container .answer-description, .product-comment, .product-comment .text-container, .weblog-card.relation .card-body, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container.story-modal .modal-content, .rating-card, .rating-card .card-header, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-footer .comments-number, .product-details, .product-category, .product-card .card-body, .product-card .card-body .discount-box, .logo-banner, .feature-description-box.text-type, .accordion-group, .contact-us-social-media, .privilege, .biography .cover-on-image, .article-banner-weblog, .article-banner-weblog .banner-content {
+.flex-column, .labeld-card .content, .focused-card .content, .forign-product, .forign-product .wrapper-text-send, .forign-product .wrapper-text-sale, .forign-product .wrapper-text-sale .wrapper-sale, .forign-product .wrapper-sale-btn, .forign-product .container-price, .unavailable, .unavailable .filter, .variable-product, .variable-product .product-main-content, .variable-product .container-sales-per-week, .variable-product .container-sales-per-week .sales-per-week, .variable-product .container-variation-color, .call-product, .call-product .container-price .wrapper-date, .call-product .wrapper-btn .wrapper-call, .air-banner .content .product .text-box, .exclusive-sale-banner, .slider, .slider .slider-wrapper.slider-column, .product-gallery.slider, .product-qa, .product-qa .answer-container .answer-description, .product-comment, .product-comment .text-container, .weblog-card.relation .card-body, .weblog-card.newest-row .card-body, .weblog-card.newest-column, .weblog-card.newest-column .card-body, .summary-opinion, .modal-container.story-modal .modal-content, .rating-card, .rating-card .card-header, .rating-card .card-body, .rating-card .card-body .percentage-point, .rating-card .card-footer .comments-number, .product-details, .product-category, .product-card .card-body, .product-card .card-body .discount-box, .logo-banner, .feature-description-box.text-type, .accordion-group, .contact-us-social-media, .privilege, .biography .cover-on-image, .article-banner-weblog, .article-banner-weblog .banner-content {
   flex-direction: column;
 }
 
@@ -2921,7 +2921,7 @@ html {
   justify-content: flex-start;
 }
 
-.justify-content-center, .labeld-card .content, .focused-card .content, .air-banner .content .contain-button, .badge-wrapper .badge, .badge-wrapper .badge-inside, .information-tooltip, .product-comment .features-container .show-more .btn, .modal-container.story-modal, .rating-card, .rating-card .card-footer, .progress-bar, .product-category, .product-card .image-container, .product-card .image-container .image-box {
+.justify-content-center, .labeld-card .content, .focused-card .content, .unavailable .login-btn, .air-banner .content .contain-button, .badge-wrapper .badge, .badge-wrapper .badge-inside, .information-tooltip, .product-comment .features-container .show-more .btn, .modal-container.story-modal, .rating-card, .rating-card .card-footer, .progress-bar, .product-category, .product-card .image-container, .product-card .image-container .image-box, .logo-container {
   justify-content: center;
 }
 
@@ -2953,7 +2953,7 @@ html {
   justify-content: end;
 }
 
-.justify-content-space-between, .forign-product .wrapper-text-send .wrapper-send, .unavailable .wrapper-unavailable, .variable-product .product-main-content .product-main-content-buy, .call-product .container-price, .call-product .wrapper-btn, .call-product .wrapper-btn .wrapper-call, .product-comment .information-comment, .product-comment .features-container, .rating-card .card-header .rating-count, .rating-card .card-body .percentage-point .description-container, .product-card .logo-container, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-information {
+.justify-content-space-between, .forign-product .wrapper-text-send .wrapper-send, .unavailable .wrapper-unavailable, .variable-product .product-main-content .product-main-content-buy, .call-product .container-price, .call-product .wrapper-btn, .call-product .wrapper-btn .wrapper-call, .air-banner .content .product, .product-comment .information-comment, .product-comment .features-container, .rating-card .card-header .rating-count, .rating-card .card-body .percentage-point .description-container, .product-card .logo-container, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-information {
   justify-content: space-between;
 }
 
@@ -3201,7 +3201,7 @@ html {
   align-items: flex-start;
 }
 
-.align-items-center, .forign-product .container-price .wrapper-price, .forign-product .container-price .wrapper-price-percent, .unavailable .wrapper-unavailable, .call-product, .call-product .container-price .wrapper-date .wrapper-price, .exclusive-sale-banner, .badge-wrapper .badge, .badge-wrapper .badge-inside, .commodity-pack, .slider, .information-tooltip, .product-gallery.slider, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.relation, .story-content .story-timelines, .modal-container.story-modal, .modal-container.story-modal .modal-content, .rating-card .card-header, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress-bar, .product-details.rating, .product-category, .product-card .logo-container, .product-card .card-body .fast-shipping, .product-card .card-body .discount-box .discount-percentage, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .article-related {
+.align-items-center, .labeld-card .content, .focused-card .content, .forign-product .container-price .wrapper-price, .forign-product .container-price .wrapper-price-percent, .unavailable .wrapper-unavailable, .call-product, .call-product .container-price .wrapper-date .wrapper-price, .air-banner .content .product, .air-banner .content .contain-button, .exclusive-sale-banner, .badge-wrapper .badge, .badge-wrapper .badge-inside, .commodity-pack, .slider, .information-tooltip, .product-gallery.slider, .product-qa .question-container, .product-qa .question-container .btn, .product-qa .answer-container .answer-description .user-name, .product-comment .information-comment .btn, .product-comment .features-container .show-more, .product-comment .features-container .show-more .btn, .product-comment .features-container .features .feature, .weblog-card.relation, .story-content .story-timelines, .modal-container.story-modal, .modal-container.story-modal .modal-content, .rating-card .card-header, .rating-card .card-body .percentage-point .description-container, .rating-card .card-footer, .rating-card .card-footer .comments-number, .progress-bar, .product-details.rating, .product-category, .product-card .logo-container, .product-card .card-body .fast-shipping, .product-card .card-body .discount-box .discount-percentage, .logo-banner .under-banner, .accordion-group .accordion .accordion-box .accordion-header, .contact-us-social-media, .article-related {
   align-items: center;
 }
 
@@ -5567,7 +5567,7 @@ html {
   padding-right: 0.5rem;
 }
 
-.px-3, .call-product .wrapper-btn .call-btn, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-card .image-container {
+.px-3, .call-product .wrapper-btn .call-btn, .air-banner .content .product .text-box, .product-qa .question-container .btn, .product-comment .information-comment .btn, .product-card .image-container {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
@@ -6147,7 +6147,7 @@ html {
   padding-bottom: 2.25rem;
 }
 
-.py-10, .labeld-card .content, .focused-card .content, .summary-opinion {
+.py-10, .labeld-card .content, .focused-card .content, .call-product, .summary-opinion {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -11271,7 +11271,7 @@ html {
   font-size: 0.814rem;
 }
 
-.txt-title, .forign-product .wrapper-text-send .wrapper-send .text, .variable-product .product-main-content .product-main-content-buy .product-main-content-buy-text, .variable-product .container-variation-color .variation-color-text, .product-comment .text-container .description, .weblog-card.relation .card-body .description, .weblog-card.newest-row .card-body .description, .summary-opinion .description, .rating-card .card-footer .comments-number .count, .product-details .description, .logo-banner .under-banner .description, .accordion-group .accordion .accordion-box .accordion-body, .contact-us-information .title, .contact-us-information .direction {
+.txt-title, .forign-product .wrapper-text-send .wrapper-send .text, .variable-product .product-main-content .product-main-content-buy .product-main-content-buy-text, .variable-product .container-variation-color .variation-color-text, .air-banner .content .product .text-box .name, .product-comment .text-container .description, .weblog-card.relation .card-body .description, .weblog-card.newest-row .card-body .description, .summary-opinion .description, .rating-card .card-footer .comments-number .count, .product-details .description, .logo-banner .under-banner .description, .accordion-group .accordion .accordion-box .accordion-body, .contact-us-information .title, .contact-us-information .direction {
   font-size: 0.875rem;
 }
 
@@ -11295,7 +11295,7 @@ html {
   font-size: 1.125rem;
 }
 
-.txt-big-title, .forign-product .container-price .wrapper-price-percent .price-percent, .call-product .container-price .wrapper-date .wrapper-price .price, .call-product .wrapper-btn .wrapper-call .phone-number, .summary-opinion .title, .logo-banner .under-banner .icon-download-banner, .biography .title, .article-banner-weblog .title {
+.txt-big-title, .labeld-card .content .product-name, .forign-product .container-price .wrapper-price-percent .price-percent, .call-product .container-price .wrapper-date .wrapper-price .price, .call-product .wrapper-btn .wrapper-call .phone-number, .summary-opinion .title, .logo-banner .under-banner .icon-download-banner, .biography .title, .article-banner-weblog .title {
   font-size: 1.313rem;
 }
 
@@ -26674,7 +26674,7 @@ dialog {
   overflow-y: hidden;
 }
 
-.position-relative, .labeld-card, .labeld-card .content, .focused-card, .focused-card .content, .air-banner, .air-banner .content, .air-banner .content .product .text-box, .exclusive-sale-banner .view-all, .banner, .banner .cantainer-text, .banner .cantainer-text .subtitle, .banner .cantainer-text .name-product, .badge-wrapper, .commodity-pack, .slider .slider-wrapper, .information-tooltip, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .story-content, .rating-card, .product-card, .product-card .image-container, .product-card .card-body .btn-add-to-cart, .product-card .card-body .btn-add-to-cart span, .privilege, .biography, .article-banner-weblog {
+.position-relative, .labeld-card, .labeld-card .content, .focused-card, .focused-card .content, .forign-product, .air-banner, .air-banner .content, .air-banner .content .product .text-box, .exclusive-sale-banner .view-all, .banner, .banner .cantainer-text, .banner .cantainer-text .subtitle, .banner .cantainer-text .name-product, .badge-wrapper, .commodity-pack, .slider .slider-wrapper, .information-tooltip, .product-gallery.slider .slider-wrapper, .weblog-card.relation .cover-image, .story-content, .rating-card, .product-card, .product-card .image-container, .product-card .card-body .btn-add-to-cart, .product-card .card-body .btn-add-to-cart span, .privilege, .biography, .article-banner-weblog {
   position: relative;
 }
 
@@ -26690,7 +26690,7 @@ dialog {
   position: sticky;
 }
 
-.top-0, .forign-product, .unavailable, .variable-product, .call-product, .weblog-card.relation .cover-image::after, .modal-container.story-modal, .modal-container.story-modal .modal-content, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .biography::after, .article-banner-weblog::after {
+.top-0, .forign-product, .unavailable, .variable-product, .call-product, .air-banner .content .product .text-box .frame, .weblog-card.relation .cover-image::after, .modal-container.story-modal, .modal-container.story-modal .modal-content, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .biography::after, .article-banner-weblog::after {
   top: 0px;
 }
 
@@ -26714,7 +26714,7 @@ dialog {
   z-index: 1;
 }
 
-.z-index-2, .variable-product, .biography .cover-on-image, .article-banner-weblog .banner-content {
+.z-index-2, .variable-product, .air-banner .cover, .biography .cover-on-image, .article-banner-weblog .banner-content {
   z-index: 2;
 }
 
@@ -27107,21 +27107,6 @@ dialog {
   left: 40%;
 }
 
-.call-product {
-  box-shadow: 0px 0px 9px -3px rgb(205, 205, 205);
-}
-.call-product .container-price .last-price {
-  line-height: 2;
-}
-.call-product .explanation-text {
-  line-height: 2;
-}
-.variable-product {
-  z-index: 999;
-  box-shadow: 0px 3px 57px 6px rgba(154, 168, 188, 0.1);
-}
-.unavailable .filter {
-  filter: blur(2px);
 .air-banner .content .product .text-box .description {
   font-size: 2.5rem;
 }
@@ -27141,6 +27126,22 @@ dialog {
   background-size: contain;
 }
 
+.call-product {
+  box-shadow: 0px 0px 9px -3px rgb(205, 205, 205);
+}
+.call-product .container-price .last-price {
+  line-height: 2;
+}
+.call-product .explanation-text {
+  line-height: 2;
+}
+.variable-product {
+  z-index: 999;
+  box-shadow: 0px 3px 57px 6px rgba(154, 168, 188, 0.1);
+}
+.unavailable .filter {
+  filter: blur(2px);
+}
 .focused-card {
   background-image: url("../../assets/media/images/category/Vector-7.svg"), radial-gradient(at center, #F6F7F8 1%, #B4CBD8);
   background-repeat: no-repeat;
