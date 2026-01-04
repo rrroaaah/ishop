@@ -1384,52 +1384,16 @@ aside {
     width: 180px !important;
   }
 }
-#simple-product #productpage > div > div > a {
-  font-weight: 600;
-}
-
 .description-wrapper a:hover {
   border-bottom: 1px dashed var(--secondary-text);
   transition: all 200ms linear;
 }
 
-.reviewsubmit::after {
-  background: linear-gradient(180deg, #e2e6ed, #ffffff);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  padding: 1px;
-  padding-bottom: 1px;
-  padding-bottom: 1px;
-  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  mask-composite: add, add;
-  mask-composite: add, add;
-  mask-composite: add, add;
-  mask-composite: add, add;
-  mask-composite: add, add;
-  mask-composite: exclude;
-  left: 0px;
-  top: 0px;
-  border-radius: 17px;
-  padding-bottom: 0px;
-}
-
-#simple-product #productpage {
-  flex-direction: row !important;
-  padding-top: 10px !important;
-}
-
-#simple-product #productpage .featurebox:nth-child(4):after {
+#simple-product #productpage .featurebox:nth-child(4)::after {
   content: "";
   width: 0px;
   height: 0%;
   background: var(--border);
-}
-
-#simple-product #productpage .featurebox img {
-  width: 25px;
 }
 
 #simple-product #productpage > div > div:nth-child(3) > div:nth-child(1) > div > div > div:nth-child(1) > span::after {
@@ -1440,43 +1404,12 @@ aside {
   margin-top: 1rem;
 }
 
-#simple-product #productpage > div > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
-  border-top: 1px dashed var(--border);
-  border-bottom: 1px dashed var(--border);
-}
-
 #simple-product #productpage > div > div:nth-child(3) > div:nth-child(1) > div > span:nth-child(1)::after {
   content: "";
   width: 100%;
   height: 1px;
   background: var(--border);
   margin-top: 0.5rem;
-}
-
-#simple-product #productpage .swiper-slide {
-  box-shadow: unset;
-}
-
-#simple-product #productpage .scrol-products {
-  overflow-x: scroll;
-  width: calc(75% + var(--space-factor) * 14) !important;
-  scrollbar-color: transparent transparent;
-}
-
-#simple-product .swiper-slide {
-  border-right: 1px solid var(--border);
-}
-
-#simple-product .swiper-slide h2 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -moz-box-orient: vertical;
-}
-
-#simple-product #comented-link .product-reviews {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 2.5rem;
 }
 
 #simple-product #question-link .tag-item ~ div {
@@ -1491,14 +1424,8 @@ aside {
   padding-bottom: 2.5rem;
 }
 
-#simple-product #productpage .scroll-items {
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
 #simple-product #productpage .swiper-slide {
   width: 260px;
-  flex-shrink: 0;
 }
 
 #simple-product .tag-item input[type=radio]:checked + label {
@@ -1538,6 +1465,34 @@ aside {
 
 #simple-product .popup-all #card-shop-open[type=radio]:checked + input + div + .pop-product {
   display: flex !important;
+}
+
+div:has(> .rating-card) {
+  top: 2rem;
+}
+
+div:has(.ratingbox) {
+  top: 5rem;
+}
+
+.ratingbox.question {
+  box-shadow: 4px 3px 12px 0px #eeecec;
+  background-image: linear-gradient(-34deg, white 60%, #EEECEC 100%);
+}
+
+.rating-card {
+  background: linear-gradient(-34deg, #FDFDFD 70%, rgba(229, 229, 229, 0.5098039216) 100%);
+  box-shadow: 90px 160px 200px -120px rgba(0, 0, 0, 0.49);
+}
+
+.ratingbox.question > div:nth-child(2) > div::before {
+  content: "";
+  width: 2px;
+  background: #E8EDF3;
+}
+
+.reviewsubmit {
+  box-shadow: 0px 11px 5px -6px rgba(223, 228, 235, 0.5), 0px -1px 2px 0px rgba(126, 127, 128, 0.5);
 }
 
 @media screen and (width < 1200px) {
