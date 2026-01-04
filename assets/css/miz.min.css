@@ -26678,7 +26678,7 @@ dialog {
   position: relative;
 }
 
-.position-absolute, .product-toolbar .icons-box .label .label-name, .labeld-card::before, .labeld-card::after, .labeld-card .content .product-name, .focused-card::before, .focused-card::after, .iphone-banner::after, .iphone-banner::before, .air-banner .cover, .air-banner .content .product .text-box .frame, .air-banner::before, .air-banner::after, .banner .cantainer-image img, .banner .cantainer-text .angle-right, .banner .cantainer-text .angle-left, .badge-wrapper .badge, .badge-wrapper .badge-inside, .slider .slider-wrapper .slider-content, .information-tooltip span.box, .weblog-card.relation .cover-image::after, .modal-container.story-modal .modal-content, .product-card .product-colors, .product-card .image-container .feature, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
+.position-absolute, .product-toolbar .icons-box .label .label-name, .labeld-card::before, .labeld-card::after, .labeld-card .content .product-name, .focused-card::before, .focused-card::after, .iphone-banner::after, .iphone-banner::before, .air-banner .cover, .air-banner .content .product .text-box .frame, .air-banner::before, .air-banner::after, .banner .cantainer-image img, .banner .cantainer-text .angle-right, .banner .cantainer-text .angle-left, .badge-wrapper .badge, .badge-wrapper .badge-inside, .information-tooltip span.box, .weblog-card.relation .cover-image::after, .modal-container.story-modal .modal-content, .product-card .product-colors, .product-card .image-container .feature, .product-card .card-body .btn-add-to-cart .vector, .product-card .card-body .btn-add-to-cart img, .biography::after, .biography .cover-on-image, .article-banner-weblog::after, .article-banner-weblog .banner-content {
   position: absolute;
 }
 
@@ -27023,6 +27023,46 @@ dialog {
   left: unset;
   top: calc(var(--number) * 100%);
 }
+.slider-wrapper {
+  cursor: grab;
+}
+
+.slider-wrapper.dragging {
+  cursor: grabbing;
+}
+
+.slider-wrapper.dragging .slider-content {
+  pointer-events: none;
+  user-select: none;
+}
+
+.slider-wrapper.dragging .slider-content img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  position: unset;
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s linear;
+}
+
+.slider-wrapper.slider-column .slider-container {
+  flex-direction: column;
+}
+
+.slider-content {
+  flex-shrink: 0;
+}
+
 .badge-wrapper .badge, .badge-wrapper .badge-inside {
   padding: 8px;
   text-transform: uppercase;
